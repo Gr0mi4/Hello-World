@@ -1,14 +1,13 @@
-HTML {background-color: honeydew
-  font-family: cursive;
+body {background-color: honeydew;
+  font-family: serif;
 }
 main {
   font-size: 14pt;
   text-align: center;
-padding-top: 5%;
+  padding-top: 5%;
 }
 header {
     height: 300px;
-    padding: 5%;
 }
 footer {
 font-size: 15px;
@@ -19,8 +18,16 @@ margin-top: 20%;
 nav {
     text-align: center;
     font-size: x-large;
-    font-family: serif;
-
+}
+article {
+  text-align: center;
+  font-size: x-large;
+  padding: 20 0 0 0;
+  font-style: oblique;
+  color: darkgoldenrod;
+  border-width: 10px;
+  border-color: darkgoldenrod;
+  border-bottom-style: dashed;
 }
 Nav ul {
   background-color: peachpuff;
@@ -29,6 +36,26 @@ nav ul li {
   display: inline;
 padding: 0 50 00 50;
 }
-#logo {
-    align-self: center;
+menu ul li {
+    padding: 10 10 10 10;
+    font-size: 20px;
 }
+#logo {
+    padding-left: 25%;
+}
+#Navigation {
+  font-size: 40px;
+  font-weight: 200;
+  margin: auto;
+  padding: 30 0 0 0;
+  }
+  a:link {
+    color:            #b76666;
+    text-decoration:  none;
+    border-bottom:    thin dotted #b76666;
+  }
+  a:visited {
+    color:            #675c47;
+    text-decoration:  none;
+    border-bottom:    thin dotted #675c47;
+  }
