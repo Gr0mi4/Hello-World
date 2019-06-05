@@ -56,13 +56,19 @@ menu ul li {
   a:link {
     color:            #b76666;
     text-decoration:  none;
-    border-bottom:    thin dotted #b76666;
+        transition: 1s;
   }
   a:visited {
-    color:            #675c47;
+    color:            Black;
     text-decoration:  none;
-    border-bottom:    thin dotted #675c47;
+    transition: 1s;
   }
-  a:scope {
-    color: red;
+  a:hover {
+    background-color: #B38E6D;
+    color: #262626;
+    transition: 1s;
+  }
+  a:active {
+      color: black;
+          transition: 1s;
   }
