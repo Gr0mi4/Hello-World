@@ -29,6 +29,9 @@ article {
   border-color: darkgoldenrod;
   border-bottom-style: dashed;
 }
+aside {
+  float:right;
+}
 Nav ul {
   background-color: peachpuff;
 }
