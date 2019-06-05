@@ -1,11 +1,34 @@
-body {
+HTML {background-color: honeydew
+  font-family: cursive;
+}
+main {
   font-size: 14pt;
   text-align: center;
-  font-family: cursive;
-background-color: honeydew;
 padding-top: 5%;
 }
 header {
     height: 300px;
     padding: 5%;
+}
+footer {
+font-size: 15px;
+text-align: center;
+vertical-align: bottom;
+margin-top: 20%;
+}
+nav {
+    text-align: center;
+    font-size: x-large;
+    font-family: serif;
+
+}
+Nav ul {
+  background-color: peachpuff;
+}
+nav ul li {
+  display: inline;
+padding: 0 50 00 50;
+}
+#logo {
+    align-self: center;
 }
