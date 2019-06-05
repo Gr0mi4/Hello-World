@@ -5,3 +5,7 @@ body {
 background-color: honeydew;
 padding-top: 5%;
 }
+header {
+    height: 300px;
+    padding: 5%;
+}
