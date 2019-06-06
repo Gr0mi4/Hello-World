@@ -13,15 +13,15 @@ body {        font-family: serif;}
 .menu-item {  display: inline;
               padding: 0 50 00 50;
               font-family: sans-serif;}
-main {        font-size: 14pt;
+.text {       font-size: 14pt;
               text-align: center;}
-article {     text-align: center;
+.article-1 { text-align: center;
               font-size: x-large;
               padding: 20 0 0 0;
               font-style: oblique;}
-aside {       float:right;}
+.ferrariimg { float:right;}
 .mainmenu {   font-size: 20px;}
-.mmitem {          padding: 5;}
+.mmitem {     padding: 5;}
 a:link {      color: white;
               text-decoration:  none;
               transition: color 1s;
@@ -33,8 +33,9 @@ a:hover {     background-color: #78FFFF;
               color: #262626;
               transition: 1s;}
 a:active{     transition: 1s;}
-footer {      font-size: 15px;
+.footer {      font-size: 15px;
               text-align: center;
               vertical-align: bottom;
               margin-top: 20%;
-              background-color:  grey;}
+              background-color:  grey;
+              padding: 10;}
