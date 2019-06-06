@@ -1,68 +1,37 @@
-body {background-color: honeydew;
-  font-family: serif;
-}
-main {
-  font-size: 14pt;
-  text-align: center;
-  padding-top: 5%;
-}
-header {
-    height: 300px;
-}
-footer {
-font-size: 15px;
-text-align: center;
-vertical-align: bottom;
-margin-top: 20%;
-background-color:  peachpuff;
-}
-nav {
-    text-align: center;
-    font-size: x-large;
-}
-article {
-  text-align: center;
-  font-size: x-large;
-  padding: 20 0 0 0;
-  font-style: oblique;
-  color: darkgoldenrod;
-  border-width: 10px;
-  border-color:  peachpuff;
-  border-bottom-style: dashed;
-}
-aside {
-  float:right;
-}
-Nav ul {
-  background-color: peachpuff;
-}
-nav ul li {
-  display: inline;
-padding: 0 50 00 50;
-}
-menu ul li {
-    padding: 10 10 10 10;
-    font-size: 20px;
-}
-#logo {
-    padding-left: 25%;
-}
-#Navigation {
-  font-size: 40px;
-  font-weight: 200;
-  margin: auto;
-  padding: 30 0 0 0;
-  }
-  a:link {
-    color:            #b76666;
-    text-decoration:  none;
-    border-bottom:    thin dotted #b76666;
-  }
-  a:visited {
-    color:            #675c47;
-    text-decoration:  none;
-    border-bottom:    thin dotted #675c47;
-  }
-  a:scope {
-    color: red;
-  }
+
+body {        font-family: serif;}
+.blog {
+              font-size: 40px;
+              font-size: 40px;
+              font-weight: 600;
+              font-family: sans-serif;}
+.navigation { background-color: #2BC6DC;
+              color: white;
+              text-align: center;
+              padding: 5;
+              font-size: 30px;}
+.menu-item {  display: inline;
+              padding: 0 50 00 50;
+              font-family: sans-serif;}
+main {        font-size: 14pt;
+              text-align: center;}
+article {     text-align: center;
+              font-size: x-large;
+              padding: 20 0 0 0;
+              font-style: oblique;}
+aside {       float:right;}
+.mainmenu {   font-size: 20px;}
+.mmitem {          padding: 5;}
+a:link {      color: white;
+              text-decoration:  none;
+              transition: 1s;}
+a:visited {   color:            white;
+              text-decoration:  none;}
+a:hover {     background-color: #78FFFF;
+              color: #262626;
+              transition: 1s;}
+footer {      font-size: 15px;
+              text-align: center;
+              vertical-align: bottom;
+              margin-top: 20%;
+              background-color:  grey;}
