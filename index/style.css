@@ -24,12 +24,15 @@ aside {       float:right;}
 .mmitem {          padding: 5;}
 a:link {      color: white;
               text-decoration:  none;
-              transition: 1s;}
+              transition: color 1s;
+              transition: background 1s;}
 a:visited {   color:            white;
-              text-decoration:  none;}
+              text-decoration:  none;
+              transition: 1s;}
 a:hover {     background-color: #78FFFF;
               color: #262626;
               transition: 1s;}
+a:active{     transition: 1s;}
 footer {      font-size: 15px;
               text-align: center;
               vertical-align: bottom;
