@@ -11,13 +11,17 @@
   padding: 5;
   font-size: 30px;
 }
+.main {
+  display: table-row;
+}
 .menu-item {
   display: inline;
-  padding: 0 140 00 140;
+  padding: 0 120 00 120;
   font-family: sans-serif;
 }
-.ferrariimg {
-  float:right;
+.advertisement {
+  display: table-cell;
+  border-spacing: 5px;
 }
 .headline {
   text-align: center;
@@ -29,8 +33,9 @@
   font-size: 25;
 }
 .oilcheck-GS500 {
+  display: table-cell;
   text-align: left;
-  padding: 20 480 10 80;
+  padding: 20 80 20 80;
   font-size: 20;
   font-family: sans-serif;
 }
@@ -63,7 +68,7 @@ a:active{
   font-size: 15px;
   text-align: center;
   vertical-align: bottom;
-  margin-top: 20%;
+  margin-top: 5%;
   background-color:  grey;
   padding: 10;
 }
