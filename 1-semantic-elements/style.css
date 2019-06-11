@@ -3,9 +3,13 @@ body {
 }
 .blog {
   font-size: 40px;
-  font-size: 40px;
   font-weight: 600;
   font-family: sans-serif;
+  background-color: #2BC6DC;
+  color: white;
+  text-align: center;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
 }
 .navigation {
   background-color: #2BC6DC;
