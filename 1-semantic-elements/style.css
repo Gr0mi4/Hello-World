@@ -1,3 +1,6 @@
+body {
+  margin: 0;
+}
 .blog {
   font-size: 40px;
   font-size: 40px;
@@ -10,18 +13,33 @@
   text-align: center;
   padding: 5;
   font-size: 30px;
+  padding-block-start: 20px;
+  padding-block-end: 20px;
 }
-.main {
-  display: table-row;
+.navigation ul {
+  padding-inline-start: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+.navigation p {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
 }
 .menu-item {
-  display: inline;
-  padding: 0 120 00 120;
+  display: inline-block;
+  margin: 12 46;
   font-family: sans-serif;
 }
 .advertisement {
-  display: table-cell;
-  border-spacing: 5px;
+  float: right;
+  vertical-align: top;
+  width: 450;
+  height: 800px;
+  margin: 60 10 0 10;
+  background-color: grey;
+  text-align: center;
+  font-size: 50;
+  font-weight: bolder;
 }
 .headline {
   text-align: center;
@@ -32,32 +50,34 @@
 .headline-2 {
   font-size: 25;
 }
-.oilcheck-GS500 {
-  display: table-cell;
+.article {
+  display: inline-block;
+  vertical-align: top;
   text-align: left;
   padding: 20 80 20 80;
   font-size: 20;
   font-family: sans-serif;
+  width: 1300;
 }
 .mainmenu-item {
   padding: 5;
 }
-a:link {
+.navigation a:link {
   color: white;
   text-decoration:  none;
   transition: color 1s;
   transition: background 1s;
 }
-a:visited {
+.navigation a:visited {
   color: white;
   text-decoration:  none;
   transition: 1s;}
-a:hover {
+.navigation a:hover {
   background-color: #78FFFF;
   color: #262626;
   transition: 1s;
 }
-a:active{
+.navigation a:active{
   transition: 1s;
 }
 .wisdom {
