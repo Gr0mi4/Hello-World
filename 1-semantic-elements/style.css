@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0px;
 }
 .blog {
   font-size: 40px;
@@ -10,89 +10,87 @@ body {
   text-align: center;
   margin-block-start: 0px;
   margin-block-end: 0px;
+  padding-block-start: 10px;
 }
 .navigation {
   background-color: #2BC6DC;
   color: white;
   text-align: center;
-  padding: 5;
+  padding: 5px;
   font-size: 30px;
   padding-block-start: 20px;
   padding-block-end: 20px;
 }
-.navigation ul {
+.navigation .menu {
   padding-inline-start: 0px;
   margin-block-start: 0px;
   margin-block-end: 0px;
 }
-.navigation p {
+.navigation {
   margin-block-start: 0px;
   margin-block-end: 0px;
 }
-.menu-item {
+.nav-li {
   display: inline-block;
-  margin: 12 46;
+  margin: 12px 46px;
   font-family: sans-serif;
 }
-.advertisement {
-  float: right;
-  vertical-align: top;
-  width: 450;
-  height: 800px;
-  margin: 60 10 0 10;
-  background-color: grey;
-  text-align: center;
-  font-size: 50;
-  font-weight: bolder;
+.nav-item:link {
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  transition: background 1s;
+  cursor: alias;
 }
-.headline {
-  text-align: center;
-  font-size: 30;
-  padding: 20 0 0 0;
-  font-style: oblique;
+.nav-item:link:hover {
+  background-color: #78FFFF;
+  color: #262626;
+  transition: 1s;
+  transition: color 1s;
 }
-.headline-2 {
-  font-size: 25;
+.main {
+  width: 1400px;
+  margin: auto;
 }
 .article {
   display: inline-block;
   vertical-align: top;
   text-align: left;
-  padding: 20 80 20 80;
-  font-size: 20;
+  padding: 20px 20px 20px 0px;
+  font-size: 20px;
   font-family: sans-serif;
-  width: 1300;
+  width: 800px;
 }
-.mainmenu-item {
-  padding: 5;
+.advertisement {
+  display: inline-block;
+  vertical-align: top;
+  width: 400px;
+  height: 800px;
+  margin: 60px 10px 0px 10px;
+  background-color: grey;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder;
 }
-.navigation a:link {
-  color: white;
-  text-decoration:  none;
-  transition: color 1s;
-  transition: background 1s;
+.headline {
+  text-align: center;
+  font-size: 30px;
+  padding: 20px 0px 0px 0px;
+  font-style: oblique;
 }
-.navigation a:visited {
-  color: white;
-  text-decoration:  none;
-  transition: 1s;}
-.navigation a:hover {
-  background-color: #78FFFF;
-  color: #262626;
-  transition: 1s;
-}
-.navigation a:active{
-  transition: 1s;
+.headline-2 {
+  font-size: 25px;
 }
 .wisdom {
   font-style: oblique;
   text-align: center;
 }
-.footer {
+.copyright {
   font-size: 15px;
   text-align: center;
   vertical-align: bottom;
   margin-top: 5%;
   background-color:  grey;
-  padding: 10;
+  padding: 10px;
 }
