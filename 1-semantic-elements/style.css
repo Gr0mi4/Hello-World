@@ -8,30 +8,15 @@ body {
   background-color: #2BC6DC;
   color: white;
   text-align: center;
-<<<<<<< HEAD
-  margin : 0px;
-=======
   margin: 0px;
->>>>>>> 5adf1a6330d47d6cfefd2e36a2a2fd8fe8b99b91
   padding: 10px 0px 0px 0px;
 }
 .navigation {
   background-color: #2BC6DC;
   color: white;
   text-align: center;
-  padding: 5px;
   font-size: 30px;
-<<<<<<< HEAD
-  padding: 20px 0px 20px 0px;
-}
-.navigation .menu {
-  padding: 0px;
-  margin : 0px;
-}
-.navigation {
-  margin : 0px 0px 0px 0px;
-=======
-  padding: 20px 0 20px 0;
+  padding: 20px 0px 0px 0px;
 }
 .navigation .menu {
   padding: 0px;
@@ -39,7 +24,6 @@ body {
 }
 .navigation {
   margin: 0px;
->>>>>>> 5adf1a6330d47d6cfefd2e36a2a2fd8fe8b99b91
 }
 .menu-item {
   display: inline-block;
@@ -53,59 +37,40 @@ body {
   padding: 10px;
   transition: background 1s;
 }
-<<<<<<< HEAD
 .menu-item-link:hover {
-=======
-.nav-item-link:hover {
->>>>>>> 5adf1a6330d47d6cfefd2e36a2a2fd8fe8b99b91
   background-color: #78FFFF;
   color: #262626;
   transition: 1s;
-  transition: color 1s;
 }
 .main {
-  width: 1400px;
+  box-sizing: border-box;
+  width: 1440px;
+  padding: 40px;
   margin: auto;
 }
 .article {
   display: inline-block;
   vertical-align: top;
   text-align: left;
-  padding: 20px 20px 20px 0px;
   font-family: sans-serif;
-<<<<<<< HEAD
-  font-size: 20px;
-=======
->>>>>>> 5adf1a6330d47d6cfefd2e36a2a2fd8fe8b99b91
-  width: 1040px;
+  width: 1010px;
 }
 .advertisement {
   display: inline-block;
-<<<<<<< HEAD
-  vertical-align: top;
-=======
->>>>>>> 5adf1a6330d47d6cfefd2e36a2a2fd8fe8b99b91
   width: 300px;
   height: 600px;
-  margin: 60px 10px 0px 10px;
   background-color: lightgrey;
   text-align: center;
   font-size: 18px;
-<<<<<<< HEAD
-  font-weight: bolder;
-  line-height: 600px  ;
-  float: right;
-=======
   font-weight: bold;
   line-height: 600px;
->>>>>>> 5adf1a6330d47d6cfefd2e36a2a2fd8fe8b99b91
   font-family: Helvetica;
   color: #555555;
+  margin-left: 40px;
 }
 .headline {
   text-align: center;
   font-size: 30px;
-  padding: 20px 0px 0px 0px;
   font-style: oblique;
 }
 .headline-2 {
@@ -122,11 +87,6 @@ body {
   font-size: 15px;
   text-align: center;
   vertical-align: bottom;
-  margin-top: 5%;
-<<<<<<< HEAD
-  background-color:  lightgrey;
-=======
   background-color: lightgrey;
->>>>>>> 5adf1a6330d47d6cfefd2e36a2a2fd8fe8b99b91
-  padding: 10px;
+  padding: 10px 0px 0px 0px;
 }
