@@ -1,6 +1,7 @@
 body {
   margin: 0px;
 }
+
 .blog {
   font-size: 40px;
   font-weight: 600;
@@ -11,25 +12,27 @@ body {
   margin: 0px;
   padding: 10px 0px 0px 0px;
 }
+
 .navigation {
   background-color: #2BC6DC;
   color: white;
   text-align: center;
   font-size: 30px;
   padding: 20px 0px 0px 0px;
+  margin: 0px;
 }
+
 .navigation .menu {
   padding: 0px;
   margin: 0px;
 }
-.navigation {
-  margin: 0px;
-}
+
 .menu-item {
   display: inline-block;
   margin: 12px 46px;
   font-family: sans-serif;
 }
+
 .menu-item-link {
   color: white;
   text-decoration: none;
@@ -37,17 +40,20 @@ body {
   padding: 10px;
   transition: background 1s;
 }
+
 .menu-item-link:hover {
   background-color: #78FFFF;
   color: #262626;
   transition: 1s;
 }
+
 .main {
   box-sizing: border-box;
   width: 1440px;
   padding: 40px;
   margin: auto;
 }
+
 .article {
   display: inline-block;
   vertical-align: top;
@@ -55,6 +61,7 @@ body {
   font-family: sans-serif;
   width: 1010px;
 }
+
 .advertisement {
   display: inline-block;
   width: 300px;
@@ -68,14 +75,17 @@ body {
   color: #555555;
   margin-left: 40px;
 }
+
 .headline {
   text-align: center;
   font-size: 30px;
   font-style: oblique;
 }
+
 .headline-2 {
   font-size: 25px;
 }
+
 .wisdom {
   font-style: oblique;
   text-align: center;
@@ -83,12 +93,14 @@ body {
 .ferrariimg {
   width: 500px;
 }
+
 .footer {
   background-color: lightgrey;
   box-sizing: content-box;
   padding: 15px;
   text-align: center;
 }
+
 .copyright {
   font-size: 15px;
   margin: 0px;
