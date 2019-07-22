@@ -2,7 +2,12 @@ body {
   margin: 0px;
 }
 
-.blog {
+.blog-navigation {
+  background-color: #2BC6DC;
+  padding: 10px 0px 0px 0px;
+}
+
+.blog-name {
   font-size: 40px;
   font-weight: 600;
   font-family: sans-serif;
@@ -10,7 +15,7 @@ body {
   color: white;
   text-align: center;
   margin: 0px;
-  padding: 10px 0px 0px 0px;
+  padding: 0px;
 }
 
 .navigation {
@@ -18,8 +23,8 @@ body {
   color: white;
   text-align: center;
   font-size: 30px;
-  padding: 20px 0px 0px 0px;
-  margin: 0px;
+  padding: 0px;
+  margin: 20px 0px 0px 0px;
 }
 
 .navigation .menu {
@@ -62,6 +67,52 @@ body {
   width: 1010px;
 }
 
+.headline {
+  text-align: center;
+  font-size: 30px;
+  font-style: oblique;
+  margin: 0px;
+}
+
+.text {
+  margin: 24px 0px 0px 0px;
+  font-family: Georgia;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.numbered-list, .unnumbered-list {
+  padding: 0px;
+  margin: 24px 0px 0px 20px;
+  font-family: Georgia;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.headline-2 {
+  font-size: 24px;
+  margin: 24px 0px 0px 0px;
+  line-height: 30px;
+}
+
+.quote {
+  width: 600px;
+  margin: 32px auto 0;
+  padding: 24px;
+  font-family: Helvetica;
+  font-size: 24px;
+  font-style: italic;
+  line-height: 32px;
+  text-align: center;
+  border: 4px dashed #bf0000;
+}
+
+.image {
+  margin: 40px auto 0px;
+  display: block;
+  width: 500px;
+}
+
 .advertisement {
   display: inline-block;
   width: 300px;
@@ -74,24 +125,6 @@ body {
   font-family: Helvetica;
   color: #555555;
   margin-left: 40px;
-}
-
-.headline {
-  text-align: center;
-  font-size: 30px;
-  font-style: oblique;
-}
-
-.headline-2 {
-  font-size: 25px;
-}
-
-.wisdom {
-  font-style: oblique;
-  text-align: center;
-}
-.ferrariimg {
-  width: 500px;
 }
 
 .footer {
