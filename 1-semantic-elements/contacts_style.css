@@ -16,6 +16,7 @@ body {
   text-align: center;
   margin: 0px;
   padding: 0px;
+  text-transform: uppercase;
 }
 
 .navigation {
@@ -52,79 +53,81 @@ body {
   transition: 1s;
 }
 
+.choosen-link {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #78FFFF;
+  color: #262626;
+}
+
 .main {
   box-sizing: border-box;
-  width: 1440px;
+  width: 700px;
   padding: 40px;
   margin: auto;
 }
 
-.article {
-  display: inline-block;
-  vertical-align: top;
+.contacts {
+  margin: 24px auto 0px;
+  font-family: Georgia;
+  font-size: 18px;
+  line-height: 24px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.contacts-caption {
   text-align: left;
   font-family: sans-serif;
-  width: 1010px;
-}
-
-.headline {
-  text-align: center;
   font-size: 30px;
-  font-style: oblique;
-  margin: 0px;
-}
-
-.text {
-  margin: 24px 0px 0px 0px;
-  font-family: Georgia;
-  font-size: 18px;
-  line-height: 24px;
-}
-
-.numbered-list, .unnumbered-list {
-  padding: 0px;
-  margin: 24px 0px 0px 20px;
-  font-family: Georgia;
-  font-size: 18px;
-  line-height: 24px;
-}
-
-.headline-2 {
-  font-size: 24px;
-  margin: 24px 0px 0px 0px;
-  line-height: 30px;
-}
-
-.quote {
-  width: 600px;
-  margin: 32px auto 0;
-  padding: 24px;
-  font-family: Helvetica;
-  font-size: 24px;
-  font-style: italic;
-  line-height: 32px;
-  text-align: center;
-  border: 4px dashed #bf0000;
-}
-
-.image {
-  margin: 40px auto 0px;
-  display: block;
-  width: 500px;
-}
-
-.advertisement {
-  display: inline-block;
-  width: 300px;
-  height: 600px;
-  background-color: lightgrey;
-  text-align: center;
-  font-size: 18px;
+  line-height: 80px;
   font-weight: bold;
-  line-height: 600px;
-  font-family: Helvetica;
-  color: #555555;
-  margin-left: 40px;
+}
+
+.contacts-headline {
+  text-align: left;
+  font-size: 26px;
+  line-height: 34px;
+  font-style: oblique;
+}
+
+.contacts-cell {
+  line-height: 30px;
+  padding: 10px 10px 10px 20px;
+  border-bottom: 1px solid black;
+}
+
+.type {
+  border-right: 1px solid black;
+}
+
+.viber {
+  border-bottom-width: 0px;
+  border-radius: 0px 0px 20px 0px;
+}
+
+.viber.type {
+  border-radius: 0px 0px 0px 20px;
+}
+
+.cellphone, .email, .facebook, .instagram, .viber {
+  background-color: rgba(43, 232, 255, 0.2);
+}
+.officephone, .vk, .twitter, .telegram {
+  background-color: rgba(236, 252, 133, 0.2);
+
+}
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.phone {
+  color: orange;
+  font-style: oblique;
+  text-decoration: none;
 }
 
 .footer {

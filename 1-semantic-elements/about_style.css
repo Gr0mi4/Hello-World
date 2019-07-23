@@ -16,6 +16,7 @@ body {
   text-align: center;
   margin: 0px;
   padding: 0px;
+  text-transform: uppercase;
 }
 
 .navigation {
@@ -50,6 +51,15 @@ body {
   background-color: #78FFFF;
   color: #262626;
   transition: 1s;
+}
+
+.choosen-link {
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #78FFFF;
+  color: #262626;
 }
 
 .main {
