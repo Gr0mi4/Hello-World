@@ -7,15 +7,15 @@ body {
   padding: 10px 0px 0px 0px;
 }
 
-.blog-name {
-  font-size: 40px;
-  font-weight: 600;
-  font-family: sans-serif;
+.page-name {
+  font-size: 50px;
+  font-family: "Gagalin", sans-serif;
   background-color: #2BC6DC;
   color: white;
   text-align: center;
   margin: 0px;
   padding: 0px;
+  text-transform: uppercase;
 }
 
 .navigation {
@@ -35,7 +35,7 @@ body {
 .menu-item {
   display: inline-block;
   margin: 12px 46px;
-  font-family: sans-serif;
+  font-family: "Gagalin", sans-serif;
 }
 
 .menu-item-link {
@@ -50,6 +50,14 @@ body {
   background-color: #78FFFF;
   color: #262626;
   transition: 1s;
+}
+
+.choosen-link {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #78FFFF;
+  color: #262626;
 }
 
 .main {

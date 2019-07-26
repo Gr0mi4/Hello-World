@@ -1,0 +1,149 @@
+body {
+  margin: 0px;
+}
+
+.blog-navigation {
+  background-color: #2BC6DC;
+  padding: 10px 0px 0px 0px;
+}
+
+.page-name {
+  font-size: 50px;
+  font-family: "Gagalin", sans-serif;
+  background-color: #2BC6DC;
+  color: white;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  text-transform: uppercase;
+}
+
+.navigation {
+  background-color: #2BC6DC;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  padding: 0px;
+  margin: 20px 0px 0px 0px;
+}
+
+.navigation .menu {
+  padding: 0px;
+  margin: 0px;
+}
+
+.menu-item {
+  display: inline-block;
+  margin: 12px 46px;
+  font-family: "Gagalin", sans-serif;
+}
+
+.menu-item-link {
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  transition: background 1s;
+}
+
+.menu-item-link:hover {
+  background-color: #78FFFF;
+  color: #262626;
+  transition: 1s;
+}
+
+.choosen-link {
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #78FFFF;
+  color: #262626;
+}
+
+.main {
+  box-sizing: border-box;
+  width: 1440px;
+  padding: 40px;
+  margin: auto;
+}
+
+.article {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  font-family: sans-serif;
+  width: 1010px;
+}
+
+.headline {
+  text-align: center;
+  font-size: 30px;
+  font-style: oblique;
+  margin: 0px;
+}
+
+.text {
+  margin: 24px 0px 0px 0px;
+  font-family: Georgia;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.numbered-list, .unnumbered-list {
+  padding: 0px;
+  margin: 24px 0px 0px 20px;
+  font-family: Georgia;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.headline-2 {
+  font-size: 24px;
+  margin: 24px 0px 0px 0px;
+  line-height: 30px;
+}
+
+.quote {
+  width: 600px;
+  margin: 32px auto 0;
+  padding: 24px;
+  font-family: Helvetica;
+  font-size: 24px;
+  font-style: italic;
+  line-height: 32px;
+  text-align: center;
+  border: 4px dashed #bf0000;
+}
+
+.image {
+  margin: 40px auto 0px;
+  display: block;
+  width: 500px;
+}
+
+.advertisement {
+  display: inline-block;
+  width: 300px;
+  height: 600px;
+  background-color: lightgrey;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 600px;
+  font-family: Helvetica;
+  color: #555555;
+  margin-left: 40px;
+}
+
+.footer {
+  background-color: lightgrey;
+  box-sizing: content-box;
+  padding: 15px;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 15px;
+  margin: 0px;
+}

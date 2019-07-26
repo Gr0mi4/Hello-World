@@ -1,0 +1,143 @@
+body {
+  margin: 0px;
+}
+
+.blog-navigation {
+  background-color: #2BC6DC;
+  padding: 10px 0px 0px 0px;
+}
+
+.page-name {
+  font-size: 50px;
+  font-family: "Gagalin", sans-serif;
+  background-color: #2BC6DC;
+  color: white;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  text-transform: uppercase;
+}
+
+.navigation {
+  background-color: #2BC6DC;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  padding: 0px;
+  margin: 20px 0px 0px 0px;
+}
+
+.navigation .menu {
+  padding: 0px;
+  margin: 0px;
+}
+
+.menu-item {
+  display: inline-block;
+  margin: 12px 46px;
+  font-family: "Gagalin", sans-serif;
+}
+
+.menu-item-link {
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  transition: background 1s;
+}
+
+.menu-item-link:hover {
+  background-color: #78FFFF;
+  color: #262626;
+  transition: 1s;
+}
+
+.choosen-link {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #78FFFF;
+  color: #262626;
+}
+
+.main {
+  box-sizing: border-box;
+  width: 700px;
+  padding: 40px;
+  margin: auto;
+}
+
+.contacts-table {
+  margin: 24px auto 0px;
+  font-family: Georgia;
+  font-size: 18px;
+  line-height: 24px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.contacts-caption {
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 30px;
+  line-height: 80px;
+  font-weight: bold;
+}
+
+.contacts-head  {
+  text-align: left;
+  font-size: 26px;
+  line-height: 34px;
+  font-style: oblique;
+}
+
+.contacts-cell {
+  line-height: 30px;
+  padding: 10px 10px 10px 20px;
+  border-bottom: 1px solid black;
+}
+
+.contacts-cell:nth-child(odd) {
+  border-right: 1px solid black;
+}
+
+.contacts-body > .contacts-row:last-child > .contacts-cell:nth-child(2) {
+  border-bottom-width: 0px;
+  border-radius: 0px 0px 20px 0px;
+}
+
+.contacts-body > .contacts-row:last-child > .contacts-cell:nth-child(1) {
+  border-bottom-width: 0px;
+  border-radius: 0px 0px 0px 20px;
+}
+
+.contacts-body .contacts-row:nth-child(odd) {
+  background-color: rgba(43, 232, 255, 0.2);
+}
+.contacts-body .contacts-row:nth-child(even) {
+  background-color: rgba(236, 252, 133, 0.2);
+
+}
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.phone {
+  color: orange;
+  font-style: oblique;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: lightgrey;
+  box-sizing: content-box;
+  padding: 15px;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 15px;
+  margin: 0px;
+}
