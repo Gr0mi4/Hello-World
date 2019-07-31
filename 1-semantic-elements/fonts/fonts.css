@@ -1,3 +1,5 @@
+@import url("http://fonts.fontstorage.com/import/gagalin.css");
+/*Файрфокс отказывается импортировать локальные шрифты, пришлось вставить такую подстраховку*/
 @font-face {
     font-family: 'Gagalin';
     src:
