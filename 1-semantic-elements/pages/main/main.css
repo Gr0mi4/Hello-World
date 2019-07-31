@@ -5,16 +5,13 @@ body {
 .blog-navigation {
   background-color: #2BC6DC;
   padding: 10px 0px 0px 0px;
+  font-family: "Gagalin", sans-serif;
+  text-align: center;
 }
 
 .page-name {
   font-size: 50px;
-  font-family: "Gagalin", sans-serif;
-  background-color: #2BC6DC;
   color: black;
-  text-align: center;
-  margin: 0px auto;
-  padding: 0px;
   text-transform: uppercase;
   text-decoration: none;
   display: block;
@@ -27,9 +24,7 @@ body {
 }
 
 .navigation {
-  background-color: #2BC6DC;
   color: white;
-  text-align: center;
   font-size: 30px;
   padding: 0px;
   margin: 20px 0px 0px 0px;
@@ -43,7 +38,6 @@ body {
 .menu-item {
   display: inline-block;
   margin: 12px 46px;
-  font-family: "Gagalin", sans-serif;
 }
 
 .menu-item-link {
