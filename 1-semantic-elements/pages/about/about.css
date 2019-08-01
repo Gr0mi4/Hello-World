@@ -55,7 +55,7 @@ body {
 .menu-item-link:hover {
   background-color: #78FFFF;
   color: #262626;
-  transition: 1s;
+  transition: background 1s, color 1s;
 }
 
 .choosen-link {

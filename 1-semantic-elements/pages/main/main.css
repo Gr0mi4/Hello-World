@@ -20,7 +20,6 @@ body {
 
 .page-name:hover {
   color: white;
-  transition: 1s;
 }
 
 .navigation {
@@ -45,13 +44,12 @@ body {
   text-decoration: none;
   border-radius: 5px;
   padding: 10px;
-  transition: 1s;
+  transition: background 1s, color 1s;
 }
 
 .menu-item-link:hover {
   background-color: #78FFFF;
   color: #262626;
-  transition: 1s;
 }
 
 .main {
