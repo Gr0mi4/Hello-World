@@ -11,11 +11,18 @@ body {
   font-size: 50px;
   font-family: "Gagalin", sans-serif;
   background-color: #2BC6DC;
-  color: white;
+  color: black;
   text-align: center;
-  margin: 0px;
+  margin: 0px auto;
   padding: 0px;
   text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  transition: color 1s;
+}
+
+.page-name:hover {
+  color: white;
 }
 
 .navigation {
@@ -43,13 +50,12 @@ body {
   text-decoration: none;
   border-radius: 5px;
   padding: 10px;
-  transition: background 1s;
+  transition: background 1s, color 1s;
 }
 
 .menu-item-link:hover {
   background-color: #78FFFF;
   color: #262626;
-  transition: 1s;
 }
 
 .choosen-link {

@@ -11,11 +11,18 @@ body {
   font-size: 50px;
   font-family: "Gagalin", sans-serif;
   background-color: #2BC6DC;
-  color: white;
+  color: black;
   text-align: center;
-  margin: 0px;
+  margin: 0px auto;
   padding: 0px;
   text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  transition: color 1s;
+}
+
+.page-name:hover {
+  color: white;
 }
 
 .navigation {
@@ -43,13 +50,12 @@ body {
   text-decoration: none;
   border-radius: 5px;
   padding: 10px;
-  transition: background 1s;
+  transition: background 1s, color 1s;
 }
 
 .menu-item-link:hover {
   background-color: #78FFFF;
   color: #262626;
-  transition: 1s;
 }
 
 .choosen-link {
@@ -67,14 +73,6 @@ body {
   margin: auto;
 }
 
-.article {
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
-  font-family: sans-serif;
-  width: 1010px;
-}
-
 .headline {
   text-align: center;
   font-size: 30px;
@@ -82,57 +80,18 @@ body {
   margin: 0px;
 }
 
-.text {
-  margin: 24px 0px 0px 0px;
-  font-family: Georgia;
-  font-size: 18px;
-  line-height: 24px;
-}
-
-.numbered-list, .unnumbered-list {
+.unnumbered-list {
   padding: 0px;
-  margin: 24px 0px 0px 20px;
+  margin: 20px auto;
   font-family: Georgia;
-  font-size: 18px;
-  line-height: 24px;
-}
-
-.headline-2 {
   font-size: 24px;
-  margin: 24px 0px 0px 0px;
-  line-height: 30px;
-}
-
-.quote {
-  width: 600px;
-  margin: 32px auto 0;
-  padding: 24px;
-  font-family: Helvetica;
-  font-size: 24px;
-  font-style: italic;
-  line-height: 32px;
+  line-height: 28px;
   text-align: center;
-  border: 4px dashed #bf0000;
 }
 
-.image {
-  margin: 40px auto 0px;
-  display: block;
-  width: 500px;
-}
-
-.advertisement {
+.post-theme {
   display: inline-block;
-  width: 300px;
-  height: 600px;
-  background-color: lightgrey;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 600px;
-  font-family: Helvetica;
-  color: #555555;
-  margin-left: 40px;
+  margin: 10px;
 }
 
 .footer {
