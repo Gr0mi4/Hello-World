@@ -23,7 +23,6 @@ body {
 
 .page-name:hover {
   color: white;
-  transition: 1s;
 }
 
 .navigation {
@@ -51,7 +50,6 @@ body {
   text-decoration: none;
   border-radius: 5px;
   padding: 10px;
-  transition: 1s;
 }
 
 .menu-item-link:hover {

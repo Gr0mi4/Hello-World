@@ -1,14 +1,8 @@
 @font-face {
     font-family: 'Gagalin';
     src:
-    local('Gagalin'),
-    local('Gagalin-Regular'),
-    url('Gagalin.woff2') format('woff2'),
-    url('Gagalin.woff') format('woff'),
-    url('Gagalin.ttf')  format('truetype');
+    url('http://hb.bizmrg.com/fonts/gagalin/400.woff2') format('woff2'),
+    url('http://hb.bizmrg.com/fonts/gagalin/400.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
-
-@import url("http://fonts.fontstorage.com/import/gagalin.css");
-/*Файрфокс отказывается импортировать локальные шрифты, пришлось вставить такую подстраховку*/
