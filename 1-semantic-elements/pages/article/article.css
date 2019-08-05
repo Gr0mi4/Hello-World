@@ -5,6 +5,8 @@ body {
 .blog-navigation {
   background-color: #2BC6DC;
   padding: 10px 0px 0px 0px;
+  font-family: "Gagalin", sans-serif;
+  text-align: center;
 }
 
 .page-name {
@@ -42,7 +44,7 @@ body {
 .menu-item {
   display: inline-block;
   margin: 12px 46px;
-  font-family: "Gagalin", sans-serif;
+  position: relative;
 }
 
 .menu-item-link {
@@ -65,12 +67,76 @@ body {
   margin: auto;
 }
 
+.topics {
+  padding: 10px 35px;
+  position: relative;
+}
+
+.menu-item:hover .topics-menu {
+  display: block;
+}
+
+.topics-menu {
+  display: none;
+  padding: 5px;
+  position: absolute;
+  left: -20px;
+  top: 45px;
+  font-size: 20px;
+  color: black;
+  background-color: #F9F9F9;
+  list-style-type: none;
+  width: 180px;
+  box-shadow: 0px 5px 10px -3px grey;
+}
+
+.topics-item {
+  padding: 2px 15px;
+  font-family: "Calibri";
+  border-bottom: 2px solid #EEEEEE;
+  font-weight: bold;
+  text-align: left;
+}
+
+.topics-item:hover {
+  background-color: #dddddd;
+  transition: background 0.5s;
+  cursor: pointer;
+}
+
+.topics-link {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-item-link.topics::after {
+  position: absolute;
+  right: 9px;
+  top: 25px;
+  content: "";
+  border-style: solid;
+  border-width: 10px 9px 0px 9px;
+  border-color: white transparent;
+  transition: 1s;
+}
+
+.menu-item-link.topics:hover::after {
+  border-color: black transparent;
+  transform:rotate(180deg);
+  transition: 1s;
+}
+
 .article {
   display: inline-block;
   vertical-align: top;
   text-align: left;
   font-family: sans-serif;
   width: 1010px;
+  border-bottom: 4px solid #EFEFEF;
+}
+
+.article:not(:first-child) {
+  margin: 25px 0px 0px 0px;
 }
 
 .headline {
@@ -120,6 +186,8 @@ body {
 }
 
 .advertisement {
+  top: 10px;
+  position: sticky;
   display: inline-block;
   width: 300px;
   height: 600px;
