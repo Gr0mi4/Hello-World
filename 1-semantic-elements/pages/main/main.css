@@ -18,8 +18,35 @@ body {
   transition: color 1s;
 }
 
-.page-name:hover {
+.page-name:hover  {
   color: white;
+}
+
+.page-name::after {
+  content: "";
+  display: block;
+  background-image: url(../../images/1.png);
+  background-repeat: no-repeat;
+  background-size: 140px;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 100px;
+  top: 18px;
+  min-width: 150px;
+}
+
+.page-name::before {
+  content: "";
+  display: block;
+  background-image: url(../../images/2.png);
+  background-repeat: no-repeat;
+  background-size: 120px;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 100px;
+  top: 18px;
 }
 
 .navigation {
@@ -31,6 +58,7 @@ body {
 .navigation .menu {
   padding: 0px;
   margin: 0px;
+
 }
 
 .menu-item {
@@ -74,6 +102,7 @@ body {
   list-style-type: none;
   width: 180px;
   box-shadow: 0px 5px 10px -3px grey;
+  z-index: 10;
 }
 
 .dropout-menu-item {
@@ -114,9 +143,58 @@ body {
 
 .main {
   box-sizing: border-box;
-  width: 1040px;
+  width: 1140px;
   padding: 40px;
   margin: auto;
+}
+
+.theme-headline {
+    font-family: "Gagalin", "Calibri", sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    margin: 5px 0px;
+    position: relative;
+    left: 50px;
+}
+
+.theme {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  border: 2px solid #eeeeee;
+  border-radius: 15px;
+  width: 250px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+
+.card-image {
+  width: 250px;
+  height: 155px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.card-headline {
+  text-align: center;
+  margin: 5px 0px;
+  font-family: "Calibri";
+  padding: 5px;
+}
+
+.card-article-date {
+  padding: 5px 0px 5px 10px;
+  font-size: 14px;
+  margin-top: auto;
 }
 
 .headline {

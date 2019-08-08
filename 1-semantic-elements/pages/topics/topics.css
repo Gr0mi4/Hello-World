@@ -22,6 +22,32 @@ body {
   color: black;
 }
 
+.page-name::after {
+  content: "";
+  display: block;
+  background-image: url(../../images/1.png);
+  background-repeat: no-repeat;
+  background-size: 140px;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 100px;
+  top: 18px;
+}
+
+.page-name::before {
+  content: "";
+  display: block;
+  background-image: url(../../images/2.png);
+  background-repeat: no-repeat;
+  background-size: 120px;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 100px;
+  top: 18px;
+}
+
 .navigation {
   color: white;
   font-size: 30px;
@@ -49,7 +75,7 @@ body {
 }
 
 .menu-item-link {
-  color: white;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -57,7 +83,7 @@ body {
   text-decoration: none;
   border-radius: 10px;
   background-color: #78FFFF;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
   color: #262626;
 }
 
