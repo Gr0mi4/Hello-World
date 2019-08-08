@@ -126,6 +126,7 @@ body {
   font-family: sans-serif;
   width: 1010px;
   border-bottom: 4px solid #EFEFEF;
+  padding-bottom: 20px;
 }
 
 .article:not(:first-child) {
