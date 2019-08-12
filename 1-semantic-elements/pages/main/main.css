@@ -184,6 +184,13 @@ body {
   border-radius: 15px 15px 0px 0px;
 }
 
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
 .card-headline {
   text-align: center;
   margin: 5px 0px;
@@ -194,7 +201,7 @@ body {
 .card-article-date {
   padding: 5px 0px 5px 10px;
   font-size: 14px;
-  margin-top: auto;
+  margin-top: 14px;
 }
 
 .headline {
