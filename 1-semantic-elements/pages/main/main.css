@@ -22,28 +22,22 @@ body {
   color: white;
 }
 
-.page-name::after {
-  content: "";
+.decoration-img:first-of-type {
   display: block;
-  background-image: url(../../images/1.png);
-  background-repeat: no-repeat;
-  background-size: 140px;
-  width: 150px;
-  height: 150px;
+  size: 140px;
+  width: 130px;
+  height: 130px;
   position: absolute;
   right: 100px;
   top: 18px;
   min-width: 150px;
 }
 
-.page-name::before {
-  content: "";
+.decoration-img:last-of-type {
   display: block;
-  background-image: url(../../images/2.png);
-  background-repeat: no-repeat;
-  background-size: 120px;
-  width: 150px;
-  height: 150px;
+  size: 120px;
+  width: 130px;
+  height: 130px;
   position: absolute;
   left: 100px;
   top: 18px;
@@ -58,7 +52,6 @@ body {
 .navigation .menu {
   padding: 0px;
   margin: 0px;
-
 }
 
 .menu-item {
@@ -148,6 +141,10 @@ body {
   margin: auto;
 }
 
+.theme:not(:first-of-type) {
+  margin-top: 60px;
+}
+
 .theme-headline {
     font-family: "Gagalin", "Calibri", sans-serif;
     font-size: 35px;
@@ -157,25 +154,31 @@ body {
     left: 50px;
 }
 
-.theme {
+.card-wrapper {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
   justify-content: center;
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  margin: 5px;
-  border: 2px solid #eeeeee;
-  border-radius: 15px;
-  width: 250px;
+.card  {
+
 }
 
 .card:hover {
   transform: scale(1.05);
   transition: transform 0.5s;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 2px solid #eeeeee;
+  border-radius: 15px;
+  width: 250px;
 }
 
 .card-image {
@@ -184,17 +187,27 @@ body {
   border-radius: 15px 15px 0px 0px;
 }
 
-.card-headline {
-  text-align: center;
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  font-family: "Helvetica", sans-serif;
   margin: 5px 0px;
-  font-family: "Calibri";
+
+}
+.card-headline {
+  margin: 0px;
   padding: 5px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+
 }
 
 .card-article-date {
-  padding: 5px 0px 5px 10px;
-  font-size: 14px;
-  margin-top: auto;
+  padding: 5px;
+  font-size: 12px;
+  margin-top: 16px;
 }
 
 .headline {

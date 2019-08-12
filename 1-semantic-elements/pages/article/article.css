@@ -22,27 +22,22 @@ body {
   color: black;
 }
 
-.page-name::after {
-  content: "";
+.decoration-img:first-of-type {
   display: block;
-  background-image: url(../../images/1.png);
-  background-repeat: no-repeat;
-  background-size: 140px;
-  width: 150px;
-  height: 150px;
+  size: 140px;
+  width: 130px;
+  height: 130px;
   position: absolute;
   right: 100px;
   top: 18px;
+  min-width: 150px;
 }
 
-.page-name::before {
-  content: "";
+.decoration-img:last-of-type {
   display: block;
-  background-image: url(../../images/2.png);
-  background-repeat: no-repeat;
-  background-size: 120px;
-  width: 150px;
-  height: 150px;
+  size: 120px;
+  width: 130px;
+  height: 130px;
   position: absolute;
   left: 100px;
   top: 18px;
