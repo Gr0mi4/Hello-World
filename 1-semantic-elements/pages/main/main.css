@@ -3,8 +3,9 @@ body {
 }
 
 .blog-navigation {
-  background-color: #2BC6DC;
-  padding: 10px 0px 0px 0px;
+  background-image:
+  linear-gradient(#2BC6DC 60%, #FFFFFF 100%);
+  padding: 10px 0px 60px 0px;
   font-family: "Gagalin", sans-serif;
   text-align: center;
 }
@@ -20,6 +21,27 @@ body {
 
 .page-name:hover {
   color: white;
+}
+
+.decoration-img:first-of-type {
+  display: block;
+  size: 140px;
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  right: 100px;
+  top: 18px;
+  min-width: 150px;
+}
+
+.decoration-img:last-of-type {
+  display: block;
+  size: 120px;
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  left: 100px;
+  top: 18px;
 }
 
 .navigation {
@@ -74,6 +96,7 @@ body {
   list-style-type: none;
   width: 180px;
   box-shadow: 0px 5px 10px -3px grey;
+  z-index: 10;
 }
 
 .dropout-menu-item {
@@ -114,9 +137,79 @@ body {
 
 .main {
   box-sizing: border-box;
-  width: 1040px;
+  width: 1140px;
   padding: 40px;
   margin: auto;
+
+}
+
+.topic:not(:first-of-type) {
+  margin-top: 30px;
+}
+
+.topic:last-child {
+  margin-bottom: 40px;
+}
+
+.topic-headline {
+    font-family: "Gagalin", "Calibri", sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    margin: 5px 0px;
+    position: relative;
+    left: 50px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0px 0px 5px 5px #eeeeee;
+  border-radius: 15px;
+  width: 250px;
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.5s;
+}
+
+.card-link:hover {
+  box-shadow: 0px 0px 10px 10px #cccccc;
+}
+
+.card-image {
+  width: 250px;
+  height: 155px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.card-text {
+  font-family: "Helvetica", sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.card-headline {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.card-article-date {
+  margin-top: 16px;
+  font-size: 14px;
+  color: grey;
+  font-weight: 600;
 }
 
 .headline {
