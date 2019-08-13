@@ -1,9 +1,11 @@
 body {
   margin: 0px;
+  background-image: linear-gradient(#2BC6DC 8%,
+     #FFFFFF 17%, #FFFFFF 92%, lightgrey 97%);
 }
 
 .blog-navigation {
-  background-color: #2BC6DC;
+  /*background-color: #2BC6DC;*/
   padding: 10px 0px 0px 0px;
   font-family: "Gagalin", sans-serif;
   text-align: center;
@@ -139,10 +141,15 @@ body {
   width: 1140px;
   padding: 40px;
   margin: auto;
+
 }
 
-.theme:not(:first-of-type) {
-  margin-top: 60px;
+.theme {
+  margin-top: 80px;
+}
+
+.theme:last-child {
+  margin-bottom: 40px;
 }
 
 .theme-headline {
@@ -161,24 +168,20 @@ body {
   justify-content: center;
 }
 
-.card  {
-
-}
-
-.card:hover {
-  transform: scale(1.05);
-  transition: transform 0.5s;
-}
-
 .card-link {
   text-decoration: none;
   color: inherit;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  border: 2px solid #eeeeee;
+  box-shadow: 0px 0px 5px 5px #eeeeee;
   border-radius: 15px;
   width: 250px;
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-link:hover {
+  box-shadow: 0px 0px 10px 10px #cccccc;
+  transition: box-shadow 0.5s;
 }
 
 .card-image {
@@ -188,26 +191,26 @@ body {
 }
 
 .card-text {
+  font-family: "Helvetica", sans-serif;
   display: flex;
   flex-direction: column;
-  align-content: space-between;
-  font-family: "Helvetica", sans-serif;
-  margin: 5px 0px;
-
+  flex-grow: 1;
+  justify-content: space-between;
+  margin: 10px 5px 5px 10px;
 }
+
 .card-headline {
-  margin: 0px;
-  padding: 5px;
   font-size: 20px;
   line-height: 24px;
   font-weight: bold;
-
+  margin: 0px;
 }
 
 .card-article-date {
-  padding: 5px;
-  font-size: 12px;
   margin-top: 16px;
+  font-size: 14px;
+  color: grey;
+  font-weight: 600;
 }
 
 .headline {
