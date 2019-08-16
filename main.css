@@ -23,6 +23,10 @@ body {
   color: white;
 }
 
+.hamburger {
+  display: none;
+}
+
 .decoration-img:first-of-type {
   display: block;
   width: 150px;
@@ -138,7 +142,6 @@ body {
   max-width: 1140px;
   padding: 40px;
   margin: auto;
-
 }
 
 .topic:not(:first-of-type) {
@@ -210,6 +213,10 @@ body {
   font-weight: 600;
 }
 
+.mobbutton {
+  display: none;
+}
+
 .headline {
   text-align: center;
   font-size: 30px;
@@ -219,9 +226,11 @@ body {
 
 .footer {
   background-color: lightgrey;
+  background-image: linear-gradient(#fff, lightgrey);
   box-sizing: content-box;
-  padding: 15px;
+  padding: 35px 0 15px 0px;
   text-align: center;
+  width: 100%;
 }
 
 .copyright {
@@ -239,29 +248,46 @@ body {
     width: 103%;
 }
 
-  .menu-item:hover .dropout-menu {
+.menu-item:hover .dropout-menu {
   display: none;
 }
+
 .card-wrapper {
   flex-wrap: wrap;
 }
+
 .topic-headline {
   font-size: 2.5em;
 }
+
 .card-link {
   width: 35%;
-  height: 15%;
 }
+
 .card-image {
   height: 225px;
 }
 
-  .decoration-img:first-of-type, .decoration-img:last-of-type {
-    display: none;
-  }
+.decoration-img:first-of-type {
+  display: block;
+  width: 115px;
+  height: 105px;
+  position: absolute;
+  right: 2%;
+  top: 1%;
+}
+
+.decoration-img:last-of-type {
+  display: block;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  left: 5%;
+  top: 1%;
+}
 
 .navigation {
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .page-name {
@@ -276,31 +302,79 @@ body {
 
 @media screen and (max-width: 571px ) {
 
+.page-name {
+    font-size: 4em;
+  }
+
 .main {
     padding: 0;
   }
+
 .blog-navigation {
     width: 103%;
   }
+
 .card-wrapper {
     flex-wrap: wrap;
   }
-  .decoration-img:first-of-type, .decoration-img:last-of-type {
+
+.decoration-img:first-of-type, .decoration-img:last-of-type {
     display: none;
   }
+
 .navigation {
-    font-size: 4em;
+  font-size: 2em;
+  margin-top: 0;
 }
-.page-name {
-    font-size: 6em;
+
+.menu-item {
+  display: block;
+  padding: 1%;
+  margin: 0;
 }
 
 .topic-headline {
-  font-size: 2.8em;
+  font-size: 2em;
   text-align: left;
+  position: relative;
+  left: 10px;
 }
 
 .card-link {
   min-width: 90%;
-height: 15%;
+  height: 15%;
+  flex-direction: row;
+}
+
+.card-image {
+  height: auto;
+  width: 35%;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.card-text {
+  padding: 6px;
+}
+
+.card-headline {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.card-article-date {
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 8px;
+}
+
+ .card-link:nth-of-type(n+3) {
+  display: none;
+}
+
+.mobbutton {
+  display: block;
+  width: 150px;
+  position: relative;
+  top: 12px;
+  left: 100px;
 }
