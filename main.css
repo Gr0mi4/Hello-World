@@ -23,10 +23,6 @@ body {
   color: white;
 }
 
-.hamburger {
-  display: none;
-}
-
 .decoration-img:first-of-type {
   display: block;
   width: 150px;
@@ -239,6 +235,37 @@ body {
 }
 
 @media screen and (max-width: 1139px ) {
+
+.decoration-img:first-of-type {
+    display: block;
+    width: 115px;
+    height: 105px;
+    position: absolute;
+    right: 2%;
+    top: 1%;
+  }
+
+.decoration-img:last-of-type {
+    display: block;
+    width: 105px;
+    height: 105px;
+    position: absolute;
+    left: 5%;
+    top: 1%;
+  }
+
+.navigation {
+      font-size: 2.5em;
+  }
+
+.page-name {
+      font-size: 4em;
+  }
+
+.menu-item.triangle::after {
+    display: none;
+
+  }
 .main {
     padding: 0;
     width: 95%;
@@ -262,43 +289,27 @@ body {
 
 .card-link {
   width: 23%;
-  min-width: 240px;
+  min-width: 220px;
 }
 
 .card-image {
-  height: 48%;
+  height: 150px;
 }
 
-.decoration-img:first-of-type {
-  display: block;
-  width: 115px;
-  height: 105px;
-  position: absolute;
-  right: 2%;
-  top: 1%;
+.card-text {
+  padding: 6px;
 }
 
-.decoration-img:last-of-type {
-  display: block;
-  width: 105px;
-  height: 105px;
-  position: absolute;
-  left: 5%;
-  top: 1%;
+.card-headline {
+  font-size: 16px;
+  line-height: 18px;
 }
 
-.navigation {
-    font-size: 2.5em;
+.card-article-dat {
+  margin-top: 5px;
+  font-size: 10px;
 }
 
-.page-name {
-    font-size: 4em;
-}
-
-.menu-item.triangle::after {
-  display: none;
-
-}
 }
 
 @media screen and (max-width: 571px ) {
