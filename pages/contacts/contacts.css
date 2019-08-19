@@ -225,7 +225,7 @@ body {
 
 @media screen and (max-width: 1139px ) {
 
-.decoration-img:first-of-type {
+  .decoration-img:first-of-type {
     display: block;
     width: 115px;
     height: 105px;
@@ -234,7 +234,7 @@ body {
     top: 1%;
   }
 
-.decoration-img:last-of-type {
+  .decoration-img:last-of-type {
     display: block;
     width: 105px;
     height: 105px;
@@ -243,84 +243,84 @@ body {
     top: 1%;
   }
 
-.navigation {
-      font-size: 2.5em;
+  .navigation {
+    font-size: 2.5em;
   }
 
-.page-name {
-      font-size: 4em;
+  .page-name {
+    font-size: 4em;
   }
 
-.menu-item.triangle::after {
+  .menu-item.triangle::after {
     display: none;
 
   }
 
-.main {
+  .main {
     padding: 0;
     width: 95%;
   }
 
-.blog-navigation {
+  .blog-navigation {
     width: 100vw;
-}
+  }
 
-.menu-item:hover .dropout-menu {
-  display: none;
-}
-
-}
+  .menu-item:hover .dropout-menu {
+    display: none;
+  }
+  }
 
 @media screen and (max-width: 571px ) {
 
-.page-name {
+  .page-name {
     font-size: 4em;
   }
 
-.main {
+  .main {
     padding: 0;
   }
 
-.blog-navigation {
+  .blog-navigation {
     width: 100%;
   }
 
-.decoration-img:first-of-type, .decoration-img:last-of-type {
+  .decoration-img:first-of-type, .decoration-img:last-of-type {
     display: none;
   }
 
-.navigation {
-  font-size: 2em;
-  margin-top: 0;
-}
+  .navigation {
+    font-size: 2em;
+    margin-top: 0;
+  }
 
-.menu-item {
-  display: block;
-  padding: 1%;
-  margin: 0;
-}
+  .menu-item {
+    display: inline-block;
+    padding: 0px 15px;
+    margin: 0px;
+    font-size: 25px;
+  }
 
-.contacts-table {
-  font-size: 11px;
-  display: table;
-}
-
-.contacts-head {
-  font-size: 20px;
-  line-height: 16px;
-}
-
-.contacts-cell {
-  line-height: 18px;
-  padding: 4px 6px;
-}
-
-.contacts-row {
-  width: 85%
-}
-
-
-.copyright {
+  .contacts-table {
     font-size: 11px;
-}
-}
+    display: table;
+  }
+
+  .contacts-head {
+    font-size: 20px;
+    line-height: 16px;
+  }
+
+  .contacts-cell {
+    line-height: 18px;
+    padding: 4px 6px;
+  }
+
+  .contacts-row {
+    width: 85%
+  }
+
+
+  .copyright {
+    font-size: 11px;
+  }
+  }

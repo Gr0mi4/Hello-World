@@ -15,7 +15,6 @@ body {
   color: black;
   text-transform: uppercase;
   text-decoration: none;
-  display: block;
   transition: color 1s;
 }
 
@@ -255,11 +254,11 @@ body {
   }
 
   .navigation {
-      font-size: 2.5em;
+    font-size: 2.5em;
   }
 
   .page-name {
-      font-size: 4em;
+    font-size: 4em;
   }
 
   .menu-item.triangle::after {
@@ -312,7 +311,6 @@ body {
   }
 
 @media screen and (max-width: 571px ) {
-
   .page-name {
     font-size: 4em;
   }
@@ -340,8 +338,8 @@ body {
 
   .menu-item {
     display: inline-block;
-    padding: 0;
-    margin: 0 15px;
+    padding: 0px 15px;
+    margin: 0px;
     font-size: 25px;
   }
 
@@ -350,6 +348,10 @@ body {
     text-align: left;
     position: relative;
     left: 10px;
+  }
+
+  .topic:not(:first-of-type) {
+    margin-top: 15px;
   }
 
   .card-link {
