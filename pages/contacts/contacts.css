@@ -224,7 +224,6 @@ body {
 }
 
 @media screen and (max-width: 1139px ) {
-
   .decoration-img:first-of-type {
     display: block;
     width: 115px;
@@ -268,7 +267,7 @@ body {
   .menu-item:hover .dropout-menu {
     display: none;
   }
-  }
+}
 
 @media screen and (max-width: 571px ) {
 
@@ -323,4 +322,4 @@ body {
   .copyright {
     font-size: 11px;
   }
-  }
+}

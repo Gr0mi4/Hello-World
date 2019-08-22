@@ -53,7 +53,7 @@ body {
 
 .menu-item {
   display: inline-block;
-  margin: 1% 2%;
+  margin: 15px 30px;
   position: relative;
   border-radius: 10px;
   padding: 10px 5px;
@@ -148,12 +148,12 @@ body {
 }
 
 .topic-headline {
-    font-family: "Gagalin", "Calibri", sans-serif;
-    font-size: 35px;
-    font-weight: 400;
-    margin: 5px 0px;
-    position: relative;
-    left: 50px;
+  font-family: "Gagalin", "Calibri", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  margin: 5px 0px;
+  position: relative;
+  left: 50px;
 }
 
 .card-wrapper {
@@ -267,8 +267,8 @@ body {
   }
 
   .main {
-    padding: 0;
-    width: 95%;
+    max-width: 700px;
+    padding: 20px;
   }
 
   .blog-navigation {
@@ -312,9 +312,14 @@ body {
   .card-link:nth-of-type(n+4) {
     display: none;
   }
+}
+
+@media screen and (max-width: 704px ) {
+  .main {
+    max-width: 500px;
+    padding: 10px;
   }
 
-@media screen and (max-width: 697px ) {
   .decoration-img:first-of-type {
     display: block;
     width: 85px;
@@ -329,22 +334,23 @@ body {
     width: 75px;
     height: 75px;
     position: absolute;
-    left: 5%;
+    left: 2%;
     top: 1%;
   }
 
   .card-link:nth-of-type(n+3) {
     display: flex;
   }
-  }
+}
 
 @media screen and (max-width: 571px ) {
   .page-name {
-    font-size: 4em;
+    font-size: 60px;
   }
 
   .main {
     padding: 0;
+    max-width: 520px;
   }
 
   .blog-navigation {
@@ -360,7 +366,6 @@ body {
   }
 
   .navigation {
-    font-size: 2em;
     margin-top: 0;
   }
 
@@ -369,13 +374,6 @@ body {
     padding: 0px 15px;
     margin: 0px;
     font-size: 25px;
-  }
-
-  .topic-headline {
-    font-size: 2em;
-    text-align: left;
-    position: relative;
-    left: 10px;
   }
 
   .topic:not(:first-of-type) {
@@ -448,12 +446,13 @@ body {
   .copyright {
     font-size: 11px;
   }
-  }
+}
 
 @media screen and (max-width: 359px ) {
   .topic-headline {
     font-size: 20px;
     line-height: 20px;
+    left: 20px;
   }
   .card-headline {
     font-size: 14px;
@@ -473,4 +472,4 @@ body {
   .card-text {
     padding: 8px;
   }
-  }
+}

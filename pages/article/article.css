@@ -230,7 +230,7 @@ body {
 @media screen and (max-width: 1415px ) {
   .advertisement {
     display: none;
-}
+  }
 }
 
 @media screen and (max-width: 1139px ) {
@@ -276,10 +276,9 @@ body {
   .menu-item.triangle::after {
     display: none;
   }
-  }
+}
 
 @media screen and (max-width: 571px ) {
-
   .page-name {
     font-size: 4em;
   }
@@ -374,4 +373,4 @@ body {
   .copyright {
     font-size: 11px;
   }
-  }
+}
