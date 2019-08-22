@@ -464,6 +464,10 @@ body {
     height: auto;
   }
 
+  .image-wrapper {
+    
+  }
+
   .card-image {
     width: 100px;
     display: none;
