@@ -230,7 +230,7 @@ body {
   .menu-item:hover .dropout-menu {
     display: none;
   }
-  }
+}
 
 @media screen and (max-width: 571px ) {
 
@@ -265,4 +265,4 @@ body {
   .copyright {
     font-size: 11px;
   }
-  }
+}
