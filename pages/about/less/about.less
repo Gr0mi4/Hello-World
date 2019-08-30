@@ -1,10 +1,11 @@
+@azuregradient: linear-gradient(#2BC6DC 60%, #FFFFFF 100%);
+
 body {
   margin: 0px;
 }
 
 .blog-navigation {
-  background-image:
-  linear-gradient(#2BC6DC 60%, #FFFFFF 100%);
+  background-image: @azuregradient;
   padding: 10px 0px 60px 0px;
   font-family: "Gagalin", sans-serif;
   text-align: center;
@@ -18,39 +19,38 @@ body {
   text-decoration: none;
   display: block;
   transition: color 1s;
+
+  &:hover {
+    color: black;
+  }
 }
 
-.page-name:hover {
-  color: black;
-}
-
-.decoration-img:first-of-type {
+.decoration-img {
   display: block;
-  width: 150px;
   height: 130px;
-  position: absolute;
-  right: 7%;
   top: 18px;
-}
+  position: absolute;
 
-.decoration-img:last-of-type {
-  display: block;
-  width: 130px;
-  height: 130px;
-  position: absolute;
-  left: 7%;
-  top: 18px;
+  &:first-of-type {
+    width: 150px;
+    right: 7%;
+  }
+
+  &:last-of-type {
+    width: 130px;
+    left: 7%;
+  }
 }
 
 .navigation {
   color: white;
   font-size: 30px;
   margin: 20px 0px 0px 0px;
-}
 
-.navigation .menu {
+  .menu {
   padding: 0px;
   margin: 0px;
+  }
 }
 
 .menu-item {
