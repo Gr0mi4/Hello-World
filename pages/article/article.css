@@ -160,6 +160,15 @@ body {
   margin: 0px;
 }
 
+.hero-image {
+  display: block;
+  box-shadow: 0 0 5px 5px #eeeeee;
+  background-color: #fff;
+  padding: 10px;
+  width: 60%;
+  float: right;
+}
+
 .text {
   margin: 24px 0px 0px 0px;
   font-family: Georgia;
@@ -193,8 +202,90 @@ body {
   border: 4px dashed #bf0000;
 }
 
-.see-more-button {
-  display: none;
+.gallery {
+  padding: 15px;
+  height: 800px;
+  font-family: "Bernard MT", "Calibri", sans-serif;
+}
+
+.gallery .headline {
+  font-size: 45px;
+  line-height: 55px;
+  background-image:
+  linear-gradient(45deg, transparent, lightgrey, transparent);
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 80%;
+  border: 15px solid black;
+  border-image:
+  linear-gradient(to top, transparent, lightgrey, transparent);
+  border-image-slice: 1;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.article-figure {
+  margin: 0;
+  padding: 10px;
+  width: 35%;
+  height: auto;
+  box-shadow: 0 0 5px 5px #eeeeee;
+  background-color: #fff;
+  transition: transform 1s, background-color 0.2s;
+  position: relative;
+}
+
+.article-figure:hover{
+  display: block;
+  transform: scale(1.35);
+  background-color: lightgrey;
+  z-index: 5;
+}
+
+.article-figure:hover .image-description {
+  opacity: 1;
+}
+
+.article-figure:hover .image-description::after {
+   opacity: 1;
+   transform: translateY(-38px);
+ }
+
+.article-image {
+  width: 100%;
+  height: 100%;
+  filter: saturate(150%);
+}
+
+.image-description {
+  opacity: 0;
+  font-size: 16px;
+  transition: opacity 0.5s;
+  text-align: center;
+  top: -30px;
+  position: relative;
+  z-index: 6;
+  color: lightgrey;
+  font-family: "Book Antiqua", fantasy;
+}
+
+.image-description::after {
+  display: block;
+  position: absolute;
+  top: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  content: "";
+  width: 100%;
+  height: 35px;
+  opacity: 0;
+  transition: transform 1s;
+  z-index: -5;
 }
 
 .advertisement {
