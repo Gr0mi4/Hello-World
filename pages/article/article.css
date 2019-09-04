@@ -146,18 +146,6 @@ body {
   width: 100%;
   max-width: 1010px;
   border-bottom: 4px solid #EFEFEF;
-  padding-bottom: 20px;
-}
-
-.article:not(:first-child) {
-  margin: 25px 0px 0px 0px;
-}
-
-.headline {
-  text-align: center;
-  font-size: 30px;
-  font-style: oblique;
-  margin: 0px;
 }
 
 .hero-image {
@@ -165,10 +153,18 @@ body {
   box-shadow: 0 0 5px 5px #eeeeee;
   background-color: #fff;
   padding: 10px;
-  width: 60%;
+  width: 100%;
   float: right;
   min-width: 480px;
-  margin: 10px;
+  margin: 10px auto;
+}
+
+.headline {
+  text-align: center;
+  font-size: 30px;
+  font-style: oblique;
+  display: inline-block;
+  margin-bottom: 0;
 }
 
 .text {
@@ -205,16 +201,19 @@ body {
 }
 
 .gallery {
+  margin-top: 25px;
   padding: 15px;
-  max-height: 800px;
-  font-family: "Bernard MT", "Calibri", sans-serif;
+  height: fit-content;
 }
 
-.gallery .headline {
+.gallery-headline {
   font-size: 45px;
   line-height: 55px;
   background-image:
-  linear-gradient(45deg, transparent, lightgrey, transparent);
+    linear-gradient(45deg, transparent, lightgrey, transparent);
+  font-family: "Bernard MT Condensed", "Calibri", sans-serif;
+  text-align: center;
+  margin: 0;
 }
 
 .images {
@@ -229,24 +228,25 @@ body {
   linear-gradient(to top, transparent, lightgrey, transparent);
   border-image-slice: 1;
   box-sizing: border-box;
-  padding: 15px;
+  padding: 10px;
 }
 
 .article-figure {
-  margin: 0;
+  margin: 20px 0;
   padding: 10px;
   width: 35%;
   min-width: 150px;
   height: auto;
   box-shadow: 0 0 5px 5px #eeeeee;
   background-color: #fff;
-  transition: transform 1s, background-color 0.2s;
+  transition: transform 0.6s, background-color 0.2s;
   position: relative;
+  cursor: url('https://iconbird.com/png/download.php?id=47412&s=32'), zoom-in;
 }
 
 .article-figure:hover{
   display: block;
-  transform: scale(1.35);
+  transform: scale(1.20);
   background-color: lightgrey;
   z-index: 5;
 }
@@ -275,7 +275,7 @@ body {
   position: relative;
   z-index: 6;
   color: lightgrey;
-  font-family: "Book Antiqua", fantasy;
+  font-family: "VnBook-Antiqua", fantasy;
 }
 
 .image-description::after {
@@ -432,9 +432,13 @@ body {
     width: 80%;
   }
 
-  .gallery .headline {
+  .gallery-headline {
     font-size: 30px;
     line-height: 35px;
+  }
+
+  .gallery {
+    margin-top: 0;
   }
 
   .image-description {
@@ -468,7 +472,7 @@ body {
   }
 
   .images {
-    padding: 5px;
+    padding: 0px;
   }
 
   .aricle-figure {
