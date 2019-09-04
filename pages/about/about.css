@@ -147,11 +147,89 @@ body {
   margin: auto;
 }
 
-.headline {
-  text-align: center;
-  font-size: 30px;
-  font-style: oblique;
-  margin: 0px;
+.logo {
+  display: block;
+  width: 456px;
+  height: 305px;
+  background-image: url(../../images/ivangromovproduction.png);
+  background-position: -10% 50%;
+  margin: 0 auto;
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes move {
+
+  0% {
+    left: -100%
+
+  }
+
+  25% {
+    left: 0;
+  }
+
+  50%, 100% {
+    left: 100%
+  }
+}
+
+
+.logo .rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+
+}
+
+.logo .rectangle::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-top: 10px solid black;
+  animation: move 10s linear infinite backwards;
+  border-image: linear-gradient(to left, white, red, white);
+  border-image-slice: 1;
+}
+
+.logo .rectangle:nth-child(1) {
+  transform: rotate(0deg);
+}
+
+.logo .rectangle:nth-child(2) {
+  transform: rotate(90deg);
+  left: 76px;
+}
+
+.logo .rectangle:nth-child(3) {
+  transform: rotate(180deg);
+}
+
+.logo .rectangle:nth-child(4) {
+  transform: rotate(270deg);
+  left: -76px;
+}
+
+.logo .rectangle:nth-child(1)::before {
+  animation-delay: 0s;
+}
+
+.logo .rectangle:nth-child(2)::before {
+  animation-delay: 2s;
+}
+
+.logo .rectangle:nth-child(3)::before {
+  animation-delay: 4s;
+}
+
+.logo .rectangle:nth-child(4)::before {
+  animation-delay: 6s;
 }
 
 .footer {
@@ -167,6 +245,7 @@ body {
   font-size: 15px;
   margin: 0px;
 }
+
 
 @media screen and (max-width: 1139px ) {
   .decoration-img:first-of-type {
@@ -188,11 +267,12 @@ body {
   }
 
   .navigation {
-    font-size: 2.5em;
+    font-size: 30px;
+    margin-top: 5px;
   }
 
   .page-name {
-    font-size: 4em;
+    font-size: 45px;
   }
 
   .menu-item.triangle::after {
@@ -200,8 +280,8 @@ body {
   }
 
   .main {
-    padding: 0;
-    width: 95%;
+    max-width: 700px;
+    padding: 20px;
   }
 
   .blog-navigation {
@@ -213,17 +293,47 @@ body {
   }
 }
 
+@media screen and (max-width: 704px ) {
+  .main {
+    max-width: 500px;
+    padding: 10px;
+  }
+
+  .topic-headline {
+    margin-left: 32px;
+  }
+
+  .decoration-img:first-of-type {
+    display: block;
+    width: 85px;
+    height: 75px;
+    position: absolute;
+    right: 2%;
+    top: 1%;
+  }
+
+  .decoration-img:last-of-type {
+    display: block;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    left: 2%;
+    top: 1%;
+  }
+}
+
 @media screen and (max-width: 571px ) {
   .page-name {
-    font-size: 4em;
+    font-size: 60px;
   }
 
   .main {
     padding: 0;
+    max-width: 520px;
   }
 
   .blog-navigation {
-    width: 100%;
+    width: 100vw;
   }
 
   .decoration-img:first-of-type, .decoration-img:last-of-type {
@@ -231,7 +341,6 @@ body {
   }
 
   .navigation {
-    font-size: 2em;
     margin-top: 0;
   }
 
