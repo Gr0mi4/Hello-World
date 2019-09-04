@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru eng">
 <head>
   <title> Hello World!</title>
   <link type="text/css" rel="stylesheet" href="../../fonts/fonts.css" />
@@ -46,14 +46,20 @@
   <main class="main">
     <article class="article">
       <picture>
-        <img class="hero-image"
+        <source
+          media="(min-width: 571px)"
+          srcset="../../images/article/hero-image-718px.jpg 718w,
+                  ../../images/article/hero-image-1142px.jpg 1142w,
+                  ../../images/article/hero-image-1408px.jpg 1408w,
+                  ../../images/article/hero-image.jpg 2199w">
+        <source
+          srcset="../../images/article/hero-image-mob-320px.jpg 320w,
+                ../../images/article/hero-image-mob-571px.jpg 571w,
+                ../../images/article/hero-image-mob-1200px.jpg 1200w">
+        <img
+        class="hero-image"
         src="../../images/article/hero-image-1408px.jpg"
-        srcset="../../images/article/hero-image-320px.jpg 320w,
-                ../../images/article/hero-image-718px.jpg 718w,
-                ../../images/article/hero-image-1142px.jpg 1142w,
-                ../../images/article/hero-image-1408px.jpg 1408w,
-                ../../images/article/hero-image.jpg 2199w"
-        alt="yellow Suzuki GS 500 photo whith a headline">
+        alt="yellow Suzuki GS 500 photo whith a headline" />
       </picture>
 
       <h1 class="headline">
