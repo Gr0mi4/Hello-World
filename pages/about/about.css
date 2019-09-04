@@ -2,6 +2,8 @@ body {
   margin: 0px;
 }
 
+/* header */
+
 .blog-navigation {
   background-image:
   linear-gradient(#2BC6DC 60%, #FFFFFF 100%);
@@ -147,90 +149,136 @@ body {
   margin: auto;
 }
 
-.logo {
-  display: block;
-  width: 456px;
-  height: 305px;
-  background-image: url(../../images/ivangromovproduction.png);
-  background-position: -10% 50%;
-  margin: 0 auto;
-  border: 1px solid black;
-  position: relative;
-  overflow: hidden;
-}
+/* logo */
 
-@keyframes move {
-
+@keyframes move-top {
   0% {
-    left: -100%
-
+    transform: rotate(0deg) translateX(0) scale(0, 1);
   }
 
   25% {
-    left: 0;
+    transform: rotate(0deg) translateX(0) scale(1, 1);
   }
 
-  50%, 100% {
-    left: 100%
+  50%, 75% {
+    transform: rotate(0deg) translateX(100%) scale(0, 1);
+  }
+
+  100% {
+    transform: rotate(0deg) translateX(0) scale(0, 1);
   }
 }
 
+@keyframes move-right {
+  0% {
+    transform: rotate(90deg) translateX(0) scale(0, 1);
+  }
 
-.logo .rectangle {
+  25% {
+    transform: rotate(90deg) translateX(0) scale(1, 1);
+  }
+
+  50%, 75% {
+    transform: rotate(90deg) translateX(100%) scale(0, 1);
+  }
+
+  100% {
+    transform: rotate(90deg) translateX(0) scale(0, 1);
+  }
+}
+
+@keyframes move-bottom {
+  0% {
+    transform: rotate(180deg) translateX(-100%) scale(0, 1);
+  }
+
+  25% {
+    transform: rotate(180deg) translateX(-100%) scale(1, 1);
+  }
+
+  50%, 75% {
+    transform: rotate(180deg) translateX(0) scale(0, 1);
+  }
+
+  100% {
+    transform: rotate(180deg) translateX(-100%) scale(0, 1);
+  }
+}
+
+@keyframes move-left {
+  0% {
+    transform: rotate(-90deg) translateX(-100%) scale(0, 1);
+  }
+
+  25% {
+    transform: rotate(-90deg) translateX(-100%) scale(1, 1);
+  }
+
+  50%, 75% {
+    transform: rotate(-90deg) translateX(0) scale(0, 1);
+  }
+
+  100% {
+    transform: rotate(-90deg) translateX(-100%) scale(0, 1);
+  }
+}
+
+.logo {
+  width: 456px;
+  height: 456px;
+  background-image: url(../../images/ivangromovproduction.png);
+  background-position: 7px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 1px solid black;
+  position: relative;
+}
+
+.logo .snake {
+  width: calc(100% + 22px);
+  height: 10px;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-
+  background: red;
 }
 
-.logo .rectangle::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: none;
-  border-top: 10px solid black;
-  animation: move 10s linear infinite backwards;
-  border-image: linear-gradient(to left, white, red, white);
-  border-image-slice: 1;
-}
-
-.logo .rectangle:nth-child(1) {
-  transform: rotate(0deg);
-}
-
-.logo .rectangle:nth-child(2) {
-  transform: rotate(90deg);
-  left: 76px;
-}
-
-.logo .rectangle:nth-child(3) {
-  transform: rotate(180deg);
-}
-
-.logo .rectangle:nth-child(4) {
-  transform: rotate(270deg);
-  left: -76px;
-}
-
-.logo .rectangle:nth-child(1)::before {
+.logo .snake.top {
+  top: -11px;
+  left: -11px;
+  animation: move-top 4s linear infinite;
+  animation-fill-mode: both;
   animation-delay: 0s;
+  transform-origin: left;
 }
 
-.logo .rectangle:nth-child(2)::before {
+.logo .snake.right {
+  top: -11px;
+  right: calc(-100% - 33px);
+  animation: move-right 4s linear infinite;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+  transform-origin: left top;
+}
+
+.logo .snake.bottom {
+  bottom: -1px;
+  left: -11px;
+  animation: move-bottom 4s linear infinite;
+  animation-fill-mode: both;
   animation-delay: 2s;
+  transform-origin: left bottom;
 }
 
-.logo .rectangle:nth-child(3)::before {
-  animation-delay: 4s;
+.logo .snake.left {
+  left: -11px;
+  top: -11px;
+  transform-origin: left top;
+  animation: move-left 4s linear infinite;
+  animation-fill-mode: both;
+  animation-delay: 3s;
 }
 
-.logo .rectangle:nth-child(4)::before {
-  animation-delay: 6s;
-}
+/* footer */
 
 .footer {
   background-color: lightgrey;
