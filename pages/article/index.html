@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru eng">
 <head>
   <title> Hello World!</title>
   <link type="text/css" rel="stylesheet" href="../../fonts/fonts.css" />
@@ -45,6 +45,23 @@
 
   <main class="main">
     <article class="article">
+      <picture>
+        <source
+          media="(min-width: 571px)"
+          srcset="../../images/article/hero-image-718px.jpg 718w,
+                  ../../images/article/hero-image-1142px.jpg 1142w,
+                  ../../images/article/hero-image-1408px.jpg 1408w,
+                  ../../images/article/hero-image.jpg 2199w">
+        <source
+          srcset="../../images/article/hero-image-mob-320px.jpg 320w,
+                ../../images/article/hero-image-mob-571px.jpg 571w,
+                ../../images/article/hero-image-mob-1200px.jpg 1200w">
+        <img
+        class="hero-image"
+        src="../../images/article/hero-image-1408px.jpg"
+        alt="yellow Suzuki GS 500 photo whith a headline" />
+      </picture>
+
       <h1 class="headline">
         Как ПРАВИЛЬНО проверять уровень масла на Suzuki GS 500 96'
       </h1>
@@ -73,7 +90,7 @@
 
       <p class="text">
         "Что тут может быть сложного?" - подумаете вы, и будете правы - сложного тут ничего нет. Но зато есть уйма вещей
-        которые можно сделать не правильно. Например вот вам список того что непраильно делал лично я, пока не нашел
+        которые можно сделать не правильно. Например вот вам список того что неправильно делал лично я, пока не нашел
         данный мануал:
       </p>
 
@@ -95,108 +112,66 @@
         у вас. Так что качайте мануал для своей техники и читайте как правильно: Менять свечи, масло, ГРМ и вообще
         обслуживать свою железяку. Не считайте себя умнее инженеров - это черевато). Всем мир!
       </p>
+
+      <div class="gallery">
+        <h1 class="gallery-headline">Gallery</h1>
+        <div class="images">
+          <figure class="article-figure">
+            <img
+              class="article-image"
+              src="../../images/article/1.jpg"
+              srcset="../../images/article/1.jpg 666w,
+                      ../../images/article/1-320px.jpg 320w"
+              sizes="(min-width: 571px) 35vw,
+                    (max-width: 570px) 50vw"
+              alt="Two Suzuki's on the street">
+
+            <figcaption class="image-description">Me and my friend having a ride</figcaption>
+          </figure>
+
+          <figure class="article-figure">
+            <img
+              class="article-image"
+              src="../../images/article/2.jpg"
+              sizes="(min-width: 571px) 35vw,
+                    (max-width: 570px) 50vw"
+              srcset="../../images/article/2.jpg 666w,
+                      ../../images/article/2-320px.jpg 320w"
+              alt="Suzuki GSX 400 84' oil stick placement">
+
+            <figcaption class="image-description">Suzuki GSX 400 84' oil stick placement</figcaption>
+          </figure>
+
+          <figure class="article-figure">
+            <img
+              class="article-image"
+              src="../../images/article/3.jpg"
+              sizes="(min-width: 571px) 35vw,
+                    (max-width: 570px) 50vw"
+              srcset="../../images/article/3.jpg 666w,
+                      ../../images/article/3-320px.jpg 320w"
+              alt="Suzuki GSX 400 84' oil filter placement">
+
+            <figcaption class="image-description">Suzuki GSX 400 84' oil filter placement</figcaption>
+          </figure>
+
+          <figure class="article-figure">
+            <img
+              class="article-image"
+              src="../../images/article/4.jpg"
+              sizes="(min-width: 571px) 35vw,
+                    (max-width: 570px) 50vw"
+              srcset="../../images/article/4.jpg 666w,
+                     ../../images/article/4-320px.jpg 320w"
+              alt="Suzuki GS 500e 96' ">
+
+            <figcaption class="image-description">Suzuki GS 500e 96'</figcaption>
+          </figure>
+        </div>
+      </div>
     </article>
 
     <aside class="advertisement">Advertisement</aside>
-
-    <article class="article">
-      <h1 class="headline">
-        Как ПРАВИЛЬНО смазывать цепь на Suzuki GS 500 96'
-      </h1>
-
-      <p class="text">
-        В продолжении рурбрики "Как правильно?" я решил написать ещё одну статью посвященную смазке цепи. Смазка цепи
-        это также очень не сложная операция, однако и тут на самом деле можно получить много неприятностей, если не
-        уделить процессу должное количество внимания. Некоторые райдеры вообще предочитают не смазывать цепь. Такой ход
-        хоть и позволяет сэкономить время но также уменьшает ресурс мотоцепи с 50-60 тысяч километров примерно до 10 тысяч.
-      </p>
-
-      <h2 class="headline-2">
-        Смазка и контроль состояния цепи Gromov Way
-      </h2>
-
-      <ol class="numbered-list">
-        <li> Ставим на центральную подножку</li>
-        <li> Вращая колесо, чистим цепь КЕРОСИНОМ (ни в коем случае не бензин или растворитель)</li>
-        <li> после даем просохнуть, либо сушим сжатым воздухом</li>
-        <li> Едем на 10и минутную прогулку</li>
-        <li> Смазываем уплотнительные колечки а не центральные звенья в 2 прохода. Сначала дальний ряд потом ближний ряд так на всю длинну цепи</li>
-        <li> Выжидаем пару минут и протираем цепь сухой тряпкой</li>
-        <li> Оставляем цепь в покое примерно на час</li>
-        <li> После смазки контролируем натяжение цепи линейкой (или штангенциркулем)</li>
-      </ol>
-
-      <p class="text">
-        Список предметов которые вам понадобятся для очистики цепи мотоцикла
-      </p>
-
-      <ul class="unnumbered-list">
-        <li>Смазка для цепи</li>
-        <li>Керосин</li>
-        <li>Старая зубная щётка (или другая мягкая щётка)</li>
-        <li>Емкость для керосина</li>
-        <li>Тряпки</li>
-        <li>Линейка или штангенциркуль</li>
-      </ul>
-
-      <p class="text">
-        Вот так легко и просто можно поддерживать цепь в рабочем состоянии. Смазку цепи лучше проводить раз в тысячу килеметров,
-        либо после хороших прогулок в дождь. Не принебригайте обязательными процедурами обслуживания! Всем мир!
-      </p>
-    </article>
-
-    <article class="article">
-      <h1 class="headline">
-        Статья №3
-      </h1>
-
-      <p class="text">
-        Многие вещи в повседневном использовании техники кажуться нам до ужаса простыми. Ну в самом деле что может
-        быть сложного в проверке уровня масла в мотоцикле? Но даже в такой простой операции могут быть различные ньюансы.
-        (Например после закручивания заливной крышки щуп опускается на много ниже, чем если его просто опустить в картер)
-        Что бы не допустить масляного голодания, в следствии того что вы не правильно поняли сколько масла в картере
-        вашего
-        мотоцикла, вот как описана данная операция в руководстве по ремонту Suzuki:
-      </p>
-
-      <h2 class="headline-2">
-        Замена масла в мотоциле Suzuki GS 500 96', согласно мануала
-      </h2>
-
-      <ol class="numbered-list">
-        <li> Едем на короткую прогулку - прогреваем мотор до нормальной температуры</li>
-        <li> Ставим на центральную подножку</li>
-        <li> Даем постоять пару минут</li>
-        <li> Достаем щуп, протираем салфеткой, возвращаем щуп на место, но НЕ ЗАКРУЧИВАЕМ!</li>
-        <li> Достаем обратно смотрим уровень</li>
-        <li> Доливаем до уровня F</li>
-      </ol>
-
-      <p class="text">
-        "Что тут может быть сложного?" - подумаете вы, и будете правы - сложного тут ничего нет. Но зато есть уйма вещей
-        которые можно сделать не правильно. Например вот вам список того что непраильно делал лично я, пока не нашел
-        данный мануал:
-      </p>
-
-      <ul class="unnumbered-list">
-        <li>Зачастую смотрел уровень масла на холодную (не прогрев двигатель)</li>
-        <li>Не ставил мотоцикл на центральную подножку, смотрел на боковой</li>
-        <li>Закручивал масляную пробку при проверке (щуп опускался ниже чем должно быть)</li>
-        <li>Доливал масло до среднего уровня, а не до уровня F (Full)</li>
-      </ul>
-
-      <p class="text"> Резюмировать все вышесказанное можно довольно кратко:</p>
-
-      <blockquote class="quote">
-        Перед тем как совать руки в свою любимую технику прочитайте мануал.
-      </blockquote>
-
-      <p class="text">
-        Мне повезло и мое незнание не привело к ужасающим последствиям, но никто не знает как получиться
-        у вас. Так что качайте мануал для своей техники и читайте как правильно: Менять свечи, масло, ГРМ и вообще
-        обслуживать свою железяку. Не считайте себя умнее инженеров - это черевато). Всем мир!
-      </p>
-    </article>
   </main>
 
   <footer class="footer">
