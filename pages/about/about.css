@@ -144,17 +144,6 @@ body {
   margin: auto;
 }
 
-.logo {
-  width: 456px;
-  height: 305px;
-  background-image: url(../../images/ivangromovproduction.png);
-  background-position: -10% 50%;
-  margin: 0 auto;
-  border: 1px solid black;
-  position: relative;
-  overflow: hidden;
-}
-
 @keyframes move-top {
   0% {
     transform: rotate(0deg) translateX(0) scale(0, 1);
