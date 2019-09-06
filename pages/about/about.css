@@ -1,6 +1,7 @@
 body {
   margin: 0px;
 }
+
 .blog-navigation {
   background-image: linear-gradient(#2bc6dc 60%, #ffffff 100%);
   padding: 10px 0px 60px 0px;
@@ -16,32 +17,39 @@ body {
   display: block;
   transition: color 1s;
 }
+
 .page-name:hover {
   color: black;
 }
+
 .decoration-img {
   display: block;
   height: 130px;
   top: 18px;
   position: absolute;
 }
+
 .decoration-img:first-of-type {
   width: 150px;
   right: 7%;
 }
+
 .decoration-img:last-of-type {
   width: 130px;
   left: 7%;
 }
+
 .navigation {
   color: white;
   font-size: 30px;
   margin: 20px 0px 0px 0px;
 }
+
 .navigation .menu {
   padding: 0px;
   margin: 0px;
 }
+
 .menu-item {
   display: inline-block;
   margin: 12px 46px 5px;
@@ -50,15 +58,18 @@ body {
   padding: 10px;
   transition: color 1s, background 1s;
 }
+
 .menu-item:hover {
   background-color: #78FFFF;
   color: #262626;
   transition: background 1s, color 1s;
 }
+
 .menu-item-link {
   color: inherit;
   text-decoration: none;
 }
+
 .chosen-item {
   text-decoration: none;
   border-radius: 10px;
@@ -66,13 +77,16 @@ body {
   padding: 10px;
   color: #262626;
 }
+
 .triangle {
   padding: 10px 30px;
   position: relative;
 }
+
 .menu-item:hover .dropout-menu {
   display: block;
 }
+
 .dropout-menu {
   display: none;
   padding: 5px;
@@ -86,6 +100,7 @@ body {
   width: 180px;
   box-shadow: 0px 5px 10px -3px #808080;
 }
+
 .dropout-menu-item {
   padding: 2px 15px;
   font-family: "Calibri";
@@ -93,15 +108,18 @@ body {
   font-weight: bold;
   text-align: left;
 }
+
 .dropout-menu-item:hover {
   background-color: #dddddd;
   transition: background 0.5s;
   cursor: pointer;
 }
+
 .dropout-menu-link {
   text-decoration: none;
   color: black;
 }
+
 .menu-item.triangle::after {
   position: absolute;
   right: 5px;
@@ -112,17 +130,20 @@ body {
   border-color: white transparent;
   transition: border 1s, transform 1s;
 }
+
 .menu-item.triangle:hover::after {
   border-color: black transparent;
   transform: rotate(180deg);
   transition: transform 1s, border 1s;
 }
+
 .main {
   box-sizing: border-box;
   width: 1440px;
   padding: 40px;
   margin: auto;
 }
+
 .logo {
   width: 456px;
   height: 305px;
@@ -133,62 +154,134 @@ body {
   position: relative;
   overflow: hidden;
 }
-@keyframes move {
+
+@keyframes move-top {
   0% {
-    left: -100%;
+    transform: rotate(0deg) translateX(0) scale(0, 1);
   }
   25% {
-    left: 0;
+    transform: rotate(0deg) translateX(0) scale(1, 1);
   }
-  50%,
+
+  50%, 75% {
+    transform: rotate(0deg) translateX(100%) scale(0, 1);
+  }
+
   100% {
-    left: 100%;
+    transform: rotate(0deg) translateX(0) scale(0, 1);
   }
 }
-.logo .rectangle {
+
+@keyframes move-right {
+  0% {
+    transform: rotate(90deg) translateX(0) scale(0, 1);
+  }
+
+  25% {
+    transform: rotate(90deg) translateX(0) scale(1, 1);
+  }
+
+  50%, 75% {
+    transform: rotate(90deg) translateX(100%) scale(0, 1);
+  }
+
+  100% {
+    transform: rotate(90deg) translateX(0) scale(0, 1);
+  }
+}
+
+@keyframes move-bottom {
+  0% {
+    transform: rotate(180deg) translateX(-100%) scale(0, 1);
+  }
+
+  25% {
+    transform: rotate(180deg) translateX(-100%) scale(1, 1);
+  }
+
+  50%, 75% {
+    transform: rotate(180deg) translateX(0) scale(0, 1);
+  }
+
+  100% {
+    transform: rotate(180deg) translateX(-100%) scale(0, 1);
+  }
+}
+
+@keyframes move-left {
+  0% {
+    transform: rotate(-90deg) translateX(-100%) scale(0, 1);
+  }
+
+  25% {
+    transform: rotate(-90deg) translateX(-100%) scale(1, 1);
+  }
+
+  50%, 75% {
+    transform: rotate(-90deg) translateX(0) scale(0, 1);
+  }
+
+  100% {
+    transform: rotate(-90deg) translateX(-100%) scale(0, 1);
+  }
+}
+
+.logo {
+  width: 456px;
+  height: 456px;
+  background-image: url(../../images/ivangromovproduction.png);
+  background-position: 7px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 1px solid black;
+  position: relative;
+}
+
+.logo .snake {
+  width: calc(100% + 22px);
+  height: 10px;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  background: red;
 }
-.logo .rectangle::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: none;
-  border-top: 10px solid black;
-  animation: move 10s linear infinite backwards;
-  border-image: linear-gradient(to left, #ffffff, #ff0000, #ffffff);
-  border-image-slice: 1;
-}
-.logo .rectangle:nth-child(1) {
-  transform: rotate(0deg);
-}
-.logo .rectangle:nth-child(2) {
-  transform: rotate(90deg);
-  left: 76px;
-}
-.logo .rectangle:nth-child(3) {
-  transform: rotate(180deg);
-}
-.logo .rectangle:nth-child(4) {
-  transform: rotate(270deg);
-  left: -76px;
-}
-.logo .rectangle:nth-child(1)::before {
+
+.logo .snake.top {
+  top: -11px;
+  left: -11px;
+  animation: move-top 4s linear infinite;
+  animation-fill-mode: both;
   animation-delay: 0s;
+  transform-origin: left;
 }
-.logo .rectangle:nth-child(2)::before {
+
+.logo .snake.right {
+  top: -11px;
+  right: calc(-100% - 33px);
+  animation: move-right 4s linear infinite;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+  transform-origin: left top;
+}
+
+.logo .snake.bottom {
+  bottom: -1px;
+  left: -11px;
+  animation: move-bottom 4s linear infinite;
+  animation-fill-mode: both;
   animation-delay: 2s;
+  transform-origin: left bottom;
 }
-.logo .rectangle:nth-child(3)::before {
-  animation-delay: 4s;
+
+.logo .snake.left {
+  left: -11px;
+  top: -11px;
+  transform-origin: left top;
+  animation: move-left 4s linear infinite;
+  animation-fill-mode: both;
+  animation-delay: 3s;
 }
-.logo .rectangle:nth-child(4)::before {
-  animation-delay: 6s;
-}
+
+/* footer */
 .footer {
   background-color: lightgrey;
   background-image: linear-gradient(#ffffff, #d3d3d3);
