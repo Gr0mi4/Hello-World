@@ -1,0 +1,99 @@
+/*Variables*/
+/*Mixins*/
+.post-theme-list {
+  margin: 0;
+  padding: 0;
+}
+
+.post-theme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90vw;
+  height: 300px;
+  border: 2px solid lightgrey;
+  border-radius: 10px;
+  margin: 10px auto;
+  background-position: 50% 50%;
+  background-size: 100%;
+  position: relative;
+}
+.post-theme .headline {
+  color: white;
+  font-family: "Gagalin", "Calibri", sans-serif;
+  font-size: 72px;
+  position: absolute;
+  top: 20%;
+  left: 42%;
+  text-align: center;
+}
+
+.cars {
+  background-image: url(../../../images/topics/r35.jpg);
+}
+.cars .headline {
+  left: 45%;
+}
+
+.bikes {
+  background-image: url(../../../images/topics/ktm.jpg);
+}
+.bikes .headline {
+  color: black;
+}
+
+.racing {
+  background-image: url(../../../images/topics/f2008.jpg);
+}
+
+.garage {
+  background-image: url(../../../images/topics/garage.jpg);
+}
+
+.community {
+  background-image: url(../../../images/topics/community.jpg);
+  background-position: 50% 20%;
+}
+.community .headline {
+  left: 37%;
+}
+
+@media screen and (max-width: 1139px) {
+  .post-theme {
+    height: 200px;
+  }
+  .post-theme .headline {
+    top: 0%;
+  }
+}
+@media screen and (max-width: 704px) {
+  .post-theme {
+    height: 150px;
+  }
+  .post-theme .headline {
+    top: -15%;
+    left: 35%;
+  }
+}
+@media screen and (max-width: 571px) {
+  .post-theme {
+    height: 150px;
+  }
+  .post-theme .headline {
+    font-size: 46px;
+    top: 1%;
+    left: 38%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .post-theme {
+    height: 100px;
+  }
+  .post-theme .headline {
+    font-size: 32px;
+    top: 1%;
+    left: 33%;
+  }
+}
+
+/*# sourceMappingURL=topics-catalog.css.map */

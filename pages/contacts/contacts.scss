@@ -1,0 +1,22 @@
+/*Variables*/
+$azure: #2BC6DC;
+$contrast-light: #ffd987;
+$azure-light: #78FFFF;
+$black: #262626;
+$grey: lightgrey;
+$azuregradient: linear-gradient($azure 60%, #FFFFFF 100%);
+$greygradeient: linear-gradient(#fff, $grey);
+
+/*Mixins*/
+@mixin zeromargin()
+  {margin: 0;}
+
+@import "../components/header/header";
+@import "../components/navigation/navigation";
+@import "../components/main/main";
+@import "inner-components/contacts-table/contacts-table";
+@import "../components/footer/footer";
+
+body {
+  @include zeromargin;
+}

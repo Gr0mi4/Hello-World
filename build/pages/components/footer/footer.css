@@ -1,0 +1,23 @@
+/*Variables*/
+/*Mixins*/
+.footer {
+  background-color: lightgrey;
+  background-image: linear-gradient(#fff, lightgrey);
+  box-sizing: content-box;
+  padding: 35px 0 15px 0px;
+  text-align: center;
+  width: 100%;
+}
+
+.copyright {
+  font-size: 15px;
+  margin: 0;
+}
+
+@media screen and (max-width: 571px) {
+  .copyright {
+    font-size: 11px;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,86 @@
+/*Variables*/
+$azure: #2BC6DC;
+$contrast-light: #ffd987;
+$azure-light: #78FFFF;
+$black: #262626;
+$grey: lightgrey;
+$azuregradient: linear-gradient($azure 60%, #FFFFFF 100%);
+$greygradeient: linear-gradient(#fff, $grey);
+
+/*Mixins*/
+@mixin zeromargin()
+  {margin: 0;}
+
+.triangle {
+  padding: 10px 30px;
+  position: relative;
+}
+
+.menu-item.triangle::after {
+  position: absolute;
+  right: 5px;
+  top: 26px;
+  content: "";
+  border-style: solid;
+  border-width: 10px 9px 0px 9px;
+  border-color: white transparent;
+  transition: border 1s, transform 1s;
+}
+
+.menu-item.triangle:hover::after {
+  border-color: black transparent;
+  transform:rotate(180deg);
+  transition: transform 1s, border 1s;
+}
+
+.menu-item.chosen-item.triangle::after {
+  border-color: black transparent;
+}
+
+.menu-item:hover .dropout-menu {
+  display: block;
+}
+
+.dropout-menu {
+  display: none;
+  padding: 5px;
+  position: absolute;
+  left: -25px;
+  top: 57px;
+  font-size: 20px;
+  color: black;
+  background-color: #F9F9F9;
+  list-style-type: none;
+  width: 180px;
+  box-shadow: 0px 5px 10px -3px grey;
+  z-index: 10;
+
+  &-item {
+    padding: 2px 15px;
+    font-family: "Calibri";
+    border-bottom: 2px solid #EEEEEE;
+    font-weight: bold;
+    text-align: left;
+
+    &:hover {
+      background-color: #dddddd;
+      transition: background 0.5s;
+      cursor: pointer;
+    }
+  }
+
+  &-link {
+    text-decoration: none;
+    color: $black;
+  }
+}
+
+@media screen and (max-width: 1139px ) {
+  .menu-item.triangle::after {
+    display: none;
+  }
+
+  .menu-item:hover .dropout-menu {
+    display: none;
+  }
+}

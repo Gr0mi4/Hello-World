@@ -1,0 +1,22 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "First version",
+  "main": "index.js",
+  "devDependencies": {
+    "less": "^3.10.3",
+    "lessc-each": "^1.1.0"
+  },
+  "scripts": {
+    "build": "sass pages/:build/pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gr0mi4/Hello-World/issue"
+  },
+  "author": "Gromov Ivan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gr0mi4/Hello-World/issues"
+  }
+}

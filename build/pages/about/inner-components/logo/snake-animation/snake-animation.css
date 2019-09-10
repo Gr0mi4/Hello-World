@@ -1,0 +1,106 @@
+/*Variables*/
+/*Mixins*/
+.snake {
+  position: absolute;
+  width: 480px;
+  height: 25px;
+  background-color: #2BC6DC;
+}
+.snake.top {
+  top: -24px;
+  left: -1px;
+  animation: move-top 4s linear infinite;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+  transform-origin: left;
+}
+.snake.right {
+  top: -1px;
+  right: -110.3%;
+  animation: move-right 4s linear infinite;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+  transform-origin: left top;
+}
+.snake.bottom {
+  bottom: 2px;
+  left: -26px;
+  animation: move-bottom 4s linear infinite;
+  animation-fill-mode: both;
+  animation-delay: 2s;
+  transform-origin: left bottom;
+}
+.snake.left {
+  left: -26px;
+  top: -24px;
+  transform-origin: left top;
+  animation: move-left 4s linear infinite;
+  animation-fill-mode: both;
+  animation-delay: 3s;
+  background-color: #2BC6DC;
+}
+
+@keyframes move-top {
+  0% {
+    transform: rotate(0deg) translateX(0) scale(0, 1);
+  }
+  25% {
+    transform: rotate(0deg) translateX(0) scale(1, 1);
+  }
+  50%, 75% {
+    transform: rotate(0deg) translateX(100%) scale(0, 1);
+  }
+  100% {
+    transform: rotate(0deg) translateX(0) scale(0, 1);
+  }
+}
+@keyframes move-right {
+  0% {
+    transform: rotate(90deg) translateX(0) scale(0, 1);
+  }
+  25% {
+    transform: rotate(90deg) translateX(0) scale(1, 1);
+  }
+  50%, 75% {
+    transform: rotate(90deg) translateX(100%) scale(0, 1);
+    transition: background-image 1s;
+  }
+  100% {
+    transform: rotate(90deg) translateX(0) scale(0, 1);
+  }
+}
+@keyframes move-bottom {
+  0% {
+    transform: rotate(180deg) translateX(-100%) scale(0, 1);
+  }
+  25% {
+    transform: rotate(180deg) translateX(-100%) scale(1, 1);
+  }
+  50%, 75% {
+    transform: rotate(180deg) translateX(0) scale(0, 1);
+  }
+  100% {
+    transform: rotate(180deg) translateX(-100%) scale(0, 1);
+  }
+}
+@keyframes move-left {
+  0% {
+    transform: rotate(-90deg) translateX(-100%) scale(0, 1);
+  }
+  25% {
+    transform: rotate(-90deg) translateX(-100%) scale(1, 1);
+  }
+  50%, 75% {
+    transform: rotate(-90deg) translateX(0) scale(0, 1);
+  }
+  100% {
+    transform: rotate(-90deg) translateX(-100%) scale(0, 1);
+  }
+}
+@media screen and (max-width: 571px) {
+  .snake {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=snake-animation.css.map */

@@ -1,0 +1,34 @@
+/*Variables*/
+$azure: #2BC6DC;
+$contrast-light: #ffd987;
+$azure-light: #78FFFF;
+$black: #262626;
+$grey: lightgrey;
+$azuregradient: linear-gradient($azure 60%, #FFFFFF 100%);
+$greygradeient: linear-gradient(#fff, $grey);
+
+/*Mixins*/
+@mixin zeromargin()
+  {margin: 0;}
+
+
+.logo {
+  width: 456px;
+  height: 456px;
+  background-image: url(../../../images/ivangromovproduction.png);
+  background-position: -10% 50%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  border: 1px solid $black;
+  position: relative;
+}
+
+  @media screen and (max-width: 571px ) {
+    .logo {
+      width: 67vw;
+      height: 45vw;
+      background-size: 80vw;
+      background-repeat: no-repeat;
+      margin: 0px 16vw;
+    }
+  }
