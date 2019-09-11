@@ -1,0 +1,16 @@
+/*Variables*/
+@import "../../styles/colors.scss";
+@import "../../styles/gradients.scss";
+
+@import "../common/header/header";
+@import "../common/navigation/navigation";
+@import "components/topics-catalog/topics-catalog";
+@import "../common/footer/footer";
+
+body {
+  margin: 0;
+}
+
+.main {
+  width: 100vw;
+}

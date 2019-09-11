@@ -1,0 +1,42 @@
+/*Variables*/
+@import "../../styles/colors.scss";
+@import "../../styles/gradients.scss";
+
+@import "../common/header/header";
+@import "../common/navigation/navigation";
+@import "../common/main/main";
+@import "components/topic/topic";
+@import "../common/footer/footer";
+
+body {
+  margin: 0;
+}
+
+.main {
+  max-width: 1140px;
+}
+
+.page-name {
+  color: $color-black;
+}
+
+  @media screen and (max-width: 1139px ) {
+    .main {
+      padding: 0;
+      max-width: 704px;
+    }
+  }
+
+  @media screen and (max-width: 704px ) {
+    .main {
+      padding: 0;
+      max-width: 571px;
+    }
+  }
+
+  @media screen and (max-width: 571px ) {
+    .main {
+      padding: 0;
+      max-width: 320px;
+    }
+  }

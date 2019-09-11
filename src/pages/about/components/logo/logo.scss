@@ -1,0 +1,24 @@
+/*Variables*/
+@import "../../../../styles/colors.scss";
+@import "../../../../styles/gradients.scss";
+
+.logo {
+  width: 456px;
+  height: 456px;
+  background-image: url(../../../../src/images/ivangromovproduction.png);
+  background-position: -10% 50%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  border: 1px solid $color-black;
+  position: relative;
+}
+
+  @media screen and (max-width: 571px ) {
+    .logo {
+      width: 67vw;
+      height: 45vw;
+      background-size: 80vw;
+      background-repeat: no-repeat;
+      margin: 0px 16vw;
+    }
+  }

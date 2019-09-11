@@ -7,7 +7,8 @@
     "sass": "^1.23.0-module.beta.1"
   },
   "scripts": {
-    "build": "sass pages/:build/pages"
+    "build": "sass src/pages/:build/src/pages",
+    "watch": "sass --watch src/pages/:build/src/pages"
   },
   "repository": {
     "type": "git",

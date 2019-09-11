@@ -1,0 +1,71 @@
+/*Variables*/
+@import "../../../styles/colors.scss";
+@import "../../../styles/gradients.scss";
+
+/*Components*/
+@import "dropout-menu";
+
+.navigation {
+  color: white;
+  font-size: 30px;
+  margin: 20px 0px 0px 0px;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+
+
+  &-item {
+    display: inline-block;
+    margin: 12px 46px 5px;
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+    transition: color 1s, background 1s;
+
+
+    &:hover {
+      background-color: $color-azure-light;
+      color: $color-black;
+      transition: background 1s, color 1s;
+    }
+
+    &-link {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}
+
+.chosen-item {
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: $color-azure-light;
+  padding: 10px;
+  color: $color-black;
+}
+
+  @media screen and (max-width: 1139px ) {
+    .navigation {
+      font-size: 30px;
+      margin-top: 5px;
+    }
+
+    .menu-item {
+      margin: 12px 1vw 5px;
+    }
+  }
+
+  @media screen and (max-width: 571px ) {
+    .navigation {
+      margin-top: 0;
+    }
+
+    .menu-item {
+      display: inline-block;
+      padding: 0px 15px;
+      margin: 0;
+      font-size: 25px;
+    }
+  }

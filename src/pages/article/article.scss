@@ -1,0 +1,127 @@
+/*Variables*/
+@import "../../styles/colors.scss";
+@import "../../styles/gradients.scss";
+/*Components*/
+@import "../common/header/header";
+@import "../common/navigation/navigation";
+@import "../common/main/main";
+@import "components/advertisement/advertisement";
+@import "components/gallery/gallery";
+@import "../common/footer/footer";
+
+body {
+  margin: 0;
+}
+
+.article {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  font-family: sans-serif;
+  width: 100%;
+  max-width: 1010px;
+  border-bottom: 4px solid $color-grey;
+}
+
+.hero-image {
+  display: block;
+  box-shadow: 0 0 5px 5px #eeeeee;
+  background-color: $color-white;
+  padding: 10px;
+  width: 100%;
+  float: right;
+  min-width: 480px;
+  margin: 10px auto;
+}
+
+.headline {
+  text-align: center;
+  font-size: 30px;
+  font-style: oblique;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.text {
+  margin: 24px 0px 0px 0px;
+  font-family: Georgia;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.numbered-list, .unnumbered-list {
+  padding: 0px;
+  margin: 24px 0px 0px 20px;
+  font-family: Georgia;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.headline-2 {
+  font-size: 24px;
+  margin: 24px 0px 0px 0px;
+  line-height: 30px;
+}
+
+.quote {
+  max-width: 600px;
+  margin: 32px auto 0;
+  padding: 24px;
+  font-size: 24px;
+  font-style: italic;
+  line-height: 32px;
+  text-align: center;
+  border: 4px dashed $color-contrast-light;
+}
+
+@media screen and (max-width: 571px ) {
+  .text, .unnumbered-list, .numbered-list {
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 10px;
+  }
+
+  .headline {
+    font-size: 22px;
+    margin: 0px;
+  }
+
+  .headline-2 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .hero-image {
+    width: 90%;
+    min-width: 180px;
+    margin: 10px;
+  }
+
+  .quote {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 320px ) {
+  .headline {
+    font-size: 16px;
+  }
+
+  .headline-2 {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .text, .unnumbered-list, .numbered-list {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 5px;
+  }
+
+  .quote {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 5px;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,23 @@
+/*Variables*/
+@import "../../../styles/colors.scss";
+@import "../../../styles/gradients.scss";
+
+.footer {
+  background-color: $color-grey;
+  background-image: $gradeient-grey;
+  box-sizing: content-box;
+  padding: 35px 0 15px 0px;
+  text-align: center;
+  width: 100%;
+}
+
+.copyright {
+  font-size: 15px;
+  margin: 0;
+}
+
+@media screen and (max-width: 571px ) {
+  .copyright {
+    font-size: 11px;
+  }
+}
