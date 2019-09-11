@@ -4,8 +4,7 @@
   "description": "First version",
   "main": "index.js",
   "devDependencies": {
-    "less": "^3.10.3",
-    "lessc-each": "^1.1.0"
+    "sass": "^1.23.0-module.beta.1"
   },
   "scripts": {
     "build": "sass pages/:build/pages"
