@@ -1,7 +1,10 @@
-/*Colors*/
 $color-azure: #2bc6dc;
-$color-contrast-light: #ffd987;
+$color-light-orange: rgba(236, 252, 133, 0.2);
+$color-orange: orange;
 $color-azure-light: #78ffff;
 $color-black: #262626;
 $color-grey: lightgrey;
+$color-light-grey: lighten($color-grey, 30%);
+$color-dark-grey: grey;
+$color-halfdark-grey: #eeeeee;
 $color-white: #fff;

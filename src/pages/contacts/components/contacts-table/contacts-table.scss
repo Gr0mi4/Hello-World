@@ -1,10 +1,10 @@
 /*Variables*/
 @import "../../../../styles/colors.scss";
-@import "../../../../styles/gradients.scss";
+@import "../../../../styles/fonts.scss";
 
 .contacts-table {
   margin: 24px auto;
-  font-family: Georgia;
+  font-family: $font-body-text;
   font-size: 18px;
   line-height: 24px;
   border: 1px solid $color-black;
@@ -13,7 +13,7 @@
 
 .contacts-caption {
   text-align: left;
-  font-family: sans-serif;
+  font-family: $font-serif;
   font-size: 30px;
   line-height: 80px;
   font-weight: bold;
@@ -50,7 +50,7 @@
   background-color: lighten($color-azure-light, 15%);
 }
 .contacts-body .contacts-row:nth-child(even) {
-  background-color: rgba(236, 252, 133, 0.2);
+  background-color: $color-light-orange;
 
 }
 .link {
@@ -60,7 +60,7 @@
 }
 
 .phone {
-  color: orange;
+  color: $color-orange;
   font-style: oblique;
   text-decoration: none;
 }

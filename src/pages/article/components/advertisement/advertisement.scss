@@ -1,6 +1,5 @@
-/*Variables*/
 @import "../../../../styles/colors.scss";
-@import "../../../../styles/gradients.scss";
+@import "../../../../styles/fonts.scss";
 
 .advertisement {
   top: 10px;
@@ -13,7 +12,8 @@
   font-size: 18px;
   font-weight: bold;
   line-height: 600px;
-  font-family: Helvetica;
+  font-family: $font-serif
+  ;
   color: #555555;
   margin-left: 40px;
 }

@@ -1,6 +1,5 @@
-/*Variables*/
 @import "../../../../styles/colors.scss";
-@import "../../../../styles/gradients.scss";
+@import "../../../../styles/fonts.scss";
 
 .post-theme-list {
   margin: 0;
@@ -22,7 +21,7 @@
 
   & .headline {
     color: $color-white;
-    font-family: "Gagalin", "Calibri", sans-serif;
+    font-family: $font-headline;
     font-size: 72px;
     position: absolute;
     top: 20%;
@@ -32,7 +31,7 @@
 }
 
 .cars {
-  background-image: url(../../../../src/images/topics/r35.jpg);
+  background-image: url(../../../src/images/topics/r35.jpg);
 
   & .headline {
     left: 45%;
@@ -40,7 +39,7 @@
 }
 
 .bikes {
-  background-image: url(../../../../src/images/topics/ktm.jpg);
+  background-image: url(../../../src/images/topics/ktm.jpg);
 
   & .headline {
     color: $color-black;
@@ -48,15 +47,15 @@
 }
 
 .racing {
-  background-image: url(../../../../src/images/topics/f2008.jpg);
+  background-image: url(../../../src/images/topics/f2008.jpg);
 }
 
 .garage {
-  background-image: url(../../../../src/images/topics/garage.jpg);
+  background-image: url(../../../src/images/topics/garage.jpg);
 }
 
 .community {
-  background-image: url(../../../../src/images/topics/community.jpg);
+  background-image: url(../../../src/images/topics/community.jpg);
   background-position: 50% 20%;
 
   & .headline {

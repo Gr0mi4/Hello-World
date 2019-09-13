@@ -1,6 +1,5 @@
-/*Variables*/
 @import "../../../styles/colors.scss";
-@import "../../../styles/gradients.scss";
+@import "../../../styles/fonts.scss";
 
 .menu-item.triangle::after {
   position: absolute;
@@ -40,21 +39,21 @@
   top: 57px;
   font-size: 20px;
   color: black;
-  background-color: #F9F9F9;
+  background-color: $color-light-grey;
   list-style-type: none;
   width: 180px;
-  box-shadow: 0px 5px 10px -3px grey;
+  box-shadow: 0px 5px 10px -3px $color-dark-grey;
   z-index: 10;
 
   &-item {
     padding: 2px 15px;
-    font-family: "Calibri";
-    border-bottom: 2px solid #EEEEEE;
+    font-family: $font-dropout-menu;
+    border-bottom: 2px solid $color-halfdark-grey;
     font-weight: bold;
     text-align: left;
 
     &:hover {
-      background-color: #dddddd;
+      background-color: $color-grey;
       transition: background 0.5s;
       cursor: pointer;
     }

@@ -1,11 +1,9 @@
-/*Variables*/
-@import "../../../../styles/colors.scss";
-@import "../../../../styles/gradients.scss";
+@import "../../../../styles/colors";
 
 .logo {
   width: 456px;
   height: 456px;
-  background-image: url(../../../../src/images/ivangromovproduction.png);
+  background-image: url(../../../src/images/ivangromovproduction.png);
   background-position: -10% 50%;
   background-repeat: no-repeat;
   margin: 0 auto;

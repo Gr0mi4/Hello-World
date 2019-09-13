@@ -1,6 +1,6 @@
-/*Variables*/
-@import "../../styles/colors.scss";
-@import "../../styles/gradients.scss";
+@import "../../styles/colors";
+@import "../../styles/gradients";
+@import "../../styles/global";
 
 @import "../common/header/header";
 @import "../common/navigation/navigation";
@@ -8,7 +8,3 @@
 @import "components/logo/logo";
 @import "components/snake-animation/snake-animation";
 @import "../common/footer/footer";
-
-body {
-  margin: 0;
-}

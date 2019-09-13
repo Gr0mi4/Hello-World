@@ -1,18 +1,18 @@
-/*Variables*/
 @import "../../../styles/colors.scss";
 @import "../../../styles/gradients.scss";
+@import "../../../styles/fonts.scss";
 
 .blog-navigation {
   background-image: $gradient-azure;
   padding: 10px 0px 60px 0px;
-  font-family: "Gagalin", sans-serif;
+  font-family: $font-headline;
   text-align: center;
   width: 100%;
 }
 
 .page-name {
   font-size: 50px;
-  color: white;
+  color: $color-white;
   text-decoration: none;
   transition: color 1s;
 

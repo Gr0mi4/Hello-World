@@ -4,11 +4,13 @@
   "description": "First version",
   "main": "index.js",
   "devDependencies": {
-    "sass": "^1.23.0-module.beta.1"
+    "rimraf": "^3.0.0",
+    "sass": "^1.22.2"
   },
   "scripts": {
-    "build": "sass src/pages/:build/src/pages",
-    "watch": "sass --watch src/pages/:build/src/pages"
+    "build": "sass src/pages/:build/pages & sass src/styles:build/styles",
+    "watch": "sass --watch src/pages/:build/pages",
+    "clean": "rimraf build"
   },
   "repository": {
     "type": "git",

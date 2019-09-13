@@ -1,12 +1,9 @@
-/*Variables*/
 @import "../../../styles/colors.scss";
-@import "../../../styles/gradients.scss";
 
-/*Components*/
 @import "dropout-menu";
 
 .navigation {
-  color: white;
+  color: $color-white;
   font-size: 30px;
   margin: 20px 0px 0px 0px;
 }

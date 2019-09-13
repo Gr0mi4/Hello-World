@@ -1,13 +1,16 @@
-/*Variables*/
 @import "../../../../styles/colors.scss";
-@import "../../../../styles/gradients.scss";
 
 .snake {
-    position: absolute;
-    width: 480px;
-    height: 25px;
-    background-color: $color-azure;
+  position: absolute;
+  width: 480px;
+  height: 25px;
+  background-color: $color-azure;
 
+  @media screen and (max-width: 571px ) {
+    .snake {
+      display: none;
+    }
+  }
 
   &.top {
     top: -24px;
@@ -118,9 +121,3 @@
     transform: rotate(-90deg) translateX(-100%) scale(0, 1);
   }
 }
-
-@media screen and (max-width: 571px ) {
-  .snake {
-    display: none;
-  }
-  }

@@ -1,10 +1,9 @@
-/*Variables*/
 @import "../../../styles/colors.scss";
 @import "../../../styles/gradients.scss";
 
 .footer {
   background-color: $color-grey;
-  background-image: $gradeient-grey;
+  background-image: $gradient-grey;
   box-sizing: content-box;
   padding: 35px 0 15px 0px;
   text-align: center;
