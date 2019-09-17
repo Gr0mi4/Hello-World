@@ -1,11 +1,21 @@
 @import "../../../styles/colors.scss";
+@import "../../../styles/media";
 
 @import "dropout-menu";
 
 .navigation {
   color: $color-white;
   font-size: 30px;
-  margin: 20px 0px 0px 0px;
+  margin: 20px 0 0 0;
+
+  @media #{$media-1139} {
+    font-size: 30px;
+    margin-top: 5px;
+  }
+
+  @media #{$media-571} {
+    margin-top: 0;
+  }
 }
 
 .menu {
@@ -21,6 +31,16 @@
     padding: 10px;
     transition: color 1s, background 1s;
 
+    @media #{$media-1139} {
+      margin: 12px 1vw 5px;
+    }
+
+    @media #{$media-571} {
+      display: inline-block;
+      padding: 0 15px;
+      margin: 0;
+      font-size: 25px;
+    }
 
     &:hover {
       background-color: $color-azure-light;
@@ -42,27 +62,3 @@
   padding: 10px;
   color: $color-black;
 }
-
-  @media screen and (max-width: 1139px ) {
-    .navigation {
-      font-size: 30px;
-      margin-top: 5px;
-    }
-
-    .menu-item {
-      margin: 12px 1vw 5px;
-    }
-  }
-
-  @media screen and (max-width: 571px ) {
-    .navigation {
-      margin-top: 0;
-    }
-
-    .menu-item {
-      display: inline-block;
-      padding: 0px 15px;
-      margin: 0;
-      font-size: 25px;
-    }
-  }

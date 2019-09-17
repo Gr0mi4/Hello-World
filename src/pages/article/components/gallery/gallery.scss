@@ -1,19 +1,28 @@
-@import "../../../../styles/colors.scss";
-@import "../../../../styles/fonts.scss";
+@import "../../../../styles/colors";
+@import "../../../../styles/fonts";
+@import "../../../../styles/media";
 
 .gallery {
   margin-top: 25px;
   padding: 15px;
+
+  @media #{$media-571} {
+    margin-top: 0;
+  }
 }
 
 .gallery-headline {
   font-size: 45px;
   line-height: 55px;
-  background-image:
-    linear-gradient(45deg, transparent, $color-grey, transparent);
-  font-family: $font-gallery-headline;
+  background-image: linear-gradient(45deg, transparent, $color-grey, transparent);
+  font-family: $font-bernard;
   text-align: center;
   margin: 0;
+
+  @media #{$media-571} {
+    font-size: 30px;
+    line-height: 35px;
+  }
 }
 
 .images {
@@ -24,11 +33,14 @@
   width: 100%;
   height: 100%;
   border: 15px solid $color-black;
-  border-image:
-  linear-gradient(to top, transparent, $color-grey, transparent);
+  border-image: linear-gradient(to top, transparent, $color-grey, transparent);
   border-image-slice: 1;
   box-sizing: border-box;
   padding: 10px;
+
+  @media #{$media-320} {
+    padding: 0px;
+  }
 }
 
 .article-figure {
@@ -42,23 +54,32 @@
   transition: transform 0.6s, background-color 0.2s;
   position: relative;
   cursor: url('https://iconbird.com/png/download.php?id=47412&s=32'), zoom-in;
-}
 
-.article-figure:hover{
-  display: block;
-  transform: scale(1.20);
-  background-color: $color-grey;
-  z-index: 5;
-}
+  &:hover{
+    display: block;
+    transform: scale(1.20);
+    background-color: $color-grey;
+    z-index: 5;
 
-.article-figure:hover .image-description {
-  opacity: 1;
-}
+    & .image-description {
+      opacity: 1;
 
-.article-figure:hover .image-description::after {
-   opacity: 1;
-   transform: translateY(-38px);
- }
+      &::after {
+        opacity: 1;
+        transform: translateY(-38px);
+      }
+    }
+  }
+
+  @media #{$media-1139} {
+    padding: 5px;
+    max-height: 300px;
+  }
+
+  @media #{$media-320} {
+    margin: 5px 0px;
+  }
+}
 
 .article-image {
   width: 100%;
@@ -75,63 +96,41 @@
   position: relative;
   z-index: 6;
   color: $color-grey;
-  font-family: $font-gallery-description;
-}
+  font-family: $font-vnbook;
 
-.image-description::after {
-  display: block;
-  position: absolute;
-  top: 30px;
-  background-color: rgba(0, 0, 0, 0.6);
-  content: "";
-  width: 100%;
-  height: 35px;
-  opacity: 0;
-  transition: transform 1s;
-  z-index: -5;
-}
+  &::after {
+    display: block;
+    position: absolute;
+    top: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    width: 100%;
+    height: 35px;
+    opacity: 0;
+    transition: transform 1s;
+    z-index: -5;
 
-@media screen and (max-width: 1139px ) {
-  .article-figure {
-    padding: 5px;
-    max-height: 300px;
+    @media #{$media-1139} {
+      height: 50px
+    }
+
+    @media #{$media-571} {
+      top: 35px;
+      height: 35px
+    }
   }
 
-  .image-description {
-    font-size: 1.3vw;
-  }
-}
-
-@media screen and (max-width: 571px ) {
-  .gallery-headline {
-    font-size: 30px;
-    line-height: 35px;
+  @media #{$media-1139} {
+    font-size: 1.5vw;
+    top: -45px;
   }
 
-  .gallery {
-    margin-top: 0;
-  }
-
-  .image-description {
+  @media #{$media-571} {
     font-size: 2vw;
     top: -35px;
   }
 
-  .image-description::after {
-    top: 35px;
-  }
-}
-
-@media screen and (max-width: 320px ) {
-  .images {
-    padding: 0px;
-  }
-
-  .aricle-figure {
-    margin: 5px 0px;
-  }
-
-  .image-description {
+  @media #{$media-320} {
     font-size: 3.5vw;
     top: -35px;
   }

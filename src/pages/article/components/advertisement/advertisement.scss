@@ -1,5 +1,6 @@
 @import "../../../../styles/colors.scss";
 @import "../../../../styles/fonts.scss";
+@import "../../../../styles/media.scss";
 
 .advertisement {
   top: 10px;
@@ -12,13 +13,12 @@
   font-size: 18px;
   font-weight: bold;
   line-height: 600px;
-  font-family: $font-serif
-  ;
+  font-family: $font-serif;
   color: #555555;
   margin-left: 40px;
 }
 
-@media screen and (max-width: 1415px ) {
+@media #{$media-1415} {
   .advertisement {
     display: none;
   }

@@ -1,5 +1,6 @@
-@import "../../../../styles/colors.scss";
-@import "../../../../styles/fonts.scss";
+@import "../../../../styles/colors";
+@import "../../../../styles/fonts";
+@import "../../../../styles/media";
 
 .post-theme-list {
   margin: 0;
@@ -19,6 +20,18 @@
   background-size: 100%;
   position: relative;
 
+  @media #{$media-1139} {
+    height: 200px;
+  }
+
+  @media #{$media-704} {
+    height: 150px;
+  }
+
+  @media #{$media-320} {
+    height: 100px;
+  }
+
   & .headline {
     color: $color-white;
     font-family: $font-headline;
@@ -27,6 +40,27 @@
     top: 20%;
     left: 42%;
     text-align: center;
+
+    @media #{$media-1139} {
+      top: 0;
+    }
+
+    @media #{$media-704} {
+      top: -15%;
+      left: 35%;
+    }
+
+    @media #{$media-571} {
+      font-size: 46px;
+      top: 1%;
+      left: 38%;
+    }
+
+    @media #{$media-320} {
+      font-size: 32px;
+      top: 1%;
+      left: 33%;
+    }
   }
 }
 
@@ -62,49 +96,3 @@
     left: 37%;
   }
 }
-
-
-  @media screen and (max-width: 1139px )  {
-    .post-theme {
-      height: 200px;
-
-      & .headline {
-        top: 0%;
-      }
-    }
-  }
-
-  @media screen and (max-width: 704px ) {
-    .post-theme {
-      height: 150px;
-
-      & .headline {
-        top: -15%;
-        left: 35%;
-      }
-    }
-  }
-
-  @media screen and (max-width: 571px ) {
-    .post-theme {
-      height: 150px;
-
-      & .headline {
-        font-size: 46px;
-        top: 1%;
-        left: 38%;
-      }
-    }
-  }
-
-  @media screen and (max-width: 320px ) {
-    .post-theme {
-      height: 100px;
-
-      & .headline {
-        font-size: 32px;
-        top: 1%;
-        left: 33%;
-      }
-    }
-  }

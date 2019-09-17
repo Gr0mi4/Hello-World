@@ -1,4 +1,5 @@
 @import "../../../../styles/colors.scss";
+@import "../../../../styles/media";
 
 .snake {
   position: absolute;
@@ -6,10 +7,8 @@
   height: 25px;
   background-color: $color-azure;
 
-  @media screen and (max-width: 571px ) {
-    .snake {
+  @media #{$media-571} {
       display: none;
-    }
   }
 
   &.top {

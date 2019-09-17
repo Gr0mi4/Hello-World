@@ -1,6 +1,6 @@
-/*Variables*/
-@import "../../../../styles/colors.scss";
-@import "../../../../styles/fonts.scss";
+@import "../../../../styles/colors";
+@import "../../../../styles/fonts";
+@import "../../../../styles/media";
 
 .contacts-table {
   margin: 24px auto;
@@ -9,6 +9,11 @@
   line-height: 24px;
   border: 1px solid $color-black;
   border-radius: 20px;
+
+  @media #{$media-571} {
+    font-size: 11px;
+    display: table;
+  }
 }
 
 .contacts-caption {
@@ -19,17 +24,33 @@
   font-weight: bold;
 }
 
-.contacts-head  {
+.contacts-head {
   text-align: left;
   font-size: 26px;
   line-height: 34px;
   font-style: oblique;
+
+  @media #{$media-571} {
+    font-size: 20px;
+    line-height: 16px;
+  }
 }
 
 .contacts-cell {
   line-height: 30px;
   padding: 10px 10px 10px 20px;
   border-bottom: 1px solid $color-black;
+
+  @media #{$media-571} {
+    line-height: 18px;
+    padding: 4px 6px;
+  }
+}
+
+.contacts-row {
+  @media #{$media-571} {
+    width: 85%
+  }
 }
 
 .contacts-cell:nth-child(odd) {
@@ -37,13 +58,13 @@
 }
 
 .contacts-body > .contacts-row:last-child > .contacts-cell:nth-child(2) {
-  border-bottom-width: 0px;
-  border-radius: 0px 0px 20px 0px;
+  border-bottom-width: 0;
+  border-radius: 0 0 20px 0;
 }
 
 .contacts-body > .contacts-row:last-child > .contacts-cell:nth-child(1) {
-  border-bottom-width: 0px;
-  border-radius: 0px 0px 0px 20px;
+  border-bottom-width: 0;
+  border-radius: 0 0 0 20px;
 }
 
 .contacts-body .contacts-row:nth-child(odd) {
@@ -64,24 +85,3 @@
   font-style: oblique;
   text-decoration: none;
 }
-
-  @media screen and (max-width: 571px ) {
-    .contacts-table {
-      font-size: 11px;
-      display: table;
-    }
-
-    .contacts-head {
-      font-size: 20px;
-      line-height: 16px;
-    }
-
-    .contacts-cell {
-      line-height: 18px;
-      padding: 4px 6px;
-    }
-
-    .contacts-row {
-      width: 85%
-    }
-  }

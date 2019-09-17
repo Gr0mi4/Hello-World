@@ -1,34 +1,43 @@
-@import "../../../styles/colors.scss";
-@import "../../../styles/fonts.scss";
-
-.menu-item.triangle::after {
-  position: absolute;
-  right: 5px;
-  top: 26px;
-  content: "";
-  border-style: solid;
-  border-width: 10px 9px 0px 9px;
-  border-color: $color-white transparent;
-  transition: border 1s, transform 1s;
-}
-
-.menu-item.triangle:hover::after {
-  border-color: $color-black transparent;
-  transform:rotate(180deg);
-  transition: transform 1s, border 1s;
-}
-
-.menu-item.chosen-item.triangle::after {
-  border-color: $color-black transparent;
-}
+@import "../../../styles/colors";
+@import "../../../styles/fonts";
+@import "../../../styles/media";
 
 .menu-item:hover .dropout-menu {
   display: block;
+
+  @media #{$media-1139} {
+    display: none;
+  }
 }
 
 .menu-item.triangle {
   padding: 10px 30px;
   position: relative;
+
+  &::after {
+    position: absolute;
+    right: 5px;
+    top: 26px;
+    content: "";
+    border-style: solid;
+    border-width: 10px 9px 0 9px;
+    border-color: $color-white transparent;
+    transition: border 1s, transform 1s;
+
+    @media #{$media-1139} {
+      display: none;
+    }
+  }
+
+   &:hover::after {
+      border-color: $color-black transparent;
+      transform:rotate(180deg);
+      transition: transform 1s, border 1s;
+   }
+}
+
+.menu-item.chosen-item.triangle::after {
+  border-color: $color-black transparent;
 }
 
 .dropout-menu {
@@ -38,16 +47,16 @@
   left: -25px;
   top: 57px;
   font-size: 20px;
-  color: black;
+  color: $color-black;
   background-color: $color-light-grey;
   list-style-type: none;
   width: 180px;
-  box-shadow: 0px 5px 10px -3px $color-dark-grey;
+  box-shadow: 0 5px 10px -3px $color-dark-grey;
   z-index: 10;
 
   &-item {
     padding: 2px 15px;
-    font-family: $font-dropout-menu;
+    font-family: $font-calibri;
     border-bottom: 2px solid $color-halfdark-grey;
     font-weight: bold;
     text-align: left;
@@ -62,15 +71,5 @@
   &-link {
     text-decoration: none;
     color: $color-black;
-  }
-}
-
-@media screen and (max-width: 1139px ) {
-  .menu-item.triangle::after {
-    display: none;
-  }
-
-  .menu-item:hover .dropout-menu {
-    display: none;
   }
 }

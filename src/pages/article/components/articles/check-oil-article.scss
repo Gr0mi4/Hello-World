@@ -1,14 +1,36 @@
 @import "../../../../styles/colors";
 @import "../../../../styles/fonts";
+@import "../../../../styles/media";
+
+.main {
+  @media #{$media-571} {
+  width: auto;
+  }
+}
+
 
 .article {
   display: inline-block;
   vertical-align: top;
   text-align: left;
-  font-family: sans-serif;
+  font-family: $font-serif;
   width: 100%;
   max-width: 1010px;
   border-bottom: 4px solid $color-grey;
+
+  @media #{$media-571} {
+    width: 90%;
+    margin: 0 5%;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 10px;
+  }
+
+  @media #{$media-320} {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 5px;
+  }
 }
 
 .hero-image {
@@ -20,6 +42,12 @@
   float: right;
   min-width: 480px;
   margin: 10px auto;
+
+  @media #{$media-571} {
+    width: 90%;
+    min-width: 180px;
+    margin: 10px;
+  }
 }
 
 .headline {
@@ -28,18 +56,28 @@
   font-style: oblique;
   display: inline-block;
   margin-bottom: 0;
+
+  @media #{$media-571} {
+    font-size: 22px;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  @media #{$media-320} {
+    font-size: 16px;
+  }
 }
 
 .text {
-  margin: 24px 0px 0px 0px;
+  margin: 24px 0 0 0;
   font-family: $font-body-text;
   font-size: 18px;
   line-height: 24px;
 }
 
 .numbered-list, .unnumbered-list {
-  padding: 0px;
-  margin: 24px 0px 0px 20px;
+  padding: 0;
+  margin: 24px 0 0 20px;
   font-family: $font-body-text;
   font-size: 18px;
   line-height: 24px;
@@ -47,8 +85,18 @@
 
 .headline-2 {
   font-size: 24px;
-  margin: 24px 0px 0px 0px;
+  margin: 24px 0 0 0;
   line-height: 30px;
+
+  @media #{$media-571} {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  @media #{$media-320} {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .quote {
@@ -60,62 +108,12 @@
   line-height: 32px;
   text-align: center;
   border: 4px dashed $color-orange;
-}
 
-@media screen and (max-width: 571px ) {
-  .article {
-    width: 90%;
-    margin: 0 5%;
-  }
-
-  .main {
-    width: auto;
-  }
-
-  .text, .unnumbered-list, .numbered-list {
-    font-size: 14px;
-    line-height: 16px;
-    margin-top: 10px;
-  }
-
-  .headline {
-    font-size: 22px;
-    margin: 0px;
-  }
-
-  .headline-2 {
-    font-size: 18px;
-    line-height: 20px;
-  }
-
-  .hero-image {
-    width: 90%;
-    min-width: 180px;
-    margin: 10px;
-  }
-
-  .quote {
+  @media #{$media-571} {
     width: 80%;
   }
-}
 
-@media screen and (max-width: 320px ) {
-  .headline {
-    font-size: 16px;
-  }
-
-  .headline-2 {
-    font-size: 12px;
-    line-height: 14px;
-  }
-
-  .text, .unnumbered-list, .numbered-list {
-    font-size: 10px;
-    line-height: 12px;
-    margin-top: 5px;
-  }
-
-  .quote {
+  @media #{$media-320} {
     font-size: 12px;
     line-height: 16px;
     padding: 5px;

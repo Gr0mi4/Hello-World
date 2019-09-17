@@ -1,9 +1,10 @@
 @import "../../../../styles/colors";
+@import "../../../../styles/media";
 
 .logo {
   width: 456px;
   height: 456px;
-  background-image: url(../../../src/images/ivangromovproduction.png);
+  background-image: url(../../images/ivangromovproduction.png);
   background-position: -10% 50%;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -11,12 +12,12 @@
   position: relative;
 }
 
-  @media screen and (max-width: 571px ) {
+  @media #{$media-571} {
     .logo {
       width: 67vw;
       height: 45vw;
       background-size: 80vw;
       background-repeat: no-repeat;
-      margin: 0px 16vw;
+      margin: 0 16vw;
     }
   }

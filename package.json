@@ -1,15 +1,15 @@
 {
   "name": "package",
   "version": "1.0.0",
-  "description": "First version",
-  "main": "index.js",
+  "description": "Personal auto-moto blog project",
   "devDependencies": {
+    "ncp": "^2.0.0",
     "rimraf": "^3.0.0",
     "sass": "^1.22.2"
   },
   "scripts": {
-    "build": "sass src/pages/:build/pages & sass src/styles:build/styles",
-    "watch": "sass --watch src/pages/:build/pages",
+    "build": "rimraf build && sass src/pages/:build/pages && ncp src/images build/images && ncp src/fonts build/fonts ",
+    "watch": "sass --watch src/:build/",
     "clean": "rimraf build"
   },
   "repository": {
@@ -20,5 +20,6 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Gr0mi4/Hello-World/issues"
-  }
+  },
+  "dependencies": {}
 }
