@@ -1,0 +1,49 @@
+@import "../../../styles/colors";
+@import "../../../styles/fonts";
+@import "../../../styles/media";
+
+.menu-item:hover .dropout-menu {
+  display: block;
+
+  @media #{$media-1139} {
+    display: none;
+  }
+}
+
+.menu-item.chosen-item.triangle::after {
+  border-color: $color-black transparent;
+}
+
+.dropout-menu {
+  display: none;
+  padding: 5px;
+  position: absolute;
+  left: -25px;
+  top: 57px;
+  font-size: 20px;
+  color: $color-black;
+  background-color: $color-light-grey;
+  list-style-type: none;
+  width: 180px;
+  box-shadow: 0 5px 10px -3px $color-dark-grey;
+  z-index: 10;
+
+  &-item {
+    padding: 2px 15px;
+    font-family: $font-calibri;
+    border-bottom: 2px solid $color-halfdark-grey;
+    font-weight: bold;
+    text-align: left;
+
+    &:hover {
+      background-color: $color-grey;
+      transition: background 0.5s;
+      cursor: pointer;
+    }
+  }
+
+  &-link {
+    text-decoration: none;
+    color: $color-black;
+  }
+}

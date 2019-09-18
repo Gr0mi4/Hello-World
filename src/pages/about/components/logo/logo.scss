@@ -1,0 +1,21 @@
+@import "../../../../styles/colors";
+@import "../../../../styles/media";
+
+.logo {
+  width: 456px;
+  height: 456px;
+  background-image: url(../../images/ivangromovproduction.png);
+  background-position: -10% 50%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  border: 1px solid $color-black;
+  position: relative;
+
+  @media #{$media-571} {
+    width: 67vw;
+    height: 45vw;
+    background-size: 80vw;
+    background-repeat: no-repeat;
+    margin: 0 16vw;
+  }
+}

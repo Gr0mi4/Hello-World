@@ -1,0 +1,81 @@
+@import "../../../styles/colors";
+@import "../../../styles/gradients";
+@import "../../../styles/fonts";
+@import "../../../styles/media";
+
+.blog-navigation {
+  background-image: $gradient-azure;
+  padding: 10px 0 60px 0;
+  font-family: $font-headline;
+  text-align: center;
+  width: 100%;
+}
+
+.page-name {
+  font-size: 50px;
+  color: $color-white;
+  text-decoration: none;
+  transition: color 1s;
+
+  &:hover {
+    color: $color-black;
+  }
+
+  @media #{$media-1139} {
+    font-size: 45px;
+  }
+
+  @media #{$media-571} {
+    font-size: 60px;
+  }
+}
+
+.decoration-img {
+  display: block;
+  height: 130px;
+  top: 18px;
+  position: absolute;
+
+  @media #{$media-1139} {
+    height: 105px;
+    top: 1%;
+  }
+
+  @media #{$media-704} {
+    height: 75px;
+  }
+
+  @media #{$media-571} {
+    display: none;
+  }
+
+  &:first-of-type {
+    width: 150px;
+    right: 7%;
+
+    @media #{$media-1139} {
+      width: 115px;
+      right: 2%;
+    }
+
+    @media #{$media-704} {
+      width: 85px;
+      right: 2%;
+    }
+  }
+
+  &:last-of-type {
+    width: 130px;
+    left: 7%;
+
+    @media #{$media-1139} {
+      width: 105px;
+      left: 5%;
+    }
+
+    @media #{$media-704} {
+      width: 75px;
+      left: 2%;
+    }
+  }
+}

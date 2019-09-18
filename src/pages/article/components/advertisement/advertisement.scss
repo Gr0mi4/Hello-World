@@ -1,0 +1,25 @@
+@import "../../../../styles/colors.scss";
+@import "../../../../styles/fonts.scss";
+@import "../../../../styles/media.scss";
+
+.advertisement {
+  top: 10px;
+  position: sticky;
+  display: inline-block;
+  width: 300px;
+  height: 600px;
+  background-color: $color-grey;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 600px;
+  font-family: $font-serif;
+  color: #555555;
+  margin-left: 40px;
+}
+
+@media #{$media-1415} {
+  .advertisement {
+    display: none;
+  }
+}

@@ -1,0 +1,115 @@
+@import "../../../../styles/colors";
+@import "../../../../styles/fonts";
+@import "../../../../styles/media";
+
+.story {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  font-family: $font-serif;
+  width: 100%;
+  max-width: 1010px;
+  border-bottom: 4px solid $color-grey;
+
+  @media #{$media-571} {
+    width: 90%;
+    margin: 0 5%;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 10px;
+  }
+
+  @media #{$media-320} {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 5px;
+  }
+}
+
+.hero-image {
+  display: block;
+  box-shadow: 0 0 5px 5px #eeeeee;
+  background-color: $color-white;
+  padding: 10px;
+  width: 100%;
+  float: right;
+  min-width: 480px;
+  margin: 10px auto;
+
+  @media #{$media-571} {
+    width: 90%;
+    min-width: 180px;
+    margin: 10px;
+  }
+}
+
+.headline {
+  text-align: center;
+  font-size: 30px;
+  font-style: oblique;
+  display: inline-block;
+  margin-bottom: 0;
+
+  @media #{$media-571} {
+    font-size: 22px;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  @media #{$media-320} {
+    font-size: 16px;
+  }
+}
+
+.text {
+  margin: 24px 0 0 0;
+  font-family: $font-body-text;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.numbered-list, .unnumbered-list {
+  padding: 0;
+  margin: 24px 0 0 20px;
+  font-family: $font-body-text;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.headline-2 {
+  font-size: 24px;
+  margin: 24px 0 0 0;
+  line-height: 30px;
+
+  @media #{$media-571} {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  @media #{$media-320} {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.quote {
+  max-width: 600px;
+  margin: 32px auto 0;
+  padding: 24px;
+  font-size: 24px;
+  font-style: italic;
+  line-height: 32px;
+  text-align: center;
+  border: 4px dashed $color-orange;
+
+  @media #{$media-571} {
+    width: 80%;
+  }
+
+  @media #{$media-320} {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 5px;
+    margin-top: 10px;
+  }
+}

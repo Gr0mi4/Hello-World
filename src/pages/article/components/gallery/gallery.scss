@@ -1,0 +1,137 @@
+@import "../../../../styles/colors";
+@import "../../../../styles/fonts";
+@import "../../../../styles/media";
+
+.gallery {
+  margin-top: 25px;
+  padding: 15px;
+
+  @media #{$media-571} {
+    margin-top: 0;
+  }
+}
+
+.gallery-headline {
+  font-size: 45px;
+  line-height: 55px;
+  background-image: linear-gradient(45deg, transparent, $color-grey, transparent);
+  font-family: $font-bernard;
+  text-align: center;
+  margin: 0;
+
+  @media #{$media-571} {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  border: 15px solid $color-black;
+  border-image: linear-gradient(to top, transparent, $color-grey, transparent);
+  border-image-slice: 1;
+  box-sizing: border-box;
+  padding: 10px;
+
+  @media #{$media-320} {
+    padding: 0px;
+  }
+}
+
+.article-figure {
+  margin: 20px 0;
+  padding: 10px;
+  width: 35%;
+  min-width: 150px;
+  height: auto;
+  box-shadow: 0 0 5px 5px #eeeeee;
+  background-color: $color-white;
+  transition: transform 0.6s, background-color 0.2s;
+  position: relative;
+  cursor: url('https://iconbird.com/png/download.php?id=47412&s=32'), zoom-in;
+
+  &:hover{
+    display: block;
+    transform: scale(1.20);
+    background-color: $color-grey;
+    z-index: 5;
+
+    & .image-description {
+      opacity: 1;
+
+      &::after {
+        opacity: 1;
+        transform: translateY(-38px);
+      }
+    }
+  }
+
+  @media #{$media-1139} {
+    padding: 5px;
+    max-height: 300px;
+  }
+
+  @media #{$media-320} {
+    margin: 5px 0px;
+  }
+}
+
+.article-image {
+  width: 100%;
+  height: 100%;
+  filter: saturate(150%);
+}
+
+.image-description {
+  opacity: 0;
+  font-size: 16px;
+  transition: opacity 0.5s;
+  text-align: center;
+  top: -30px;
+  position: relative;
+  z-index: 6;
+  color: $color-grey;
+  font-family: $font-vnbook;
+
+  &::after {
+    display: block;
+    position: absolute;
+    top: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    width: 100%;
+    height: 35px;
+    opacity: 0;
+    transition: transform 1s;
+    z-index: -5;
+
+    @media #{$media-1139} {
+      height: 50px
+    }
+
+    @media #{$media-571} {
+      top: 35px;
+      height: 35px
+    }
+  }
+
+  @media #{$media-1139} {
+    font-size: 1.5vw;
+    top: -45px;
+  }
+
+  @media #{$media-571} {
+    font-size: 2vw;
+    top: -35px;
+  }
+
+  @media #{$media-320} {
+    font-size: 3.5vw;
+    top: -35px;
+  }
+}

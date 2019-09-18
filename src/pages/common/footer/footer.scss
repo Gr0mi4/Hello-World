@@ -1,0 +1,21 @@
+@import "../../../styles/colors";
+@import "../../../styles/gradients";
+@import "../../../styles/media";
+
+.footer {
+  background-color: $color-grey;
+  background-image: $gradient-grey;
+  box-sizing: content-box;
+  padding: 35px 0 15px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.copyright {
+  font-size: 15px;
+  margin: 0;
+
+  @media #{$media-571} {
+    font-size: 11px;
+  }
+}

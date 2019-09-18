@@ -1,0 +1,98 @@
+@import "../../../../styles/colors";
+@import "../../../../styles/fonts";
+@import "../../../../styles/media";
+
+.post-theme-list {
+  margin: 0;
+  padding: 0;
+}
+
+.post-theme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90vw;
+  height: 300px;
+  border: 2px solid $color-grey;
+  border-radius: 10px;
+  margin: 10px auto;
+  background-position: 50% 50%;
+  background-size: 100%;
+  position: relative;
+
+  @media #{$media-1139} {
+    height: 200px;
+  }
+
+  @media #{$media-704} {
+    height: 150px;
+  }
+
+  @media #{$media-320} {
+    height: 100px;
+  }
+
+  & .headline {
+    color: $color-white;
+    font-family: $font-headline;
+    font-size: 72px;
+    position: absolute;
+    top: 20%;
+    left: 42%;
+    text-align: center;
+
+    @media #{$media-1139} {
+      top: 0;
+    }
+
+    @media #{$media-704} {
+      top: -15%;
+      left: 35%;
+    }
+
+    @media #{$media-571} {
+      font-size: 46px;
+      top: 1%;
+      left: 38%;
+    }
+
+    @media #{$media-320} {
+      font-size: 32px;
+      top: 1%;
+      left: 33%;
+    }
+  }
+}
+
+.cars {
+  background-image: url(../../../src/images/topics/r35.jpg);
+
+  & .headline {
+    left: 45%;
+  }
+}
+
+.bikes {
+  background-image: url(../../../src/images/topics/ktm.jpg);
+
+  & .headline {
+    color: $color-black;
+  }
+}
+
+.racing {
+  background-image: url(../../../src/images/topics/f2008.jpg);
+}
+
+.garage {
+  background-image: url(../../../src/images/topics/garage.jpg);
+}
+
+.community {
+  background-image: url(../../../src/images/topics/community.jpg);
+  background-position: 50% 20%;
+
+  & .headline {
+    left: 37%;
+  }
+}
