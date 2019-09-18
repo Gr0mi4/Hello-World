@@ -8,7 +8,9 @@
     "sass": "^1.22.2"
   },
   "scripts": {
-    "build": "rimraf build && sass src/pages/:build/pages && ncp src/images build/images && ncp src/fonts build/fonts ",
+    "build": "npm run clean && npm run build:styles && npm run build:assets ",
+    "build:styles" : "sass src/pages/:build/pages",
+    "build:assets" : "ncp src/images build/images",
     "watch": "sass --watch src/:build/",
     "clean": "rimraf build"
   },
