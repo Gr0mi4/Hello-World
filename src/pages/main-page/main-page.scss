@@ -1,9 +1,30 @@
-@import "../../styles/colors.scss";
-@import "../../styles/global.scss";
+@import "../../styles/colors";
+@import "../../styles/global";
+@import "../../styles/media";
 
 @import "../common/header/header";
 @import "../common/navigation/navigation";
 @import "../common/main/main";
-@import "components/main-page-settings/main-page-settings";
 @import "components/topic/topic";
 @import "../common/footer/footer";
+
+.main {
+  max-width: 1140px;
+
+  @media #{$media-1139} {
+    padding: 0;
+    max-width: 704px;
+  }
+
+  @media #{$media-704} {
+    max-width: 571px;
+  }
+
+  @media #{$media-571} {
+    width: auto;
+  }
+}
+
+.page-name {
+  color: $color-black;
+}

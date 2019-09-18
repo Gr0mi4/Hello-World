@@ -2,12 +2,6 @@
 @import "../../../../styles/fonts";
 @import "../../../../styles/media";
 
-.main {
-  @media #{$media-571} {
-  width: auto;
-  }
-}
-
 .story {
   display: inline-block;
   vertical-align: top;

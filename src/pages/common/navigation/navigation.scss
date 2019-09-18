@@ -47,12 +47,39 @@
       transition: background 1s, color 1s;
     }
 
+    &.triangle {
+      padding: 10px 30px;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        right: 5px;
+        top: 26px;
+        content: "";
+        border-style: solid;
+        border-width: 10px 9px 0 9px;
+        border-color: $color-white transparent;
+        transition: border 1s, transform 1s;
+
+        @media #{$media-1139} {
+          display: none;
+        }
+      }
+
+      &:hover::after {
+        border-color: $color-black transparent;
+        transform:rotate(180deg);
+        transition: transform 1s, border 1s;
+      }
+    }
+
     &-link {
       color: inherit;
       text-decoration: none;
     }
   }
 }
+
 
 .chosen-item {
   text-decoration: none;

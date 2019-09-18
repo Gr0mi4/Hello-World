@@ -7,3 +7,9 @@
 @import "components/advertisement/advertisement";
 @import "components/gallery/gallery";
 @import "../common/footer/footer";
+
+.main {
+  @media #{$media-571} {
+    width: auto;
+  }
+}
