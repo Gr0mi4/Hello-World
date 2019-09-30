@@ -3,6 +3,3 @@ node_modules/
 
 #ready css files directory
 build/
-
-#Hell knows what it is i suppose some WebStorm files
-.idea/

@@ -9,8 +9,8 @@
   },
   "scripts": {
     "build": "npm run clean && npm run build:styles && npm run build:assets ",
-    "build:styles": "sass src/pages/:build/pages",
-    "build:assets": "ncp src/images build/images",
+    "build:styles" : "sass src/pages/:build/pages",
+    "build:assets" : "ncp src/images build/images",
     "watch": "sass --watch src/:build/",
     "clean": "rimraf build"
   },
