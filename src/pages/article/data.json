@@ -34,6 +34,15 @@
       "content": "Проверка уровня масла, масло, мотоциклы, Suzuki, статья, мануал, как правильно"
     }
   ],
+  "sources" : [
+    {
+      "media": '(min-width: 571px)',
+      "srcset": '../../images/article/hero-image-718px.jpg 718w,
+                ../../images/article/hero-image-1142px.jpg 1142w,
+                ../../images/article/hero-image-1408px.jpg 1408w,
+                ../../images/article/hero-image.jpg 2199w'
+    }
+  ],
   "copyright" : "Все права защищены. Gromov Inc. 2019 Minsk",
   "headline" : " Как ПРАВИЛЬНО проверять уровень масла на Suzuki GS 500 96ого года'"
 }

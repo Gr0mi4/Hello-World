@@ -12,7 +12,11 @@ html(lang='ru')
     main.main
       article.story
         picture
-          source(media='(min-width: 571px)', srcset='../../images/article/hero-image-718px.jpg 718w,\
+
+          source(media= imgmedia,
+          srcset=
+          each source in imgsoureces
+          imgsoureces.source'../../images/article/hero-image-718px.jpg 718w,\
           ../../images/article/hero-image-1142px.jpg 1142w,\
           ../../images/article/hero-image-1408px.jpg 1408w,\
           ../../images/article/hero-image.jpg 2199w')
