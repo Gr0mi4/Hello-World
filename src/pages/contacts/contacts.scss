@@ -2,6 +2,11 @@
 @import "../../styles/global.scss";
 
 @import "../common/header/header";
-@import "../common/navigation/navigation";
+@import "../common/menu/menu";
 @import "components/contacts-table/contacts-table";
 @import "../common/footer/footer";
+
+.main {
+  box-sizing: border-box;
+  padding: 60px;
+}

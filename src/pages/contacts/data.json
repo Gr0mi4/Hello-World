@@ -1,5 +1,29 @@
 {
   "title": "Contacts",
+  "items" : [
+    {
+      "triangle": true,
+      "chosen": false,
+      "href": "../topics/index.html",
+      "name": "TOPICS",
+      "dropout": true
+    },
+    {
+      "triangle": false,
+      "chosen": true,
+      "href": "index.html",
+      "name": "CONTACTS",
+      "dropout": false
+    },
+    {
+      "triangle": false,
+      "chosen": false,
+      "href": "../about/index.html",
+      "name": "ABOUT",
+      "dropout": false
+    }
+  ],
+
   "metatags": [
     {
       "name": "description",

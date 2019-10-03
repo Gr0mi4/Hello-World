@@ -1,4 +1,38 @@
 {
-  "title": "Hello world",
+  "title": "About us",
+  "items" : [
+    {
+      "triangle": true,
+      "chosen": false,
+      "href": "../topics/index.html",
+      "name": "TOPICS",
+      "dropout": true
+    },
+    {
+      "triangle": false,
+      "chosen": false,
+      "href": "../contacts/index.html",
+      "name": "CONTACTS",
+      "dropout": false
+    },
+    {
+      "triangle": false,
+      "chosen": true,
+      "href": "../about/index.html",
+      "name": "ABOUT",
+      "dropout": false
+    }
+  ],
+
+  "metatags": [
+    {
+      "name": "description",
+      "content": "О создателе"
+    },
+    {
+      "name": "keywords",
+      "content": "Иван Громов, Создатель, Лого, Как нас найти"
+    }
+  ],
   "copyright" : "Все права защищены. Gromov Inc. 2019 Minsk"
 }

@@ -1,5 +1,39 @@
 {
-  "title": "Hello world",
+  "title": "Как ПРАВИЛЬНО проверять уровень масла на мотоцикле",
+  "items" : [
+    {
+      "triangle": true,
+      "chosen": false,
+      "href": "../topics/index.html",
+      "name": "TOPICS",
+      "dropout": true
+    },
+    {
+      "triangle": false,
+      "chosen": false,
+      "href": "../contacts/index.html",
+      "name": "CONTACTS",
+      "dropout": false
+    },
+    {
+      "triangle": false,
+      "chosen": false,
+      "href": "../about/index.html",
+      "name": "ABOUT",
+      "dropout": false
+    }
+  ],
+
+  "metatags": [
+    {
+      "name": "description",
+      "content": "Статья о правильности проверки уровня масла на мотоцикле Suzuki GS 500 96'"
+    },
+    {
+      "name": "keywords",
+      "content": "Проверка уровня масла, масло, мотоциклы, Suzuki, статья, мануал, как правильно"
+    }
+  ],
   "copyright" : "Все права защищены. Gromov Inc. 2019 Minsk",
   "headline" : " Как ПРАВИЛЬНО проверять уровень масла на Suzuki GS 500 96ого года'"
 }

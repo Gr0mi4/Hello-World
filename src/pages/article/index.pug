@@ -1,33 +1,14 @@
 doctype html
-html(lang='ru eng')
+html(lang='ru')
   head
     title= title
-    link(type='text/css', rel='stylesheet', href='../../../build/pages/article/article.css')
-    meta(charset='utf-8')
-    script.
-        <!-- Не удалять, нужно для лечения бага с перезагрузкой страницы в хроме-->
-    meta(name='keywords', content='Техника, Мотоциклы, GS500, Обслуживание')
-    meta(name='description', content='Сайт Ивана Громова, про Авто и Мото железо')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes')
+
+    link(type='text/css', rel='stylesheet', href='contacts.css')
+    script // Не удалять, нужно для лечения бага с перезагрузкой страницы в хроме
+    include ../common/metatags/metatags
+
   body
-    header.blog-navigation
-      a.page-name(href='../main-page/index.html') Iron Blog
-      nav.navigation
-        img.decoration-img(src='../../images/1.png')
-        img.decoration-img(src='../../images/2.png')
-        ul.menu
-          li.menu-item.triangle
-            a.menu-item-link(href='../topics/index.html') TOPICS
-            ul.dropout-menu
-              li.dropout-menu-item
-                a.dropout-menu-link(href='../article/index.html') Cars & Bikes
-              li.dropout-menu-item Racing
-              li.dropout-menu-item Garage
-              li.dropout-menu-item Community
-          li.menu-item
-            a.menu-item-link(href='../contacts/index.html') CONTACTS
-          li.menu-item
-            a.menu-item-link(href='../about/index.html') ABOUT
+    include ../common/header/header
     main.main
       article.story
         picture
@@ -96,5 +77,4 @@ html(lang='ru eng')
               ../../images/article/4-320px.jpg 320w', alt="Suzuki GS 500e 96' ")
               figcaption.image-description Suzuki GS 500e 96'
       aside.advertisement Advertisement
-    footer.footer
-      p.copyright Все права защищены. Gromov Inc. 2019 Minsk
+    include ../common/footer/footer

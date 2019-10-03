@@ -4,8 +4,22 @@
 @import "../../styles/fonts";
 
 @import "../common/header/header";
-@import "../common/navigation/navigation";
+@import "../common/menu/menu";
 @import "../common/main/main";
 @import "components/logo/logo";
 @import "components/snake-animation/snake-animation";
 @import "../common/footer/footer";
+
+.main {
+  box-sizing: border-box;
+  padding: 100px 0px;
+
+  @media #{$media-704} {
+    padding: 50px 0px;
+  }
+
+  @media #{$media-320} {
+    padding: 10px 0px;
+  }
+}
+

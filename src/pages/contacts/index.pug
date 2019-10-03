@@ -2,13 +2,15 @@ doctype html
 html(lang='ru')
   head
     title= title
-    link(type='text/css', rel='stylesheet', href='../../../build/pages/contacts/contacts.css')
+
+    link(type='text/css', rel='stylesheet', href='contacts.css')
+    script // Не удалять, нужно для лечения бага с перезагрузкой страницы в хроме
     include ../common/metatags/metatags
 
   body
     include ../common/header/header
 
     main.main
-      include ./components/contacts-table/contacts-table
+      include components/contacts-table/contacts-table
 
     include ../common/footer/footer

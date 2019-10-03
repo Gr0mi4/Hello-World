@@ -3,20 +3,7 @@
 
 @import "dropout-menu";
 
-.navigation {
-  color: $color-white;
-  font-size: 30px;
-  margin: 20px 0 0 0;
 
-  @media #{$media-1139} {
-    font-size: 30px;
-    margin-top: 5px;
-  }
-
-  @media #{$media-571} {
-    margin-top: 0;
-  }
-}
 
 .menu {
   padding: 0;
@@ -80,8 +67,7 @@
   }
 }
 
-
-.chosen-item {
+.chosen {
   text-decoration: none;
   border-radius: 10px;
   background-color: $color-azure-light;
