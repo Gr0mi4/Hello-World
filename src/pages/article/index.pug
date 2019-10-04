@@ -3,7 +3,7 @@ html(lang='ru')
   head
     title= title
 
-    link(type='text/css', rel='stylesheet', href='contacts.css')
+    link(type='text/css', rel='stylesheet', href='article.css')
     script // Не удалять, нужно для лечения бага с перезагрузкой страницы в хроме
     include ../common/metatags/metatags
 
@@ -12,73 +12,32 @@ html(lang='ru')
     main.main
       article.story
         picture
-
-          source(media= imgmedia,
-          srcset=
-          each source in imgsoureces
-          imgsoureces.source'../../images/article/hero-image-718px.jpg 718w,\
-          ../../images/article/hero-image-1142px.jpg 1142w,\
-          ../../images/article/hero-image-1408px.jpg 1408w,\
-          ../../images/article/hero-image.jpg 2199w')
-          source(srcset='../../images/article/hero-image-mob-320px.jpg 320w,\
-          ../../images/article/hero-image-mob-571px.jpg 571w,\
-          ../../images/article/hero-image-mob-1200px.jpg 1200w')
-          img.hero-image(src='../../images/article/hero-image-1408px.jpg', alt='yellow Suzuki GS 500 photo whith a headline')
-        h1.headline= headline
-        p.text
-          | Многие вещи в повседневном использовании техники кажуться нам до ужаса простыми. Ну в самом деле что может
-          | быть сложного в проверке уровня масла в мотоцикле? Но даже в такой простой операции могут быть различные ньюансы.
-          | (Например после закручивания заливной крышки щуп опускается на много ниже, чем если его просто опустить в картер)
-          | Что бы не допустить масляного голодания, в следствии того что вы не правильно поняли сколько масла в картере
-          | вашего
-          | мотоцикла, вот как описана данная операция в руководстве по ремонту Suzuki:
-        h2.headline-2
-          | Замена масла в мотоциле Suzuki GS 500 96' согласно мануала
-        ol.numbered-list
-          li  Едем на короткую прогулку - прогреваем мотор до нормальной температуры
-          li  Ставим на центральную подножку
-          li  Даем постоять пару минут
-          li  Достаем щуп, протираем салфеткой, возвращаем щуп на место, но НЕ ЗАКРУЧИВАЕМ!
-          li  Достаем обратно смотрим уровень
-          li  Доливаем до уровня F
-        p.text
-          | "Что тут может быть сложного?" - подумаете вы, и будете правы - сложного тут ничего нет. Но зато есть уйма вещей
-          | которые можно сделать не правильно. Например вот вам список того что неправильно делал лично я, пока не нашел
-          | данный мануал:
-        ul.unnumbered-list
-          li Зачастую смотрел уровень масла на холодную (не прогрев двигатель)
-          li Не ставил мотоцикл на центральную подножку, смотрел на боковой
-          li Закручивал масляную пробку при проверке (щуп опускался ниже чем должно быть)
-          li Доливал масло до среднего уровня, а не до уровня F (Full)
-        p.text  Резюмировать все вышесказанное можно довольно кратко:
-        blockquote.quote
-          | Перед тем как совать руки в свою любимую технику прочитайте мануал.
-        p.text
-          | Мне повезло и мое незнание не привело к ужасающим последствиям, но никто не знает как получиться
-          | у вас. Так что качайте мануал для своей техники и читайте как правильно: Менять свечи, масло, ГРМ и вообще
-          | обслуживать свою железяку. Не считайте себя умнее инженеров - это черевато). Всем мир!
+          each source in heroImageSources
+            source(media=source.media, srcset=source.srcset)
+          img.hero-image(src= heroImageSource, alt= heroImageAlt)
+        each section in content
+          if section.type === "headlineH1"
+            h1.headline= section.text
+          if section.type === "headlineH2"
+            h2.headline-2= section.text
+          if section.type ==="paragraph"
+            p.text= section.text
+          if section.type ==="orderedList"
+            ol.numbered-list
+            each item in section.items
+              li= item
+          if section.type ==="unorderedList"
+            ul.unnumbered-list
+            each item in section.items
+              li= item
+          if section.type ==="blockquote"
+            blockquote.quote= section.text
         .gallery
           h1.gallery-headline Gallery
           .images
-            figure.article-figure
-              img.article-image(src='../../images/article/1.jpg', srcset='../../images/article/1.jpg 666w,\
-              ../../images/article/1-320px.jpg 320w', sizes='(min-width: 571px) 35vw,\
-              (max-width: 570px) 50vw', alt="Two Suzuki's on the street")
-              figcaption.image-description Me and my friend having a ride
-            figure.article-figure
-              img.article-image(src='../../images/article/2.jpg', sizes='(min-width: 571px) 35vw,\
-              (max-width: 570px) 50vw', srcset='../../images/article/2.jpg 666w,\
-              ../../images/article/2-320px.jpg 320w', alt="Suzuki GSX 400 84' oil stick placement")
-              figcaption.image-description Suzuki GSX 400 84' oil stick placement
-            figure.article-figure
-              img.article-image(src='../../images/article/3.jpg', sizes='(min-width: 571px) 35vw,\
-              (max-width: 570px) 50vw', srcset='../../images/article/3.jpg 666w,\
-              ../../images/article/3-320px.jpg 320w', alt="Suzuki GSX 400 84' oil filter placement")
-              figcaption.image-description Suzuki GSX 400 84' oil filter placement
-            figure.article-figure
-              img.article-image(src='../../images/article/4.jpg', sizes='(min-width: 571px) 35vw,\
-              (max-width: 570px) 50vw', srcset='../../images/article/4.jpg 666w,\
-              ../../images/article/4-320px.jpg 320w', alt="Suzuki GS 500e 96' ")
-              figcaption.image-description Suzuki GS 500e 96'
+            each image in galleryImages
+              figure.article-figure
+                img.article-image(src=image.src, srcset=image.srcset, sizes=image.sizes, alt=image.alt)
+                figcaption.image-description= image.description
       aside.advertisement Advertisement
     include ../common/footer/footer

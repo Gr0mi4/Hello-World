@@ -1,3 +1,153 @@
 {
-  "title": "Hello world"
+  "title": "Main page of the Iron Blog",
+  "items" : [
+    {
+      "triangle": true,
+      "chosen": false,
+      "href": "../topics/index.html",
+      "name": "TOPICS",
+      "dropout": true
+    },
+    {
+      "triangle": false,
+      "chosen": false,
+      "href": "../contacts/index.html",
+      "name": "CONTACTS",
+      "dropout": false
+    },
+    {
+      "triangle": false,
+      "chosen": false,
+      "href": "../about/index.html",
+      "name": "ABOUT",
+      "dropout": false
+    }
+  ],
+  "metatags": [
+    {
+      "name": "description",
+      "content": "Главная страница Железного блога"
+    },
+    {
+      "name": "keywords",
+      "content": "Главная, Темы, Авто, Мото, Мотоциклы, Тюнинг, Автоспорт"
+    }
+  ],
+  "topics": [
+    {
+      "headline" : "Cars and Motorcycles",
+      "cards": [
+        {
+          "href": "../article/index.html",
+          "src": "../../images/h2r.jpg",
+          "alt": "Kawasaki H2R",
+          "headline": "  Move Hayabusa! New gamechanger is here",
+          "computerTime": "2019-08-07",
+          "userTime": "yesterday"
+        },
+        {
+          "href": "../article/index.html",
+          "src": "../../images/amggt.jpeg",
+          "alt": "Mercedes AMG GT",
+          "headline": "Mercedes AMG GT usage like drift-project platform ? Interesting",
+          "computerTime": "2019-08-06",
+          "userTime": "2 days ago"
+        },
+        {
+          "href": "../article/index.html",
+          "src": "../../images/488_pista.jpg",
+          "alt": "Ferrari 488 Pista",
+          "headline": " My opinion on Ferrari 488 Pista",
+          "computerTime": "2019-07-07",
+          "userTime": "month ago"
+        },
+        {
+          "href": "../article/index.html",
+          "src": "../../images/vette.jpg",
+          "alt": "Chevrolet Corvette 57'",
+          "headline": "Chevy Corvette. From C1 to C8, dreams and reality",
+          "computerTime": "2019-06-07",
+          "userTime": "two month ago"
+        }
+
+      ],
+      "seeMoreLink": "../topics/index.html"
+    },
+    {
+      "headline" : "Racing",
+      "cards": [
+        {
+          "href": "../article/index.html",
+          "src": "../../images/germangp.jpg",
+          "alt": "German Grand Prix Formula 1'",
+          "headline": "F1 German Grand Prix 2019. Best race of this season so far?",
+          "computerTime": "2019-08-07",
+          "userTime": "3 days ago"
+        },
+        {
+          "href": "../article/index.html",
+          "src": "../../images/rds5st.jpg",
+          "alt": "Russian Drift Series",
+          "headline": "Fifth stage of Russian Drift Series in Krasnoyarsk. Are you ready?",
+          "computerTime": "2019-08-06",
+          "userTime": "yesterday"
+        },
+        {
+          "href": "../article/index.html",
+          "src": "../../images/driftmasters.jpg",
+          "alt": "Driftmasters",
+          "headline": "Drifmaters 2019 Riga",
+          "computerTime": "2019-07-07",
+          "userTime": "month ago"
+        },
+        {
+          "href": "../article/index.html",
+          "src": "../../images/lahoysk.jpg",
+          "alt": "Belorussian Drift Championship",
+          "headline": "Belurussian Drift Championship 2019 Lahoysk",
+          "computerTime": "2019-06-07",
+          "userTime": " 2 weeks ago"
+        }
+      ],
+      "seeMoreLink": "../topics/index.html"
+    },{
+      "headline" : "Garage Stuff",
+      "cards": [
+        {
+          "href": "../article/index.html",
+          "src": "../../images/hydraulic.jpg",
+          "alt": "Hydraulic handbrake",
+          "headline": "Hydraulic handbrake with your own hands",
+          "computerTime": "2019-08-07",
+          "userTime": "week ago"
+        },
+        {
+          "href": "../article/index.html",
+          "src": "../../images/steering.jpg",
+          "alt": "Ford Sierra with additional steering angle",
+          "headline": "How can i get more steering angle from my 86' Ford Sierra",
+          "computerTime": "2019-08-06",
+          "userTime": "5 days ago"
+        },
+        {
+          "href": "../article/index.html",
+          "src": "../../images/488_pista.jpg",
+          "alt": "Ferrari 488 Pista",
+          "headline": " My opinion on Ferrari 488 Pista",
+          "computerTime": "2019-07-07",
+          "userTime": "month ago"
+        },
+        {
+          "href": "../article/index.html",
+          "src": "../../images/vette.jpg",
+          "alt": "Chevrolet Corvette 57'",
+          "headline": "Chevy Corvette. From C1 to C8, dreams and reality",
+          "computerTime": "2019-06-07",
+          "userTime": "two month ago"
+        }
+
+      ],
+      "seeMoreLink": "../topics/index.html"
+    }
+  ]
 }
