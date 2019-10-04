@@ -1,0 +1,13 @@
+each topic in topics
+  section.topic
+    h1.topic-headline= topic.headline
+    .card-wrapper
+      each card in topic.cards
+        a.card(href= card.href)
+          .card-image-wrapper
+            img.card-image(src= card.src, alt= card.alt)
+          .card-text
+            h2.card-headline= card.headline
+            time.card-article-date(datetime= card.computerTime)= card.userTime
+    a.see-more-link(href= topic.seeMoreLink)
+      | SEE MORE

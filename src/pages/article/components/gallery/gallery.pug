@@ -1,0 +1,7 @@
+.gallery
+  h1.gallery-headline Gallery
+  .images
+    each image in galleryImages
+      figure.article-figure
+        img.article-image(src=image.src, srcset=image.srcset, sizes=image.sizes, alt=image.alt)
+        figcaption.image-description= image.description

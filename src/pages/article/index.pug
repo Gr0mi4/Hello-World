@@ -10,34 +10,6 @@ html(lang='ru')
   body
     include ../common/header/header
     main.main
-      article.story
-        picture
-          each source in heroImageSources
-            source(media=source.media, srcset=source.srcset)
-          img.hero-image(src= heroImageSource, alt= heroImageAlt)
-        each section in content
-          if section.type === "headlineH1"
-            h1.headline= section.text
-          if section.type === "headlineH2"
-            h2.headline-2= section.text
-          if section.type ==="paragraph"
-            p.text= section.text
-          if section.type ==="orderedList"
-            ol.numbered-list
-            each item in section.items
-              li= item
-          if section.type ==="unorderedList"
-            ul.unnumbered-list
-            each item in section.items
-              li= item
-          if section.type ==="blockquote"
-            blockquote.quote= section.text
-        .gallery
-          h1.gallery-headline Gallery
-          .images
-            each image in galleryImages
-              figure.article-figure
-                img.article-image(src=image.src, srcset=image.srcset, sizes=image.sizes, alt=image.alt)
-                figcaption.image-description= image.description
-      aside.advertisement Advertisement
+      include components/story/story
+      include components/advertisement/advertisement
     include ../common/footer/footer

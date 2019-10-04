@@ -1,3 +1,58 @@
 {
-  "title": "Hello world"
+"title": "Topics of the Iron Blog",
+"items" : [
+{
+"triangle": false,
+"chosen": true,
+"href": "../topics/index.html",
+"name": "TOPICS",
+"dropout": false
+},
+{
+"triangle": false,
+"chosen": false,
+"href": "../contacts/index.html",
+"name": "CONTACTS",
+"dropout": false
+},
+{
+"triangle": false,
+"chosen": false,
+"href": "../about/index.html",
+"name": "ABOUT",
+"dropout": false
+}
+],
+"metatags": [
+{
+"name": "description",
+"content": "Основные темы Железного Блога"
+},
+{
+"name": "keywords",
+"content": " Темы, Автомобили, Мотоциклы, Тюнинг, Гараж, Автоспорт, Сообщество"
+}
+],
+"themes": [
+  {
+    "class": "cars",
+    "headline": "Cars"
+  },
+  {
+    "class": "bikes",
+    "headline": "Bikes"
+  },
+  {
+    "class": "racing",
+    "headline": "Racing"
+  },
+  {
+    "class": "garage",
+    "headline": "Garage"
+  },
+  {
+    "class": "community",
+    "headline": "Community"
+  }
+]
 }
