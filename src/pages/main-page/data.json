@@ -131,19 +131,19 @@
         },
         {
           "href": "../article/index.html",
-          "src": "../../images/488_pista.jpg",
-          "alt": "Ferrari 488 Pista",
-          "headline": " My opinion on Ferrari 488 Pista",
+          "src": "../../images/bashbar.jpg",
+          "alt": "Driftcar with BashBar",
+          "headline": "BashBar. What is it?",
           "computerTime": "2019-07-07",
-          "userTime": "month ago"
+          "userTime": "yesterday"
         },
         {
           "href": "../article/index.html",
-          "src": "../../images/vette.jpg",
-          "alt": "Chevrolet Corvette 57'",
-          "headline": "Chevy Corvette. From C1 to C8, dreams and reality",
+          "src": "../../images/wrap.jpg",
+          "alt": "SUV with a custom wrap",
+          "headline": "Design basics. Can i design wrapping?",
           "computerTime": "2019-06-07",
-          "userTime": "two month ago"
+          "userTime": "3 weeks ago"
         }
 
       ],

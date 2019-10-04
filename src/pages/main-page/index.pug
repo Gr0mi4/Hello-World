@@ -13,8 +13,8 @@ html(lang='ru')
     each topic in topics
       section.topic
         h1.topic-headline= topic.headline
-        each card in cards
-          .card-wrapper
+        .card-wrapper
+          each card in topic.cards
             a.card(href= card.href)
               .card-image-wrapper
                 img.card-image(src= card.src, alt= card.alt)
@@ -22,35 +22,5 @@ html(lang='ru')
                 h2.card-headline= card.headline
                 time.card-article-date(datetime= card.computerTime)= card.userTime
         a.see-more-link(href= topic.seeMoreLink)
-          | SEE MORE
-
-      section.topic
-        h1.topic-headline
-        .card-wrapper
-          a.card(href='../article/index.html')
-            .card-image-wrapper
-              img.card-image(src='', alt='Kawasaki H2R')
-            .card-text
-              h2.card-headline
-              time.card-article-date(datetime='2019-08-07')
-          a.card(href='../article/index.html')
-            .card-image-wrapper
-              img.card-image(src='', alt='Mercedes AMG GT')
-            .card-text
-              h2.card-headline
-              time.card-article-date(datetime='2019-08-07')
-          a.card(href='../article/index.html')
-            .card-image-wrapper
-              img.card-image(src='../../images/bashbar.jpg', alt='BashBar')
-            .card-text
-              h2.card-headline  BashBar. What is it?
-              time.card-article-date(datetime='2019-08-07') yesterday
-          a.card(href='../article/index.html')
-            .card-image-wrapper
-              img.card-image(src='../../images/wrap.jpg', alt="Chevrolet Corvette 57' ")
-            .card-text
-              h2.card-headline  Design basics. Can i design wrapping?
-              time.card-article-date(datetime='2019-08-07') yesterday
-        a.see-more-link(href='../article/index.html')
           | SEE MORE
     include ../common/footer/footer
