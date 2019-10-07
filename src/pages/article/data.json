@@ -1,5 +1,129 @@
 {
-  "title": "Hello world",
-  "copyright" : "Все права защищены. Gromov Inc. 2019 Minsk",
-  "headline" : " Как ПРАВИЛЬНО проверять уровень масла на Suzuki GS 500 96ого года'"
+  "title": "Как ПРАВИЛЬНО проверять уровень масла на мотоцикле",
+  "items" : [
+    {
+      "triangle": true,
+      "chosen": false,
+      "href": "../topics/index.html",
+      "name": "topics",
+      "dropout": true
+    },
+    {
+      "triangle": false,
+      "chosen": false,
+      "href": "../contacts/index.html",
+      "name": "contacts",
+      "dropout": false
+    },
+    {
+      "triangle": false,
+      "chosen": false,
+      "href": "../about/index.html",
+      "name": "about",
+      "dropout": false
+    }
+  ],
+
+  "metatags": [
+    {
+      "name": "description",
+      "content": "Статья о правильности проверки уровня масла на мотоцикле Suzuki GS 500 96'"
+    },
+    {
+      "name": "keywords",
+      "content": "Проверка уровня масла, масло, мотоциклы, Suzuki, статья, мануал, как правильно"
+    }
+  ],
+  "heroImageSources" : [
+    {
+      "media": "(min-width: 571px)",
+      "srcset": "../../images/article/hero-image-718px.jpg 718w, ../../images/article/hero-image-1142px.jpg 1142w, ../../images/article/hero-image-1408px.jpg 1408w, ../../images/article/hero-image.jpg 2199w"
+    },
+    {
+      "srcset": "../../images/article/hero-image-mob-320px.jpg 320w, ../../images/article/hero-image-mob-571px.jpg 571w, ../../images/article/hero-image-mob-1200px.jpg 1200w"
+    }
+  ],
+  "heroImageSource":  "../../images/article/hero-image-1408px.jpg",
+  "heroImageAlt": "yellow Suzuki GS 500 photo with a headline",
+  "content" : [
+    {
+      "type": "headline",
+      "text": " Как ПРАВИЛЬНО проверять уровень масла на Suzuki GS 500 96ого года'"
+    },
+    {
+      "type": "paragraph",
+      "text": " Многие вещи в повседневном использовании техники кажуться нам до ужаса простыми. Ну в самом деле что может быть сложного в проверке уровня масла в мотоцикле? Но даже в такой простой операции могут быть различные ньюансы. (Например после закручивания заливной крышки щуп опускается на много ниже, чем если его просто опустить в картер) Что бы не допустить масляного голодания, в следствии того что вы не правильно поняли сколько масла в картере вашего мотоцикла, вот как описана данная операция в руководстве по ремонту Suzuki:"
+    },
+    {
+      "type": "subHeadline",
+      "text": " Замена масла в мотоциле Suzuki GS 500 96' согласно мануала "
+    },
+    {
+      "type": "orderedList",
+      "items": [
+          "Едем на короткую прогулку - прогреваем мотор до нормальной температуры",
+          "Ставим на центральную подножку",
+          "Даем постоять пару минут",
+          "Достаем щуп, протираем салфеткой, возвращаем щуп на место, но НЕ ЗАКРУЧИВАЕМ!",
+          "Достаем обратно смотрим уровень",
+          "Доливаем до уровня F"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": " Что тут может быть сложного? - подумаете вы, и будете правы - сложного тут ничего нет. Но зато есть уйма вещей которые можно сделать не правильно. Например вот вам список того что неправильно делал лично я, пока не нашел данный мануал:"
+    },
+    {
+      "type": "unorderedList",
+      "items": [
+          "Зачастую смотрел уровень масла на холодную (не прогрев двигатель)",
+          "Не ставил мотоцикл на центральную подножку, смотрел на боковой",
+          "Закручивал масляную пробку при проверке (щуп опускался ниже чем должно быть)",
+          "Доливал масло до среднего уровня, а не до уровня F (Full)"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": " Резюмировать все вышесказанное можно довольно кратко:"
+    },
+    {
+      "type": "blockquote",
+      "text": "Перед тем как совать руки в свою любимую технику прочитайте мануал."
+    },
+    {
+      "type": "paragraph",
+      "text": "Мне повезло и мое незнание не привело к ужасающим последствиям, но никто не знает как получиться у вас. Так что качайте мануал для своей техники и читайте как правильно: Менять свечи, масло, ГРМ и вообще обслуживать свою железяку. Не считайте себя умнее инженеров - это черевато). Всем мир!"
+    }
+  ],
+  "galleryImages" :
+[
+  {
+    "src": "../../images/article/1.jpg",
+    "srcset": "../../images/article/1.jpg 666w, ../../images/article/1-320px.jpg 320w",
+    "sizes": "(min-width: 571px) 35vw, (max-width: 570px) 50vw",
+    "alt": "Two Suzuki's on the street",
+    "description": "Me and my friend having a ride"
+  },
+  {
+    "src": "../../images/article/2.jpg",
+    "srcset": "../../images/article/2.jpg 666w, ../../images/article/2-320px.jpg 320w",
+    "sizes": "(min-width: 571px) 35vw, (max-width: 570px) 50vw",
+    "alt": "Suzuki GSX 400 84' oil stick placement",
+    "description": "Suzuki GSX 400 84' oil stick placement"
+  },
+  {
+    "src": "../../images/article/3.jpg",
+    "srcset": "../../images/article/3.jpg 666w, ../../images/article/3-320px.jpg 320w",
+    "sizes": "(min-width: 571px) 35vw, (max-width: 570px) 50vw",
+    "alt": "Suzuki GSX 400 84' oil filter placement",
+    "description": "Suzuki GSX 400 84' oil filter placement"
+  },
+  {
+    "src": "../../images/article/4.jpg",
+    "srcset": "../../images/article/4.jpg 666w, ../../images/article/4-320px.jpg 320w",
+    "sizes": "(min-width: 571px) 35vw, (max-width: 570px) 50vw",
+    "alt": "My Suzuki GS 500e 96' on the street",
+    "description": "Suzuki GS 500e 96'"
+  }
+]
 }

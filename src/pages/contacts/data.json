@@ -1,4 +1,81 @@
 {
-  "title" : "Hello world",
-  "phone" : "+375 44 556 8756"
+  "title": "Contacts",
+  "items" : [
+    {
+      "triangle": true,
+      "chosen": false,
+      "href": "../topics/index.html",
+      "name": "topics",
+      "dropout": true
+    },
+    {
+      "triangle": false,
+      "chosen": true,
+      "href": "index.html",
+      "name": "contacts",
+      "dropout": false
+    },
+    {
+      "triangle": false,
+      "chosen": false,
+      "href": "../about/index.html",
+      "name": "about",
+      "dropout": false
+    }
+  ],
+
+  "metatags": [
+    {
+      "name": "description",
+      "content": "Контактные данные Ивана Громова"
+    },
+    {
+      "name": "keywords",
+      "content": "Иван Громов, контакты, адрес электронной почты, телефон, email, Facebook, Instagram, Telegram, Viber"
+    }
+  ],
+  "contacts": [
+    {
+      "type": "Cell phone #",
+      "link": "tel:+375445568756",
+      "value": "+375 44 556 8756",
+      "phone": true
+    },
+    {
+      "type": "Office phone #",
+      "link": "tel:+375445568756",
+      "value": "+375 232 601 817",
+      "phone": true
+    },
+    {
+      "type": "Email",
+      "link": "mailto:ivangromov1993@gmail.com?subject=Your%20Website%20is%20awesome!&body=Ivan%20please%20marry%20me!!!",
+      "value": "ivangromov1993@gmail.com",
+      "phone": false
+    },
+    {
+      "type": "Facebook",
+      "link": "https://www.facebook.com/ivan.gromov.9678",
+      "value": "ivan.gromov.9678",
+      "phone": false
+    },
+    {
+      "type": "Instagram",
+      "link": "https://www.instagram.com/gr0mi4",
+      "value": "gr0mi4",
+      "phone": false
+    },
+    {
+      "type": "Telegram",
+      "link": "https://t.me/gr0mi4",
+      "value": "gr0mi4",
+      "phone": false
+    },
+    {
+      "type": "Viber",
+      "link": "tel:+375445568756",
+      "value": "+375 44 556 8756",
+      "phone": true
+    }
+  ]
 }

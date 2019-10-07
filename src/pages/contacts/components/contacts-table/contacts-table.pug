@@ -1,0 +1,21 @@
+table.contacts-table(cellspacing='0')
+  caption.contacts-caption Contacts
+  thead.contacts-head
+    tr.contacts-row
+      th.contacts-cell Type
+      th.contacts-cell Details
+
+  tbody.contacts-body
+    each contact in contacts
+      tr.contacts-row
+        td.contacts-cell= contact.type
+        td.contacts-cell
+          a(
+            class={
+              phone: contact.phone,
+              link: !contact.phone
+            },
+            href=contact.link,
+            target=contact.phone ? '_self' : '_blank'
+          )= contact.value
+

@@ -1,0 +1,8 @@
+section.topic
+  h1.topic-headline= topic.headline
+  .card-wrapper
+    each card in topic.cards
+      include ../card/card
+
+  a.see-more-link(href= topic.seeMoreLink)
+   | SEE MORE

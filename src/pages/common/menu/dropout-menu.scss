@@ -10,7 +10,7 @@
   }
 }
 
-.menu-item.chosen-item.triangle::after {
+.menu-item.chosen.triangle::after {
   border-color: $color-black transparent;
 }
 
@@ -18,15 +18,16 @@
   display: none;
   padding: 5px;
   position: absolute;
-  left: -25px;
-  top: 57px;
+  left: -13px;
+  top: 35px;
   font-size: 20px;
   color: $color-black;
   background-color: $color-light-grey;
   list-style-type: none;
-  width: 180px;
+  width: 160px;
   box-shadow: 0 5px 10px -3px $color-dark-grey;
   z-index: 10;
+  text-transform: capitalize;
 
   &-item {
     padding: 2px 15px;

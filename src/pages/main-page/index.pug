@@ -2,119 +2,14 @@ doctype html
 html(lang='ru')
   head
     title= title
+
     link(type='text/css', rel='stylesheet', href='main-page.css')
-    meta(charset='utf-8')
-    script.
-        <!-- Не удалять, нужно для лечения бага с перезагрузкой страницы в хроме-->
-    meta(name='keywords', content='Техника, Мотоциклы, GS500, Обслуживание')
-    meta(name='description', content='Сайт Ивана Громова, про Авто и Мото железо')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes')
+    script // Не удалять, нужно для лечения бага с перезагрузкой страницы в хроме
+    include ../common/metatags/metatags
+
   body
-    header.blog-navigation
-      a.page-name(href='index.html') Iron Blog
-      nav.navigation
-        img.decoration-img(src='../../images/1.png')
-        img.decoration-img(src='../../images/2.png')
-        ul.menu
-          li.menu-item.triangle
-            a.menu-item-link(href='../topics/index.html') TOPICS
-            ul.dropout-menu
-              li.dropout-menu-item
-                a.dropout-menu-link(href='../article/index.html') Cars & Bikes
-              li.dropout-menu-item Racing
-              li.dropout-menu-item Garage
-              li.dropout-menu-item Community
-          li.menu-item
-            a.menu-item-link(href='../contacts/index.html') CONTACTS
-          li.menu-item
-            a.menu-item-link(href='../about/index.html') ABOUT
+    include ../common/header/header
     main.main
-      section.topic
-        h1.topic-headline  Cars and Motorcycles
-        .card-wrapper
-          a.card
-            .card-image-wrapper
-              img.card-image(src='../../images/h2r.jpg', alt='Kawasaki H2R')
-            .card-text
-              h2.card-headline  Move Hayabusa! New gamechanger is here
-              time.card-article-date(datetime='2019-08-07') yesterday
-          a.card(href='../article/index.html')
-            .card-image-wrapper
-              img.card-image(src='../../images/amggt.jpeg', alt='Mercedes AMG GT')
-            .card-text
-              h2.card-headline  Mercedes AMG GT usage like drift-project platform ? Intersting
-              time.card-article-date(datetime='2019-08-07') 2 days ago
-          a.card(href='../article/index.html')
-            .card-image-wrapper
-              img.card-image(src='../../images/488_pista.jpg', alt='Ferrari 488 Pista')
-            .card-text
-              h2.card-headline  My opinion on Ferrari 488 Pista
-              time.card-article-date(datetime='2019-08-07') month ago
-          a.card(href='../pages/article/index.html')
-            .card-image-wrapper
-              img.card-image(src='../../images/vette.jpg', alt="Chevrolet Corvette 57' ")
-            .card-text
-              h2.card-headline  Chevy Corvette. From C1 to C8, dreams and reality
-              time.card-article-date(datetime='2019-08-07') yesterday
-        a.see-more-link(href='../article/index.html')
-          | SEE MORE
-      section.topic
-        h1.topic-headline  Racing
-        .card-wrapper
-          a.card(href='../article/index.html')
-            .card-image-wrapper
-              img.card-image(src='../../images/germangp.jpg', alt='German Grand Prix Formula 1')
-            .card-text
-              h2.card-headline  F1 German Grand Prix 2019. Best race of this season so far?
-              time.card-article-date(datetime='2019-08-07') 3 days ago
-          a.card(href='../article/index.html')
-            .card-image-wrapper
-              img.card-image(src='../../images/rds5st.jpg', alt='Russian Drift Series')
-            .card-text
-              h2.card-headline  Fifth stage of Russian Drift Series in Krasnoyarsk. Are you ready?
-              time.card-article-date(datetime='2019-08-07') yesterday
-          a.card(href='../article/index.html')
-            .card-image-wrapper
-              img.card-image(src='../../images/driftmasters.jpg', alt='Driftmasters')
-            .card-text
-              h2.card-headline  Drifmaters 2019 Riga
-              time.card-article-date(datetime='2019-08-07') week ago
-          a.card(href='../article/index.html')
-            .card-image-wrapper
-              img.card-image(src='../../images/lahoysk.jpg', alt='Belorussian Drift Championship ')
-            .card-text
-              h2.card-headline  Belurussian Drift Championship 2019 Lahoysk
-              time.card-article-date(datetime='2019-08-07') 2 weks ago
-        a.see-more-link(href='../article/index.html')
-          | SEE MORE
-      section.topic
-        h1.topic-headline  Garage Stuff
-        .card-wrapper
-          a.card(href='../article/index.html')
-            .card-image-wrapper
-              img.card-image(src='../../images/hydraulic.jpg', alt='Kawasaki H2R')
-            .card-text
-              h2.card-headline  Hydraulic handbrake with your own hands
-              time.card-article-date(datetime='2019-08-07') week ago
-          a.card(href='../article/index.html')
-            .card-image-wrapper
-              img.card-image(src='../../images/steering.jpg', alt='Mercedes AMG GT')
-            .card-text
-              h2.card-headline  How can i get more steering angle from my 86' Ford Sierra
-              time.card-article-date(datetime='2019-08-07') 5 days ago
-          a.card(href='../article/index.html')
-            .card-image-wrapper
-              img.card-image(src='../../images/bashbar.jpg', alt='BashBar')
-            .card-text
-              h2.card-headline  BashBar. What is it?
-              time.card-article-date(datetime='2019-08-07') yesterday
-          a.card(href='../article/index.html')
-            .card-image-wrapper
-              img.card-image(src='../../images/wrap.jpg', alt="Chevrolet Corvette 57' ")
-            .card-text
-              h2.card-headline  Design basics. Can i design wrapping?
-              time.card-article-date(datetime='2019-08-07') yesterday
-        a.see-more-link(href='../article/index.html')
-          | SEE MORE
-    footer.footer
-      p.copyright Все права защищены. Gromov Inc. 2019 Minsk
+      each topic in topics
+        include components/topic/topic
+    include ../common/footer/footer
