@@ -27,6 +27,7 @@
   width: 160px;
   box-shadow: 0 5px 10px -3px $color-dark-grey;
   z-index: 10;
+  text-transform: capitalize;
 
   &-item {
     padding: 2px 15px;

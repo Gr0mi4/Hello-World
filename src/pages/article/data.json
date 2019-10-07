@@ -5,21 +5,21 @@
       "triangle": true,
       "chosen": false,
       "href": "../topics/index.html",
-      "name": "TOPICS",
+      "name": "topics",
       "dropout": true
     },
     {
       "triangle": false,
       "chosen": false,
       "href": "../contacts/index.html",
-      "name": "CONTACTS",
+      "name": "contacts",
       "dropout": false
     },
     {
       "triangle": false,
       "chosen": false,
       "href": "../about/index.html",
-      "name": "ABOUT",
+      "name": "about",
       "dropout": false
     }
   ],
@@ -47,7 +47,7 @@
   "heroImageAlt": "yellow Suzuki GS 500 photo with a headline",
   "content" : [
     {
-      "type": "headlineH1",
+      "type": "headline",
       "text": " Как ПРАВИЛЬНО проверять уровень масла на Suzuki GS 500 96ого года'"
     },
     {
@@ -55,7 +55,7 @@
       "text": " Многие вещи в повседневном использовании техники кажуться нам до ужаса простыми. Ну в самом деле что может быть сложного в проверке уровня масла в мотоцикле? Но даже в такой простой операции могут быть различные ньюансы. (Например после закручивания заливной крышки щуп опускается на много ниже, чем если его просто опустить в картер) Что бы не допустить масляного голодания, в следствии того что вы не правильно поняли сколько масла в картере вашего мотоцикла, вот как описана данная операция в руководстве по ремонту Suzuki:"
     },
     {
-      "type": "headlineH2",
+      "type": "subHeadline",
       "text": " Замена масла в мотоциле Suzuki GS 500 96' согласно мануала "
     },
     {

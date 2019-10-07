@@ -4,20 +4,20 @@ article.story
       source(media=source.media, srcset=source.srcset)
     img.hero-image(src= heroImageSource, alt= heroImageAlt)
   each section in content
-    if section.type === "headlineH1"
+    if section.type === "headline"
       h1.headline= section.text
-    if section.type === "headlineH2"
+    if section.type === "subHeadline"
       h2.headline-2= section.text
-    if section.type ==="paragraph"
+    if section.type === "paragraph"
       p.text= section.text
-    if section.type ==="orderedList"
+    if section.type === "orderedList"
       ol.numbered-list
       each item in section.items
         li= item
-    if section.type ==="unorderedList"
+    if section.type === "unorderedList"
       ul.unnumbered-list
       each item in section.items
         li= item
-    if section.type ==="blockquote"
+    if section.type === "blockquote"
       blockquote.quote= section.text
   include ../gallery/gallery

@@ -10,5 +10,6 @@ html(lang='ru')
   body
     include ../common/header/header
     main.main
-      include components/topic/topic
+      each topic in topics
+        include components/topic/topic
     include ../common/footer/footer

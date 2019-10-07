@@ -1,5 +1,5 @@
 each menu in items
-  li.menu-item(class={triangle: menu.triangle} class={chosen: menu.chosen})
+  li.menu-item(class={triangle: menu.triangle, chosen: menu.chosen})
     a.menu-item-link(href=menu.href)= menu.name
     if menu.dropout
       include dropout-menu

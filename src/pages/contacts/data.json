@@ -5,21 +5,21 @@
       "triangle": true,
       "chosen": false,
       "href": "../topics/index.html",
-      "name": "TOPICS",
+      "name": "topics",
       "dropout": true
     },
     {
       "triangle": false,
       "chosen": true,
       "href": "index.html",
-      "name": "CONTACTS",
+      "name": "contacts",
       "dropout": false
     },
     {
       "triangle": false,
       "chosen": false,
       "href": "../about/index.html",
-      "name": "ABOUT",
+      "name": "about",
       "dropout": false
     }
   ],

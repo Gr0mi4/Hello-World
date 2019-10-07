@@ -16,6 +16,7 @@
     border-radius: 10px;
     padding: 10px;
     transition: color 1s, background 1s;
+    text-transform: uppercase;
 
     @media #{$media-1139} {
       margin: 12px 1vw 5px;
