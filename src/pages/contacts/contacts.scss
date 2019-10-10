@@ -6,3 +6,7 @@
 @import "components/contacts-table/contacts-table";
 @import "components/feedback-form/feedback-form";
 @import "../common/footer/footer";
+
+.main {
+  box-sizing: border-box;
+}
