@@ -1,11 +1,16 @@
 .feedback
-  form
-    input.input-name(type='text' name='input-name')
-    input.input-email(type="email" name="input-email")
-    input.rating(type="radio" name="rating1")
-    input.rating(type="radio" name="rating2")
-    input.rating(type="radio" name="rating3")
-    input.rating(type="radio" name="rating4")
-    input.rating(type="radio" name="rating5")
-    input.chose-country(type="select" name="country")
-    input.message(type="textarea" name="message")
+  h1.headline Please leave your feedback
+  form.input
+    input.input-name(type='text' name='input-name' placeholder='name' size='25')
+    input.input-email(type="email" name="input-email" placeholder='email' size='25')
+    h2.sub-headline Rating
+    input.input-rating(type="radio" name="rating1")
+    input.input-rating(type="radio" name="rating2")
+    input.input-rating(type="radio" name="rating3")
+    input.input-rating(type="radio" name="rating4")
+    input.input-rating(type="radio" name="rating5")
+    h2.sub-headline Please choose your country
+    input.input-chose-country(type="select" name="country")
+    h2.sub-headline Leave a message. It's important for us!
+    textarea.input-message(name="message" cols="15" rows="15")
+    input.input-submit-button(type='submit' name='submit-button' value="submit")

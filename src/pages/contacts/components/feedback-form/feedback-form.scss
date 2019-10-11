@@ -1,9 +1,49 @@
+@import "../../../../styles/colors";
+@import "../../../../styles/fonts";
+@import "../../../../styles/media";
+
 .feedback {
   display: flex;
   flex-direction: column;
-  margin: 10px auto;
+  margin: 50px auto;
+  width: 40%;
+  border: 5px solid $color-azure;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 100px;
 }
 
-.input-name {
-  margin: 0 auto;
+.input {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+
+  &-name {
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    border-bottom: 3px dashed $color-dark-grey;
+
+  }
+
+  &-email {
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-bottom: 3px dashed $color-dark-grey;
+  }
+
+  &-message {
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-bottom: 3px dashed $color-dark-grey;
+  }
 }
+
+.sub-headline {
+  margin: 5px;
+
+}
+
+

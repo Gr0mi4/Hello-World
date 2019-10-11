@@ -13,6 +13,7 @@
     "build:styles": "sass src/pages/:build/pages",
     "build:assets": "ncp src/images build/images && ncp src/styles build/styles",
     "watch": "sass --watch src/:build/",
+    "pugWatchContacts": "pug --watch src/pages/contacts/index.pug -P -o build/pages/contacts -O src/pages/contacts/data.json",
     "clean": "rimraf build",
     "build:html": "npm run pug:about && npm run pug:article && npm run pug:contacts && npm run pug:main-page && npm run pug:topics",
     "pug:about": "pug src/pages/about/index.pug -P -o build/pages/about -O src/pages/about/data.json",
