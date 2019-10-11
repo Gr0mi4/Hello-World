@@ -6,11 +6,11 @@
   display: flex;
   flex-direction: column;
   margin: 50px auto;
-  width: 40%;
+  width: 35%;
   border: 5px solid $color-azure;
   border-radius: 15px;
   box-sizing: border-box;
-  padding: 100px;
+  padding: 20px 40px;
 }
 
 .input {
@@ -23,6 +23,7 @@
     padding: 10px;
     border: none;
     border-bottom: 3px dashed $color-dark-grey;
+    font-size: 18px;
 
   }
 
@@ -31,6 +32,7 @@
     padding: 10px;
     border: none;
     border-bottom: 3px dashed $color-dark-grey;
+    font-size: 18px;
   }
 
   &-message {
@@ -38,12 +40,36 @@
     padding: 10px;
     border: none;
     border-bottom: 3px dashed $color-dark-grey;
+    font-size: 14px;
   }
+
+  &-rating {
+    margin: 10px;
+    background-image: url("../../images/contacts/4yellowStars.png");
+  }
+
+  &-submit-button {
+    background-color: #2bc6dc;
+    font-family: $font-calibri;
+    font-size: 24px;
+    color: #fff;
+    text-transform: capitalize;
+    height: 45px;
+    width: 120px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0px 0px auto;
+  }
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
 }
 
 .sub-headline {
   margin: 5px;
-
 }
 
 
