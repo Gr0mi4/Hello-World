@@ -1,16 +1,25 @@
 @import "../../../../styles/colors";
 @import "../../../../styles/fonts";
 @import "../../../../styles/media";
+@import "../../../../styles/gradients";
 
 .feedback {
   display: flex;
   flex-direction: column;
   margin: 50px auto;
-  width: 35%;
+  width: 500px;
   border: 5px solid $color-azure;
   border-radius: 15px;
   box-sizing: border-box;
   padding: 20px 40px;
+
+  @media #{$media-704} {
+    width: 400px;
+  }
+
+  @media #{$media-571} {
+    width: 300px;
+  }
 }
 
 .input {
@@ -25,6 +34,18 @@
     border-bottom: 3px dashed $color-dark-grey;
     font-size: 18px;
 
+    @media #{$media-704} {
+      font-size: 14px;
+    }
+
+    @media #{$media-571} {
+      font-size: 10px;
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom: 4px solid $color-azure;
+    }
   }
 
   &-email {
@@ -33,6 +54,19 @@
     border: none;
     border-bottom: 3px dashed $color-dark-grey;
     font-size: 18px;
+
+    @media #{$media-704} {
+      font-size: 14px;
+    }
+
+    @media #{$media-571} {
+      font-size: 10px;
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom: 4px solid $color-azure;
+    }
   }
 
   &-message {
@@ -41,11 +75,67 @@
     border: none;
     border-bottom: 3px dashed $color-dark-grey;
     font-size: 14px;
+    resize: none;
+
+    @media #{$media-704} {
+      font-size: 12px;
+    }
+
+    @media #{$media-571} {
+      font-size: 8px;
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom: 4px solid $color-azure;
+    }
   }
 
   &-rating {
     margin: 10px;
-    background-image: url("../../images/contacts/4yellowStars.png");
+    position: relative;
+    visibility: hidden;
+
+    &:before {
+      display: block;
+      border: 2px solid $color-azure ;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      content: "";
+      visibility: visible;
+      background-color: $color-white;
+    }
+
+    &:checked:after {
+      display: block;
+      position: relative;
+      top: -19px;
+      left: 5px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      content: "";
+      visibility: visible;
+      background-color: $color-azure;
+    }
+
+    &:checked + .rating-label > .rating-img{
+      filter: none;
+    }
+  }
+
+  &-chose-country {
+    width: 180px;
+    height: 35px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 0 6px $color-azure;
+    font-family: $font-serif;
+    font-size: 16px;
+    background-image: $gradient-grey;
   }
 
   &-submit-button {
@@ -58,18 +148,94 @@
     width: 120px;
     border: none;
     border-radius: 10px;
-    margin: 10px 0px 0px auto;
+    margin: 10px 0 0 auto;
+    outline: none;
+
+    @media #{$media-704} {
+      height: 35px;
+      width: 280px;
+      font-size: 20px;
+      margin: 5px auto 0 auto;
+    }
+
+    @media #{$media-704} {
+      width: 180px;
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
   }
 }
 
 .rating {
   display: flex;
   flex-direction: column;
-  margin: 15px;
+  margin: 10px 0 10px 120px;
+  position: relative;
+
+  @media #{$media-704} {
+    margin: 10px 0 10px 60px;
+  }
+
+  @media #{$media-571} {
+    margin: 10px 0 10px 20px;
+  }
+}
+
+.headline {
+  font-family: $font-headline;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 160px;
+
+  @media #{$media-704} {
+    margin-top: 80px;
+  }
 }
 
 .sub-headline {
   margin: 5px;
+  font-family: $font-headline;
+  font-size: 24px;
+  font-weight: lighter;
+
+  @media #{$media-704} {
+    font-size: 20px;
+  }
 }
 
+.rating-img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 40px;
+  filter: grayscale(100%);
+  top: 5px;
 
+
+  &-2 {
+    width: 60px;
+    top: 38px;
+  }
+
+  &-3 {
+    width: 90px;
+    top: 71px;
+  }
+
+  &-4 {
+    width: 120px;
+    top: 104px;
+  }
+
+  &-5 {
+    width: 150px;
+    top: 137px;
+  }
+}
+
+.country-chose {
+  display: flex;
+  flex-direction: row;
+}

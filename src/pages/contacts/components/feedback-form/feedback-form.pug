@@ -1,17 +1,32 @@
-.feedback
-  h1.headline Please leave your feedback
-  form.input
+h1.headline Please leave your feedback
+.feedback(id="leaveFeedback")
+  form.input(action="huiznaetkuda.by" method="post")
     input.input-name(type='text' name='input-name' placeholder='name' size='35')
     input.input-email(type="email" name="input-email" placeholder='email' size='35')
     h2.sub-headline Rating
-      .rating
-        input.input-rating(type="radio" name="rating1")
-        input.input-rating(type="radio" name="rating2")
-        input.input-rating(type="radio" name="rating3")
-        input.input-rating(type="radio" name="rating4")
-        input.input-rating(type="radio" name="rating5")
-    h2.sub-headline Please choose your country
-    input.input-chose-country(type="select" name="country")
+    .rating
+      input.input-rating(type="radio" name="rating" value="1" id="star1")
+      label.rating-label(for="star1")
+        img.rating-img(src="../../images/contacts/yellowStar.png")
+      input.input-rating(type="radio" name="rating" value="2" id="star2")
+      label.rating-label(for="star2")
+        img.rating-img.rating-img-2(src="../../images/contacts/2yellowStars.png")
+      input.input-rating(type="radio" name="rating" value="3" id="star3")
+      label.rating-label(for="star3")
+        img.rating-img.rating-img-3(src="../../images/contacts/3yellowStars.png")
+      input.input-rating(type="radio" name="rating" value="4" id="star4")
+      label.rating-label(for="star4")
+        img.rating-img.rating-img-4(src="../../images/contacts/4yellowStars.png")
+      input.input-rating(type="radio" name="rating" value="5" id="star5" checked)
+      label.rating-label(for="star5")
+        img.rating-img.rating-img-5(src="../../images/contacts/5yellowStars.png")
+    .country-chose
+      h2.sub-headline Please choose your country
+      select.input-chose-country(name="country")
+        option(value="Belarus") Belarus
+        option(value="Russia") Russia
+        option(value="Gvatelupa") Gvatelupa
+        option(value="Zimbabwe") Zimbabwe
     h2.sub-headline Leave a message. It's important for us!
     textarea.input-message(name="message" cols="40" rows="5")
     input.input-submit-button(type='submit' name='submit-button' value="submit")

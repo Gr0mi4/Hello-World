@@ -9,9 +9,13 @@
   letter-spacing: 3px;
   border-radius: 20px;
 
+  @media #{$media-704} {
+    font-size: 18px;
+  }
+
   @media #{$media-571} {
-    font-size: 11px;
-    display: table;
+    font-size: 14px;
+    letter-spacing: 2px;
   }
 }
 
@@ -21,6 +25,10 @@
   font-size: 55px;
   line-height: 115px;
 
+  @media #{$media-704} {
+    font-size: 45px;
+    line-height: 75px;
+  }
 }
 
 .contacts-head {
@@ -29,10 +37,17 @@
   line-height: 40px;
   color: $color-black;
 
+  @media #{$media-704} {
+    font-size: 30px;
+    line-height: 32px;
+  }
+
   @media #{$media-571} {
     font-size: 20px;
     line-height: 16px;
   }
+
+
 }
 
 .contacts-cell {
@@ -81,4 +96,51 @@
   font-style: oblique;
   text-decoration: none;
   color: $color-black;
+}
+
+.feedback-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: 3%;
+  width: 110px;
+  height: 110px;
+  font-family: $font-headline;
+  color: $color-white;
+  background-color: $color-azure;
+  font-size: 15px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+
+  @media #{$media-1139} {
+    top: 40px;
+    margin: 0 auto 0 auto;
+  }
+
+  @media #{$media-571} {
+    width: 80px;
+    height: 80px;
+    font-size: 11px;
+    font-family: $font-serif;
+  }
+
+  &:after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-style: solid;
+    border-color: transparent $color-white $color-white transparent;
+    border-width: 5px;
+    display: block;
+    position: relative;
+    left: 43px;
+    transform: rotate(45deg) scale(0.8);
+
+    @media #{$media-571} {
+      left: 30px;
+    }
+
+  }
 }

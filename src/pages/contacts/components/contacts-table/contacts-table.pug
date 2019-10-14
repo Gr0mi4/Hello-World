@@ -1,4 +1,4 @@
-table.contacts-table(cellspacing='0')
+table.contacts-table
   caption.contacts-caption Contacts
   thead.contacts-head
     tr.contacts-row
@@ -18,4 +18,6 @@ table.contacts-table(cellspacing='0')
             href=contact.link,
             target=contact.phone ? '_self' : '_blank'
           )= contact.value
+
+a.link.feedback-link(href="#leaveFeedback") Leave your feedback Here
 

@@ -1,7 +1,7 @@
 {
   "name": "package",
   "version": "1.0.0",
-  "description": "Personal auto-moto blog project",
+  "description": "Personal automobile & motorcycle blog project",
   "devDependencies": {
     "ncp": "^2.0.0",
     "pug-cli": "^1.0.0-alpha6",
