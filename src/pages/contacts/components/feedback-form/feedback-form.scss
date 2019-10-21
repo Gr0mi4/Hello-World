@@ -28,11 +28,12 @@
   font-size: 15px;
 
   &-name {
-    margin: 0 auto;
-    padding: 10px;
+    margin: 10px 5px;
+    padding: 10px 0;
     border: none;
     border-bottom: 3px dashed $color-dark-grey;
     font-size: 18px;
+
 
     @media #{$media-704} {
       font-size: 14px;
@@ -45,12 +46,18 @@
     &:focus {
       outline: none;
       border-bottom: 4px solid $color-azure;
+    }
+
+    &::placeholder {
+      color: $color-black;
+      font-family: $font-headline;
+      font-size: 24px;
     }
   }
 
   &-email {
-    margin: 10px auto;
-    padding: 10px;
+    margin: 10px 5px;
+    padding: 10px 0;
     border: none;
     border-bottom: 3px dashed $color-dark-grey;
     font-size: 18px;
@@ -66,6 +73,12 @@
     &:focus {
       outline: none;
       border-bottom: 4px solid $color-azure;
+    }
+
+    &::placeholder {
+      color: $color-black;
+      font-family: $font-headline;
+      font-size: 24px;
     }
   }
 
@@ -120,7 +133,7 @@
       background-color: $color-azure;
     }
 
-    &:checked + .rating-label > .rating-img{
+    &:checked + .rating-label > .stars > .rating-img{
       filter: none;
     }
   }
@@ -150,6 +163,7 @@
     border-radius: 10px;
     margin: 10px 0 0 auto;
     outline: none;
+    cursor: pointer;
 
     @media #{$media-704} {
       height: 35px;
@@ -188,6 +202,7 @@
   font-weight: lighter;
   text-align: center;
   margin-top: 160px;
+  color: $color-black;
 
   @media #{$media-704} {
     margin-top: 80px;
@@ -199,6 +214,7 @@
   font-family: $font-headline;
   font-size: 24px;
   font-weight: lighter;
+  color: $color-black;
 
   @media #{$media-704} {
     font-size: 20px;
@@ -208,10 +224,7 @@
 .rating-img {
   width: 30px;
   height: 30px;
-  position: absolute;
-  left: 40px;
   filter: grayscale(100%);
-  top: 5px;
 
 
   &-2 {
@@ -238,4 +251,13 @@
 .country-chose {
   display: flex;
   flex-direction: row;
+}
+
+.stars {
+  display: flex;
+  padding: 5px 5px 0;
+}
+
+.rating-wrap {
+  display: flex;
 }
