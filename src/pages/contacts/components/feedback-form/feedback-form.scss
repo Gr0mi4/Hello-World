@@ -3,9 +3,35 @@
 @import "../../../../styles/media";
 @import "../../../../styles/gradients";
 
-.feedback {
+.headline {
+  font-family: $font-headline;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 160px;
+  color: $color-black;
+
+  @media #{$media-704} {
+    margin-top: 80px;
+  }
+}
+
+.sub-headline {
+  margin: 5px;
+  font-family: $font-headline;
+  font-size: 24px;
+  font-weight: lighter;
+  color: $color-black;
+  text-align: left;
+
+  @media #{$media-704} {
+    font-size: 20px;
+  }
+}
+
+.feedback-form {
   display: flex;
   flex-direction: column;
+  font-size: 15px;
   margin: 50px auto;
   width: 500px;
   border: 5px solid $color-azure;
@@ -13,34 +39,21 @@
   box-sizing: border-box;
   padding: 20px 40px;
 
-  @media #{$media-704} {
-    width: 400px;
-  }
-
-  @media #{$media-571} {
-    width: 300px;
-  }
-}
-
-.input {
-  display: flex;
-  flex-direction: column;
-  font-size: 15px;
-
-  &-name {
+  & .input {
     margin: 10px 5px;
     padding: 10px 0;
     border: none;
     border-bottom: 3px dashed $color-dark-grey;
     font-size: 18px;
 
-
     @media #{$media-704} {
       font-size: 14px;
+      width: 400px;
     }
 
     @media #{$media-571} {
       font-size: 10px;
+      width: 300px;
     }
 
     &:focus {
@@ -53,92 +66,121 @@
       font-family: $font-headline;
       font-size: 24px;
     }
-  }
 
-  &-email {
-    margin: 10px 5px;
-    padding: 10px 0;
-    border: none;
-    border-bottom: 3px dashed $color-dark-grey;
-    font-size: 18px;
-
-    @media #{$media-704} {
+    &-message {
+      margin: 10px 0;
+      padding: 10px;
+      border: none;
+      border-bottom: 3px dashed $color-dark-grey;
       font-size: 14px;
-    }
+      resize: none;
 
-    @media #{$media-571} {
-      font-size: 10px;
-    }
+      @media #{$media-704} {
+        font-size: 12px;
+      }
 
-    &:focus {
-      outline: none;
-      border-bottom: 4px solid $color-azure;
-    }
+      @media #{$media-571} {
+        font-size: 8px;
+      }
 
-    &::placeholder {
-      color: $color-black;
-      font-family: $font-headline;
-      font-size: 24px;
-    }
-  }
-
-  &-message {
-    margin: 10px auto;
-    padding: 10px;
-    border: none;
-    border-bottom: 3px dashed $color-dark-grey;
-    font-size: 14px;
-    resize: none;
-
-    @media #{$media-704} {
-      font-size: 12px;
-    }
-
-    @media #{$media-571} {
-      font-size: 8px;
-    }
-
-    &:focus {
-      outline: none;
-      border-bottom: 4px solid $color-azure;
+      &:focus {
+        outline: none;
+        border-bottom: 4px solid $color-azure;
+      }
     }
   }
 
-  &-rating {
-    margin: 10px;
+  .rating {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 0 10px 110px;
     position: relative;
-    visibility: hidden;
 
-    &:before {
-      display: block;
-      border: 2px solid $color-azure ;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      content: "";
-      visibility: visible;
-      background-color: $color-white;
+    @media #{$media-704} {
+      margin: 10px 0 10px 60px;
     }
 
-    &:checked:after {
-      display: block;
+    @media #{$media-571} {
+      margin: 10px 0 10px 20px;
+    }
+
+    &-wrap {
+      display: flex;
+    }
+
+    &-button {
+      margin: 10px;
       position: relative;
-      top: -19px;
-      left: 5px;
-      width: 14px;
-      height: 14px;
-      border-radius: 50%;
-      content: "";
-      visibility: visible;
-      background-color: $color-azure;
+      visibility: hidden;
+
+      &:before {
+        display: block;
+        border: 2px solid $color-azure;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        content: "";
+        visibility: visible;
+        background-color: $color-white;
+      }
+
+      &:checked:after {
+        display: block;
+        position: relative;
+        top: -19px;
+        left: 5px;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        content: "";
+        visibility: visible;
+        background-color: $color-azure;
+      }
+
+      &:checked + .rating-label > .stars > .rating-img {
+        filter: none;
+      }
     }
 
-    &:checked + .rating-label > .stars > .rating-img{
-      filter: none;
+    & .stars {
+      display: flex;
+      padding: 5px 5px 0;
+    }
+
+    &-img {
+      width: 30px;
+      height: 30px;
+      filter: grayscale(100%);
+
+
+      &-2 {
+        width: 60px;
+        top: 38px;
+      }
+
+      &-3 {
+        width: 90px;
+        top: 71px;
+      }
+
+      &-4 {
+        width: 120px;
+        top: 104px;
+      }
+
+      &-5 {
+        width: 150px;
+        top: 137px;
+      }
     }
   }
 
-  &-chose-country {
+  & .country-chose {
+    display: flex;
+    flex-direction: row;
+  }
+
+  & .select-country {
     width: 180px;
     height: 35px;
     margin-top: 12px;
@@ -151,7 +193,8 @@
     background-image: $gradient-grey;
   }
 
-  &-submit-button {
+  & .submit-button {
+    align-self: flex-end;
     background-color: #2bc6dc;
     font-family: $font-calibri;
     font-size: 24px;
@@ -161,7 +204,6 @@
     width: 120px;
     border: none;
     border-radius: 10px;
-    margin: 10px 0 0 auto;
     outline: none;
     cursor: pointer;
 
@@ -182,82 +224,7 @@
   }
 }
 
-.rating {
-  display: flex;
-  flex-direction: column;
-  margin: 10px 0 10px 120px;
-  position: relative;
-
-  @media #{$media-704} {
-    margin: 10px 0 10px 60px;
-  }
-
-  @media #{$media-571} {
-    margin: 10px 0 10px 20px;
-  }
-}
-
-.headline {
-  font-family: $font-headline;
-  font-weight: lighter;
-  text-align: center;
-  margin-top: 160px;
-  color: $color-black;
-
-  @media #{$media-704} {
-    margin-top: 80px;
-  }
-}
-
-.sub-headline {
-  margin: 5px;
-  font-family: $font-headline;
-  font-size: 24px;
-  font-weight: lighter;
-  color: $color-black;
-
-  @media #{$media-704} {
-    font-size: 20px;
-  }
-}
-
-.rating-img {
-  width: 30px;
-  height: 30px;
-  filter: grayscale(100%);
 
 
-  &-2 {
-    width: 60px;
-    top: 38px;
-  }
 
-  &-3 {
-    width: 90px;
-    top: 71px;
-  }
 
-  &-4 {
-    width: 120px;
-    top: 104px;
-  }
-
-  &-5 {
-    width: 150px;
-    top: 137px;
-  }
-}
-
-.country-chose {
-  display: flex;
-  flex-direction: row;
-}
-
-.stars {
-  display: flex;
-  padding: 5px 5px 0;
-}
-
-.rating-wrap {
-  display: flex;
-}
