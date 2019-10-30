@@ -2,12 +2,6 @@
   "name": "package",
   "version": "1.0.0",
   "description": "Personal automobile & motorcycle blog project",
-  "devDependencies": {
-    "ncp": "^2.0.0",
-    "pug-cli": "^1.0.0-alpha6",
-    "rimraf": "^3.0.0",
-    "sass": "^1.22.2"
-  },
   "scripts": {
     "build": "npm run clean && npm run build:styles && npm run build:assets && npm run build:html ",
     "build:styles": "sass src/pages/:build/pages",
@@ -31,5 +25,11 @@
   "bugs": {
     "url": "https://github.com/Gr0mi4/Hello-World/issues"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "ncp": "^2.0.0",
+    "pug-cli": "^1.0.0-alpha6",
+    "rimraf": "^3.0.0",
+    "sass": "^1.22.2"
+  }
 }

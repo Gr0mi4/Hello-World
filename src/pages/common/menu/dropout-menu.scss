@@ -17,9 +17,10 @@
 .dropout-menu {
   display: none;
   padding: 5px;
+  margin: 0;
   position: absolute;
-  left: 20px;
-  top: 35px;
+  left: -8px;
+  top: 100%;
   font-size: 20px;
   color: $color-black;
   background-color: $color-light-grey;

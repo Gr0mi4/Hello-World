@@ -4,11 +4,13 @@
 @import "dropout-menu";
 
 .menu {
+  display: flex;
+  justify-content: center;
   padding: 0;
   margin: 0;
 
   &-item {
-    display: inline-block;
+    display: block;
     margin: 12px 46px 5px;
     position: relative;
     text-transform: uppercase;
@@ -25,9 +27,6 @@
     }
 
     &.triangle {
-      padding: 10px 30px;
-      position: relative;
-
       & .menu-item-link {
         padding: 10px 35px;
         position: relative;
@@ -41,32 +40,33 @@
           border-width: 10px 9px 0 9px;
           border-color: $color-white transparent;
           transition: border 1s, transform 1s;
-        }
 
-        &:hover::after {
-          border-color: $color-black transparent;
-          transform:rotate(180deg);
-          transition: transform 1s, border 1s;
-        }
-
-        @media #{$media-1139} {
-          display: none;
+          @media #{$media-1139} {
+            display: none;
+          }
         }
       }
     }
 
     &-link {
+      display: block;
       color: inherit;
       text-decoration: none;
       padding: 10px;
       border-radius: 10px;
       transition: color 1s, background 1s;
+    }
 
-      &:hover {
-        background-color: $color-azure-light;
-        color: $color-black;
-        transition: background 1s, color 1s;
-      }
+    &:hover &-link {
+      background-color: $color-azure-light;
+      color: $color-black;
+      transition: background 1s, color 1s;
+    }
+
+    &.triangle:hover &-link::after {
+      border-color: $color-black transparent;
+      transform:rotate(180deg);
+      transition: transform 1s, border 1s;
     }
   }
 }
