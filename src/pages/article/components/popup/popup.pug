@@ -1,0 +1,20 @@
+.popup.question.not-visible
+  p.message-text Thank you for reading, do you like it?
+  .buttons
+    a.yes-button.popup-button Yes
+    a.no-button.popup-button No
+
+.popup.newsletter.not-visible
+  p.message-text Would you like to subscribe to our newsletter?
+  .cross
+  form.newsletter-form
+    input.newsletter-address(type='email' name='input-email' placeholder='email' size='25')
+    input.submit-button(type='submit' name='submit-button' value='Subscribe')
+
+.popup.thank-message.not-visible
+  p.message-text Thank you!
+
+.popup.sorry-message.not-visible
+  p.message-text We are sorry to hear that you aren't understood genius thoughts of the author :( Don't be upset!
+
+script(src="components/popup/popup.js")
