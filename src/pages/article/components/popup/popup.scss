@@ -18,7 +18,7 @@
   z-index: 20;
 
   & .question .message-text {
-    margin: 0;
+    margin: 10px;
     padding: 0;
   }
 
@@ -54,8 +54,9 @@
     }
   }
 
-  &.newsletter {
+  & .newsletter {
     font-size: 1.5vw;
+    position: absolute;
 
     & .newsletter-address {
       margin-bottom: 10px;
@@ -84,21 +85,27 @@
     }
   }
 
-  &.sorry-message {
-    padding: 20px;
+  & .sorry-message {
+    position: absolute;
+    padding: 1vw;
+    top: -1.2vw;
   }
 
-  &.thank-message {
-    font-size: 2vw;
+  & .thank-message {
+    position: absolute;
+    left: 10.5vw;
+    top: -1vw;
+    font-size: 3vw;
   }
 }
 
 .not-visible {
-  transform: translateY(170px);
+  transform: translateY(20vw);
+  transition: transform 1s;
 }
 
 .visible {
-  transform: translateY(0px);
+  transform: translateY(0);
   transition: transform 1s;
 }
 
