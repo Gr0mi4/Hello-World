@@ -16,6 +16,13 @@
   font-size: 1.5vw;
   border-radius: 10px 10px 0 0;
   z-index: 20;
+  transform: translateY(20vw);
+  transition: transform 1s;
+
+  & .question {
+    transform: translateY(20vw);
+    transition: transform 1s;
+  }
 
   & .question .message-text {
     margin: 10px;
@@ -57,6 +64,8 @@
   & .newsletter {
     font-size: 1.5vw;
     position: absolute;
+    transform: translateY(20vw);
+    transition: transform 1s;
 
     & .newsletter-address {
       margin-bottom: 10px;
@@ -89,6 +98,8 @@
     position: absolute;
     padding: 1vw;
     top: -1.2vw;
+    transform: translateY(20vw);
+    transition: transform 1s;
   }
 
   & .thank-message {
@@ -96,12 +107,14 @@
     left: 10.5vw;
     top: -1vw;
     font-size: 3vw;
+    transform: translateY(20vw);
+    transition: transform 1s;
   }
-}
 
-.not-visible {
-  transform: translateY(20vw);
-  transition: transform 1s;
+  & .visible {
+    transform: translateY(0);
+    transition: transform 1s;
+  }
 }
 
 .visible {

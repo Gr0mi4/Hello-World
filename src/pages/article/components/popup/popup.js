@@ -16,66 +16,74 @@ var articlePopup = (function() {
   const cross = popup.querySelector('.cross');
   const submit = popup.querySelector('.submit-button');
 
-  const invisibility = function (classname) {
+  function invisibility (classname) {
     classname.classList.remove('visible');
-  };
+  }
 
-  const visibility = function (classname) {
+  function visibility(classname) {
     classname.classList.add('visible');
-  };
+  }
 
-  function addScrollListener() {
+  function showPopup() {
+    if (pageYOffset > scrollHeight && localStorage['popupClosed'] === undefined) {
+    visibility(popup);
+    visibility(question);
+    localStorage['popupClosed'] = true;
+    }
+  }
+
+  function showNewsletter() {
+    invisibility(question);
+    visibility(newsletter);
+  }
+
+  function showSorryMessage() {
+    invisibility(question);
+    visibility(sorryMessage);
+    setTimeout(invisibility, 4000, sorryMessage);
+    setTimeout(invisibility, 4000, popup);
+  }
+
+  function hideNewsletter() {
+    invisibility(newsletter);
+    invisibility(popup);
+  }
+
+  function showThankMessage() {
+    invisibility(newsletter);
+    visibility(thankMessage);
+    setTimeout(invisibility, 3000, thankMessage);
+    setTimeout(invisibility, 3000, popup);
+  }
+
+  function addListeners() {
     if (localStorage['popupClosed'] === undefined) {
-      window.addEventListener('scroll', function () {
-        if (pageYOffset > scrollHeight) {
-          visibility(popup);
-          localStorage['popupClosed'] = true;
-        }
+      window.addEventListener('scroll', showPopup);
+      yesButton.addEventListener('click', showNewsletter);
+      noButton.addEventListener('click', showSorryMessage);
+      cross.addEventListener('click', hideNewsletter);
+      submit.addEventListener('click', function (evt) {
+        evt.preventDefault();
+        showThankMessage();
       });
     }
   }
-  addScrollListener();
+  addListeners();
 
-  yesButton.addEventListener('click', function () {
-    function showNewsLetter() {
-      invisibility(question);
-      visibility(newsletter);
-    }
-    showNewsLetter();
-  });
-
-  noButton.addEventListener('click', function () {
-    function showSorryMessage () {
-      invisibility(question);
-      visibility(sorryMessage);
-      setTimeout(invisibility, 4000, sorryMessage);
-      setTimeout(invisibility, 4000, popup);
-    }
-    showSorryMessage();
-  });
-
-  cross.addEventListener('click', function () {
-    function hideNewsLetter() {
-      invisibility(newsletter);
-      invisibility(popup);
-    }
-    hideNewsLetter();
-  });
-
-  submit.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    function showThankMessage() {
-      invisibility(newsletter);
-      visibility(thankMessage);
-      setTimeout(invisibility, 3000, thankMessage);
-      setTimeout(invisibility, 3000, popup);
-    }
-    showThankMessage();
-  });
   return  {
     init: function () {
+      addListener()
+    },
+    show: function () {
       visibility(popup);
       visibility(question);
+    },
+    hide: function () {
+      invisibility(question);
+      invisibility(newsletter);
+      invisibility(thankMessage);
+      invisibility(sorryMessage);
+      invisibility(popup);
     }
-  }
+  };
 }());
