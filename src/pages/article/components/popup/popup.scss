@@ -1,6 +1,7 @@
 @import "../../../../styles/colors";
 @import "../../../../styles/fonts";
 @import "../../../../styles/gradients";
+@import "../../../../styles/media";
 
 .popup {
   position: fixed;
@@ -19,6 +20,23 @@
   transform: translateY(20vw);
   transition: transform 1s;
 
+  @media #{$media-1139} {
+    width: 50vw;
+    font-size: 2.2vw;
+  }
+
+  @media #{$media-704} {
+    font-size: 2.5vw;
+  }
+
+  @media #{$media-571} {
+    font-size: 2.8vw;
+  }
+
+  @media #{$media-359} {
+    font-size: 3vw;
+  }
+
   & .question {
     transform: translateY(20vw);
     transition: transform 1s;
@@ -27,21 +45,42 @@
   & .question .message-text {
     margin: 10px;
     padding: 0;
+
+    @media #{$media-571} {
+      margin: 5px;
+    }
   }
 
   & .buttons {
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
+    justify-content: space-around;
+
+    @media #{$media-571} {
+      margin-bottom: 5px;
+    }
 
     & .popup-button {
       width: 5vw;
-      padding: 10px;
-      margin: 0 5vw;
       text-align: center;
-      vertical-align: middle;
       border-radius: 10px;
       border: 1px solid $color-white;
+      padding: 0.5vw 1.8vw;
+
+      @media #{$media-1139} {
+        padding: 0.5vw 3vw;
+        border-radius: 7px;
+      }
+
+      @media #{$media-704} {
+        padding: 1vw 2.5vw;
+        border-radius: 7px;
+      }
+
+      @media #{$media-571} {
+        padding: 1.6vw 3vw;
+      }
 
       &:active {
         transform: scale(0.95);
@@ -75,6 +114,7 @@
 
     & .message-text {
       margin: 25px 10px 15px 10px;
+
     }
 
     & .submit-button {
