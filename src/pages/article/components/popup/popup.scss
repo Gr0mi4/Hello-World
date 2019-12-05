@@ -1,0 +1,188 @@
+@import "../../../../styles/colors";
+@import "../../../../styles/fonts";
+@import "../../../../styles/gradients";
+@import "../../../../styles/media";
+
+.popup {
+  position: fixed;
+  bottom: 0;
+  left: 25vw;
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  background-color: $color-azure;
+  color: $color-white;
+  font-family: $font-headline;
+  text-align: center;
+  font-size: 1.5vw;
+  border-radius: 10px 10px 0 0;
+  z-index: 20;
+  transform: translateY(20vw);
+  transition: transform 1s;
+
+  @media #{$media-1139} {
+    width: 50vw;
+    font-size: 2.2vw;
+  }
+
+  @media #{$media-704} {
+    font-size: 2.5vw;
+  }
+
+  @media #{$media-571} {
+    font-size: 2.8vw;
+  }
+
+  @media #{$media-359} {
+    font-size: 3vw;
+  }
+
+  & .question {
+    transform: translateY(20vw);
+    transition: transform 1s;
+  }
+
+  & .question .message-text {
+    margin: 10px;
+    padding: 0;
+
+    @media #{$media-571} {
+      margin: 5px;
+    }
+  }
+
+  & .buttons {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: space-around;
+
+    @media #{$media-571} {
+      margin-bottom: 5px;
+    }
+
+    & .popup-button {
+      width: 5vw;
+      text-align: center;
+      border-radius: 10px;
+      border: 1px solid $color-white;
+      padding: 0.5vw 1.8vw;
+
+      @media #{$media-1139} {
+        padding: 0.5vw 3vw;
+        border-radius: 7px;
+      }
+
+      @media #{$media-704} {
+        padding: 1vw 2.5vw;
+        border-radius: 7px;
+      }
+
+      @media #{$media-571} {
+        padding: 1.6vw 3vw;
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    & .yes-button {
+      background-color: $color-green;
+    }
+
+    & .no-button {
+      background-color: $color-red;
+    }
+  }
+
+  & .newsletter {
+    font-size: 1.5vw;
+    position: absolute;
+    transform: translateY(20vw);
+    transition: transform 1s;
+
+    & .newsletter-address {
+      margin-bottom: 10px;
+      font-size: 1.35vw;
+      background-color: $gradient-grey;
+    }
+
+    & .message-text {
+      margin: 25px 10px 15px 10px;
+
+    }
+
+    & .submit-button {
+      font-family: $font-calibri;
+      font-weight: 700;
+      color: $color-azure;
+      background-color: $color-white;
+      font-size: 1.5vw;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      border-radius: 5px;
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+
+  & .sorry-message {
+    position: absolute;
+    padding: 1vw;
+    top: -1.2vw;
+    transform: translateY(20vw);
+    transition: transform 1s;
+  }
+
+  & .thank-message {
+    position: absolute;
+    left: 10.5vw;
+    top: -1vw;
+    font-size: 3vw;
+    transform: translateY(20vw);
+    transition: transform 1s;
+  }
+
+  & .visible {
+    transform: translateY(0);
+    transition: transform 1s;
+  }
+}
+
+.visible {
+  transform: translateY(0);
+  transition: transform 1s;
+}
+
+.cross {
+  position: absolute;
+  right: 9px;
+  top: -1px;
+  width: 4px;
+  height: 20px;
+  transform: rotate(45deg);
+  background-color: $color-white;
+  margin: 5px;
+
+  &:hover {
+   cursor: pointer;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 4px;
+    height: 20px;
+    transform: rotate(-90deg);
+    background-color: $color-white;
+  }
+}

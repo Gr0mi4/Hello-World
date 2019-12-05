@@ -1,0 +1,18 @@
+.popup
+  .question
+    p.message-text Thank you for reading, do you like it?
+    .buttons
+      a.yes-button.popup-button Yes
+      a.no-button.popup-button No
+  .newsletter
+    p.message-text Would you like to subscribe to our newsletter?
+    .cross
+    form.newsletter-form
+      input.newsletter-address(type='email' name='input-email' placeholder='email' size='25')
+      input.submit-button(type='submit' name='submit-button' value='Subscribe')
+  .thank-message
+    p.message-text Thank you!
+  .sorry-message
+    p.message-text We are sorry to hear that you didn't understand genius thoughts of the author :( Don't be upset!
+
+script(src="components/popup/popup.js")
