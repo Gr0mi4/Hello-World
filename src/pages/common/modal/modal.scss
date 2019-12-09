@@ -1,0 +1,70 @@
+@import "../../../styles/colors";
+@import "../../../styles/media";
+
+.modal-window {
+  position: fixed;
+  top: 15%;
+  left: 30%;
+  display: flex;
+  box-shadow: 0 0 10px 5px $color-dark-grey;
+  background-color: $color-white;
+  height: auto;
+  width: 40%;
+  z-index: 10;
+
+  @media #{$media-1139} {
+    left: 25%;
+    min-width: 500px;
+  }
+
+  @media #{$media-704} {
+    left: 10%;
+    min-width: 470px;
+  }
+
+  @media #{$media-571} {
+    left: 10%;
+    min-width: 370px;
+  }
+
+  & .cross {
+    &:after {
+      content: "";
+      position: absolute;
+      right: 14px;
+      top: 4px;
+      width: 4px;
+      height: 20px;
+      transform: rotate(-45deg);
+      background-color: $color-black;
+      cursor: pointer;
+
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      right: 9px;
+      top: -1px;
+      width: 4px;
+      height: 20px;
+      transform: rotate(45deg);
+      background-color: $color-black;
+      margin: 5px;
+      cursor: pointer;
+    }
+  }
+}
+
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.not-visible {
+  display: none;
+}
