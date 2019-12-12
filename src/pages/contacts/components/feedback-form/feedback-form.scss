@@ -3,18 +3,7 @@
 @import "../../../../styles/media";
 @import "../../../../styles/gradients";
 
-.sub-headline {
-  margin: 5px;
-  font-family: $font-headline;
-  font-size: 24px;
-  font-weight: lighter;
-  color: $color-black;
-  text-align: left;
 
-  @media #{$media-704} {
-    font-size: 20px;
-  }
-}
 
 .feedback-form {
   display: flex;
@@ -75,6 +64,19 @@
         outline: none;
         border-bottom: 4px solid $color-azure;
       }
+    }
+  }
+
+  & .sub-headline {
+    margin: 5px;
+    font-family: $font-headline;
+    font-size: 24px;
+    font-weight: lighter;
+    color: $color-black;
+    text-align: left;
+
+    @media #{$media-704} {
+      font-size: 20px;
     }
   }
 

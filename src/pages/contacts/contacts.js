@@ -1,40 +1,28 @@
-window.feedbackModal = (function feedbackModal() {
-    'use strict';
-  let feedbackButton;
-  let modalWindow;
-  let modalOverlay;
+window.contactsMainScript = (function contactsMainScript() {
+let feedbackButton = document.getElementById('leaveFeedbackButton');
 
-  function init() {
-    feedbackButton = document.getElementById('leaveFeedbackButton');
-    modalWindow = document.getElementById('modal');
-    modalOverlay = document.getElementById('overlay');
+window.modal.init();
 
-    feedbackButton.addEventListener('click', leaveFeedbackButtonClick);
-  }
+feedbackButton.addEventListener('click', leaveFeedbackButtonClick);
 
-  function showModal() {
-    modalWindow.classList.remove('not-visible');
-    modalOverlay.classList.remove('not-visible');
-  }
-
-  function leaveFeedbackButtonClick(event) {
-    event.preventDefault();
-    showModal();
-    let cross = modalWindow.querySelector('.cross');
-    cross.addEventListener('click', hideModal);
-    modalOverlay.addEventListener('click', hideModal);
-  }
-
-  function hideModal() {
-    modalWindow.classList.add('not-visible');
-    modalOverlay.classList.add('not-visible');
-  }
-
-  return {
-    init,
-    showModal,
-    hideModal
+function leaveFeedbackButtonClick(event) {
+  event.preventDefault();
+  window.modal.showModal();
 }
 })();
 
-window.feedbackModal.init();
+window.addEventListener('resize', changeMinHeight);
+
+function changeMinHeight() {
+  let main = document.querySelector('.main');
+  let footer = document.querySelector('.footer');
+  let header = document.querySelector('.blog-navigation');
+  let footerHeight = footer.offsetHeight;
+  let headerHeight = header.offsetHeight;
+  main.style = `min-height: calc(100vh - ${footerHeight}px - ${headerHeight}px)`;
+  console.log(`calc(100vh - ${footerHeight} - ${headerHeight})`);
+}
+
+
+
+
