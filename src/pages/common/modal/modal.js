@@ -2,11 +2,12 @@ window.modal = (function Modal() {
   'use strict';
   let modalWindow;
   let modalOverlay;
+  let cross;
 
   function init() {
-    let cross = document.getElementById('cross');
+    cross = document.getElementById('cross');
     modalWindow = document.getElementById('modal');
-    modalOverlay = document.getElementById('overlay');
+    modalOverlay = document.getElementById('modal-overlay');
     cross.addEventListener('click', hideModal);
     modalOverlay.addEventListener('click', hideModal);
   }

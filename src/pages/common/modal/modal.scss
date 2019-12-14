@@ -2,30 +2,33 @@
 @import "../../../styles/media";
 
 .modal {
-  position: fixed;
-  top: 15%;
-  left: 30%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   display: none;
   box-shadow: 0 0 10px 5px $color-dark-grey;
   background-color: $color-white;
   height: auto;
-  width: 40%;
+  width: 45vw;
   z-index: 10;
 
   @media #{$media-1139} {
-    left: 25%;
     min-width: 500px;
   }
 
   @media #{$media-704} {
-    left: 10%;
     min-width: 470px;
   }
 
   @media #{$media-571} {
-    left: 10%;
     min-width: 370px;
   }
+
+  @media #{$media-359} {
+    min-width: 335px;
+  }
+
 
   & .cross {
     &:after {

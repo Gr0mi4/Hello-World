@@ -9,12 +9,29 @@
   display: flex;
   flex-direction: column;
   font-size: 15px;
+  width: 600px;
   margin: 0 auto;
-  width: 500px;
   padding: 20px 40px;
   min-height: 400px;
-  height: 600px;
+  height: auto;
   max-height: calc(100vh - 40px);
+
+  @media #{$media-1139} {
+    margin: 15px auto 0;
+    padding: 10px 30px;
+  }
+
+  @media #{$media-571} {
+    margin: auto;
+    padding: 10px;
+    height: 600px;
+  }
+
+  @media #{$media-359} {
+    margin: 10px auto;
+    padding: 0;
+    height: 600px;
+  }
 
   & .input {
     margin: 10px 5px;
@@ -24,11 +41,13 @@
     font-size: 18px;
 
     @media #{$media-704} {
+      margin: 10px auto;
       font-size: 14px;
       width: 400px;
     }
 
     @media #{$media-571} {
+      margin: 10px 20px;
       font-size: 10px;
       width: 300px;
     }
@@ -58,6 +77,8 @@
 
       @media #{$media-571} {
         font-size: 8px;
+        margin: 5px 20px;
+        width: 270px;
       }
 
       &:focus {
@@ -77,6 +98,15 @@
 
     @media #{$media-704} {
       font-size: 20px;
+      margin: 0 25px;
+    }
+
+    @media #{$media-571} {
+      font-size: 20px;
+    }
+
+    @media #{$media-571} {
+      font-size: 18px;
     }
   }
 
@@ -91,7 +121,7 @@
     }
 
     @media #{$media-571} {
-      margin: 10px 0 10px 20px;
+      margin: auto;
     }
 
     &-wrap {
@@ -168,12 +198,16 @@
   & .country-chose {
     display: flex;
     flex-direction: row;
+
+    @media #{$media-571} {
+      margin: 0 20px 0 0;
+    }
   }
 
   & .select-country {
     width: 180px;
     height: 35px;
-    margin-top: 12px;
+    margin: 12px 0 0 20px;
     border: none;
     border-radius: 10px;
     outline: none;
@@ -181,6 +215,10 @@
     font-family: $font-serif;
     font-size: 16px;
     background-image: $gradient-grey;
+
+    @media #{$media-704} {
+      margin: 10px 30px 10px 20px;
+    }
   }
 
   & .submit-button {
@@ -201,7 +239,7 @@
       height: 35px;
       width: 280px;
       font-size: 20px;
-      margin: 5px auto 0 auto;
+      margin: 5px auto 5px auto;
     }
 
     @media #{$media-704} {

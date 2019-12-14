@@ -1,28 +1,24 @@
-window.contactsMainScript = (function contactsMainScript() {
-let feedbackButton = document.getElementById('leaveFeedbackButton');
+(function contactsMainScript() {
+  let feedbackButton = document.getElementById('leave-feedback-button');
 
-window.modal.init();
+  window.modal.init();
 
-feedbackButton.addEventListener('click', leaveFeedbackButtonClick);
+  feedbackButton.addEventListener('click', leaveFeedbackButtonClick);
 
-function leaveFeedbackButtonClick(event) {
-  event.preventDefault();
-  window.modal.showModal();
-}
+  function leaveFeedbackButtonClick(event) {
+    event.preventDefault();
+    window.modal.showModal();
+  }
+
+  window.addEventListener('resize', changeMinHeight);
+
+  function changeMinHeight() {
+    const main = document.querySelector('.main');
+    const footer = document.querySelector('.footer');
+    const header = document.querySelector('.blog-navigation');
+    main.style = `min-height: calc(100vh - ${footer.offsetHeight}px - ${header.offsetHeight}px)`;
+  }
+  changeMinHeight();
 })();
-
-window.addEventListener('resize', changeMinHeight);
-
-function changeMinHeight() {
-  let main = document.querySelector('.main');
-  let footer = document.querySelector('.footer');
-  let header = document.querySelector('.blog-navigation');
-  let footerHeight = footer.offsetHeight;
-  let headerHeight = header.offsetHeight;
-  main.style = `min-height: calc(100vh - ${footerHeight}px - ${headerHeight}px)`;
-  console.log(`calc(100vh - ${footerHeight} - ${headerHeight})`);
-}
-
-
 
 
