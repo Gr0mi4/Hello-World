@@ -2,14 +2,20 @@ window.modal = (function Modal() {
   'use strict';
   let modalWindow;
   let modalOverlay;
-  let cross;
+  let closeButton;
 
   function init() {
-    cross = document.getElementById('cross');
     modalWindow = document.getElementById('modal');
+    closeButton = modalWindow.querySelector('#close-button');
     modalOverlay = document.getElementById('modal-overlay');
-    cross.addEventListener('click', hideModal);
-    modalOverlay.addEventListener('click', hideModal);
+
+    closeButton.addEventListener('click', closeModal);
+    modalOverlay.addEventListener('click', closeModal);
+    window.addEventListener('keydown', (event) => {
+      if (event.code === 'Escape') {
+        closeModal();
+      }
+    });
   }
 
   function showModal() {
@@ -17,7 +23,7 @@ window.modal = (function Modal() {
     modalOverlay.classList.add('visible');
   }
 
-  function hideModal() {
+  function closeModal() {
     modalWindow.classList.remove('visible');
     modalOverlay.classList.remove('visible');
   }
@@ -25,6 +31,6 @@ window.modal = (function Modal() {
   return {
     init,
     showModal,
-    hideModal
+    closeModal
   }
 })();

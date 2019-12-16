@@ -12,3 +12,51 @@
 .main {
   box-sizing: border-box;
 }
+
+
+.feedback-button {
+  -webkit-appearance: none;
+  border: none;
+  align-items: center;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: 50px;
+  border-radius: 0 0 10px 10px;
+  font-family: $font-headline;
+  color: $color-white;
+  background-color: $color-azure;
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+  transition: filter 1s;
+
+  &:focus {
+    border: 1px solid $color-black;
+  }
+
+  &:hover {
+    filter: brightness(110%);
+    cursor: pointer;
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+
+  @media #{$media-704} {
+    width: 250px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  @media #{$media-571} {
+    width: 180px;
+    height: 30px;
+    font-size: 13px;
+  }
+}

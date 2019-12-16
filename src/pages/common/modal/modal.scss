@@ -30,7 +30,16 @@
   }
 
 
-  & .cross {
+  & .close-button {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 0;
+    -webkit-appearance: none;
+    background: none;
+    border: none;
+    // TODO Доделать как нибудь красиво outline
+
     &:after {
       content: "";
       position: absolute;

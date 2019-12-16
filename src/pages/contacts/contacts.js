@@ -1,14 +1,8 @@
 (function contactsMainScript() {
-  let feedbackButton = document.getElementById('leave-feedback-button');
-
   window.modal.init();
 
-  feedbackButton.addEventListener('click', leaveFeedbackButtonClick);
-
-  function leaveFeedbackButtonClick(event) {
-    event.preventDefault();
-    window.modal.showModal();
-  }
+  const feedbackButton = document.getElementById('leave-feedback-button');
+  feedbackButton.addEventListener('click', window.modal.showModal);
 
   window.addEventListener('resize', changeMinHeight);
 
@@ -18,6 +12,7 @@
     const header = document.querySelector('.blog-navigation');
     main.style = `min-height: calc(100vh - ${footer.offsetHeight}px - ${header.offsetHeight}px)`;
   }
+
   changeMinHeight();
 })();
 
