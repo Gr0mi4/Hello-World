@@ -12,7 +12,10 @@ html(lang='ru')
 
     main.main
       include components/contacts-table/contacts-table
-      include  components/feedback-form/feedback-form
+      include components/feedback-modal/feedback-modal
+
+      button.feedback-button(id='leave-feedback-button') Leave your feedback Here
 
     include ../common/footer/footer
+    script(src="contacts.js")
 

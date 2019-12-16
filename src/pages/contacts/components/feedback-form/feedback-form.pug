@@ -1,38 +1,37 @@
 include stars/stars
 
-h1.headline Please leave your feedback
-  form.feedback-form(action="huiznaetkuda.by" method="post" id="leaveFeedback")
-    input.input(type='text' name='input-name' placeholder='name' size='35')
-    input.input(type="email" name="input-email" placeholder='email' size='35')
-    h2.sub-headline Rating
-    .rating
-      .rating-wrap
-        input.rating-button(type="radio" name="rating" value="1" id="star1")
-        label.rating-label(for="star1")
-          +stars(1)
-      .rating-wrap
-        input.rating-button(type="radio" name="rating" value="2" id="star2")
-        label.rating-label(for="star2")
-          +stars(2)
-      .rating-wrap
-        input.rating-button(type="radio" name="rating" value="3" id="star3")
-        label.rating-label(for="star3")
-          +stars(3)
-      .rating-wrap
-        input.rating-button(type="radio" name="rating" value="4" id="star4")
-        label.rating-label(for="star4")
-          +stars(4)
-      .rating-wrap
-        input.rating-button(type="radio" name="rating" value="5" id="star5" checked)
-        label.rating-label(for="star5")
-          +stars(5)
-    .country-chose
-      h2.sub-headline Please choose your country
-      select.select-country(name="country")
-        option(value="Belarus") Belarus
-        option(value="Russia") Russia
-        option(value="Gvatelupa") Gvatelupa
-        option(value="Zimbabwe") Zimbabwe
-    h2.sub-headline Leave a message. It's important for us!
-    textarea.input-message(name="message" cols="45" rows="5")
-    input.submit-button(type='submit' name='submit-button' value="submit")
+form.feedback-form(action="huiznaetkuda.by" method="post" id="leaveFeedback")
+  input.input(type='text' name='input-name' placeholder='name' size='35')
+  input.input(type="email" name="input-email" placeholder='email' size='35')
+  h2.sub-headline Rating
+  .rating
+    .rating-wrap
+      input.rating-button(type="radio" name="rating" value="1" id="star1")
+      label.rating-label(for="star1")
+        +stars(1)
+    .rating-wrap
+      input.rating-button(type="radio" name="rating" value="2" id="star2")
+      label.rating-label(for="star2")
+        +stars(2)
+    .rating-wrap
+      input.rating-button(type="radio" name="rating" value="3" id="star3")
+      label.rating-label(for="star3")
+        +stars(3)
+    .rating-wrap
+      input.rating-button(type="radio" name="rating" value="4" id="star4")
+      label.rating-label(for="star4")
+        +stars(4)
+    .rating-wrap
+      input.rating-button(type="radio" name="rating" value="5" id="star5" checked)
+      label.rating-label(for="star5")
+        +stars(5)
+  .country-chose
+    h2.sub-headline Please choose your country
+    select.select-country(name="country")
+      option(value="Belarus") Belarus
+      option(value="Russia") Russia
+      option(value="Gvatelupa") Gvatelupa
+      option(value="Zimbabwe") Zimbabwe
+  h2.sub-headline Leave a message. It's important for us!
+  textarea.input-message(name="message" cols="45" rows="5")
+  input.submit-button(type='submit' name='submit-button' value="submit")
