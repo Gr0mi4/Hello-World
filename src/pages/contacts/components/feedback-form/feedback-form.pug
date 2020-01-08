@@ -1,8 +1,10 @@
 include stars/stars
 
-form.feedback-form(action="huiznaetkuda.by" method="post" id="leaveFeedback")
-  input.input(type='text' name='input-name' placeholder='name' size='35')
-  input.input(type="email" name="input-email" placeholder='email' size='35')
+form.feedback-form(action='huiznaetkuda.by' method='post' id='leaveFeedback')
+  .input-container(id='name-input-container')
+    input.input(type='text' name='input-name' placeholder='name' size='35' id='name-input')
+  .input-container(id='email-input-container')
+    input.input(type='email' name='input-email' placeholder='email' size='35' id='email-input')
   h2.sub-headline Rating
   .rating
     .rating-wrap
@@ -33,5 +35,7 @@ form.feedback-form(action="huiznaetkuda.by" method="post" id="leaveFeedback")
       option(value="Gvatelupa") Gvatelupa
       option(value="Zimbabwe") Zimbabwe
   h2.sub-headline Leave a message. It's important for us!
-  textarea.input-message(name="message" cols="45" rows="5")
-  input.submit-button(type='submit' name='submit-button' value="submit")
+  .input-container(id='message-input-container')
+    textarea.input-message(name="message" cols="45" rows="5" id='message-input')
+  input.submit-button(type='submit' name='submit-button' value="submit" id='submit-button')
+  script(src="components/feedback-form/feedback-form.js")
