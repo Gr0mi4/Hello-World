@@ -74,8 +74,9 @@
       border-bottom: 3px dashed $color-dark-grey;
       font-size: 14px;
       resize: none;
-      width: 97%;
+      width: 100%;
       position: relative;
+      box-sizing: border-box;
 
       @media #{$media-704} {
         font-size: 12px;
@@ -268,7 +269,6 @@
       display: block;
       content: "*Invalid value entered";
       position: absolute;
-      width: 150px;
       bottom: -10px;
       left: 5px;
       color: #ff260b;
