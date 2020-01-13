@@ -1,14 +1,19 @@
 window.feedbackForm = (function () {
   'use strict';
-  const nameInput = document.getElementById('name-input');
-  const emailInput = document.getElementById('email-input');
-  const messageInput = document.getElementById('message-input');
-  const submitButton = document.getElementById('submit-button');
+  let nameInput;
+  let emailInput;
+  let messageInput;
+  let submitButton;
 
   let sendingBlocked;
 
 
   function init() {
+    nameInput = document.getElementById('name-input');
+    emailInput = document.getElementById('email-input');
+    messageInput = document.getElementById('message-input');
+    submitButton = document.getElementById('submit-button');
+
     nameInput.onblur = () => {
       const nameIsValid = nameInput.value.match(/^.+\D\S$/i);
       if (nameIsValid) {
@@ -69,8 +74,5 @@ window.feedbackForm = (function () {
   return {
     init,
     showInvalidInputError,
-    nameInput,
-    emailInput,
-    messageInput
   }
 })();
