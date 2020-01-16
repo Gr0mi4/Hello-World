@@ -4,9 +4,11 @@ window.feedbackForm = (function () {
   let emailInput;
   let messageInput;
   let submitButton;
-
   let sendingBlocked;
-
+  const ACTION = {
+    SHOW: 'show',
+    HIDE: 'hide'
+  };
 
   function init() {
     nameInput = document.getElementById('name-input');
@@ -14,45 +16,38 @@ window.feedbackForm = (function () {
     messageInput = document.getElementById('message-input');
     submitButton = document.getElementById('submit-button');
 
-    nameInput.onblur = () => {
-      const nameIsValid = nameInput.value.match(/^.+\D\S$/i);
-      if (nameIsValid) {
-        showInvalidInputError(nameInput, 'hide');
-      } else {
-        showInvalidInputError(nameInput)
-      }
+    const VALIDATION_CHECK = {
+      NAME: /^.+\D\S$/i,
+      EMAIL: /^.+@.+\.\w+$/i,
+      MESSAGE: /Хуй|Пизд|Еб[а@]н|Уе[б6]|Бля[дт]|Пид[оoаa0]р/i,
     };
 
-    emailInput.onblur = () => {
-      const emailIsValid = emailInput.value.match(/^.+@.+\.\w+$/i);
-      if (emailIsValid) {
-        showInvalidInputError(emailInput, 'hide');
-      } else {
-        showInvalidInputError(emailInput)
-      }
-    };
+    nameInput.onblur = validateInput(VALIDATION_CHECK.NAME);
+    emailInput.onblur = validateInput(VALIDATION_CHECK.EMAIL);
+    messageInput.onblur = validateInput(!VALIDATION_CHECK.MESSAGE);
 
-    messageInput.onblur = () => {
-      const containsBadWords = messageInput.value.match(/Хуй|Пизд|Еб[а@]н|Уе[б6]|Бля[дт]|Пид[оoаa0]р/i);
-      if (containsBadWords) {
-        showInvalidInputError(messageInput);
-      } else {
-        showInvalidInputError(messageInput, 'hide');
-      }
-    };
+    function validateInput(validationCheck) {
+      return (event) => {
+        const input = event.target;
+        const isValid = input.value.match(validationCheck);
+
+        if (isValid) {
+          showInvalidInputError(input, ACTION.HIDE);
+        } else {
+          showInvalidInputError(input, ACTION.SHOW);
+        }
+      };
+    }
 
     submitButton.onclick = (event) => {
-      if (sendingBlocked) {
-        event.preventDefault();
-      }else if(nameInput.value === "") {
-        event.preventDefault();
+      event.preventDefault();
+      if(nameInput.value === "") {
         showInvalidInputError(nameInput)
       } else if(emailInput.value === "") {
-        event.preventDefault();
         showInvalidInputError(emailInput)
       } else {
-        showInvalidInputError(nameInput, 'hide');
-        showInvalidInputError(emailInput, 'hide');
+        showInvalidInputError(nameInput, ACTION.HIDE);
+        showInvalidInputError(emailInput, ACTION.HIDE);
         alert('Message sent!');
       }
     };
@@ -61,12 +56,10 @@ window.feedbackForm = (function () {
   function showInvalidInputError(element, action = 'show') {
     if (action === 'show') {
       element.parentElement.classList.add('invalid');
-      element.classList.add('invalid-input');
       sendingBlocked = true;
     }
     else if (action === 'hide') {
       element.parentElement.classList.remove('invalid');
-      element.classList.remove('invalid-input');
       sendingBlocked = false;
     }
   }
@@ -76,3 +69,5 @@ window.feedbackForm = (function () {
     showInvalidInputError,
   }
 })();
+
+
