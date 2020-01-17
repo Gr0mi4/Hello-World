@@ -1,5 +1,6 @@
 (function contactsMainScript() {
   window.modal.init();
+  window.feedbackForm.init();
 
   const feedbackButton = document.getElementById('leave-feedback-button');
   feedbackButton.addEventListener('click', window.modal.showModal);

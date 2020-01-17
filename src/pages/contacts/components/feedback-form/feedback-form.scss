@@ -3,8 +3,6 @@
 @import "../../../../styles/media";
 @import "../../../../styles/gradients";
 
-
-
 .feedback-form {
   display: flex;
   flex-direction: column;
@@ -39,6 +37,8 @@
     border: none;
     border-bottom: 3px dashed $color-dark-grey;
     font-size: 18px;
+    width: 100%;
+    position: relative;
 
     @media #{$media-704} {
       margin: 10px auto;
@@ -48,7 +48,7 @@
 
     @media #{$media-571} {
       margin: 10px 20px;
-      font-size: 10px;
+      font-size: 12px;
       width: 300px;
     }
 
@@ -70,6 +70,9 @@
       border-bottom: 3px dashed $color-dark-grey;
       font-size: 14px;
       resize: none;
+      width: 100%;
+      position: relative;
+      box-sizing: border-box;
 
       @media #{$media-704} {
         font-size: 12px;
@@ -89,7 +92,7 @@
   }
 
   & .sub-headline {
-    margin: 5px;
+    margin: 10px 5px 5px 5px;
     font-family: $font-headline;
     font-size: 24px;
     font-weight: lighter;
@@ -242,7 +245,7 @@
       margin: 5px auto 5px auto;
     }
 
-    @media #{$media-704} {
+    @media #{$media-571} {
       width: 180px;
     }
 
@@ -250,9 +253,62 @@
       transform: scale(0.95);
     }
   }
+
+  .invalid {
+    position: relative;
+
+    & .input, .input-message {
+      border-bottom: 3px solid $color-red;
+    }
+
+    &:after {
+      display: block;
+      content: "*Invalid value entered";
+      position: absolute;
+      bottom: -10px;
+      left: 5px;
+      color: $color-red;
+      font-family: $font-calibri;
+      font-size: 15px;
+      font-weight: 600;
+
+      @media #{$media-704} {
+        font-size: 12px;
+        bottom: -5px;
+      }
+
+      @media #{$media-571} {
+        font-size: 10px;
+        left: 20px;
+      }
+    }
+
+    &#message-input-container {
+      &:after {
+        display: block;
+        content: "*Very bad words used, please be kind to the author and try again";
+        position: absolute;
+        bottom: -10px;
+        left: 5px;
+        color: $color-red;
+        font-family: $font-calibri;
+        font-size: 13.5px;
+        font-weight: 600;
+
+        @media #{$media-1415} {
+          font-size: 11.5px;
+        }
+
+        @media #{$media-704} {
+          font-size: 12px;
+          bottom: -5px;
+        }
+
+        @media #{$media-571} {
+          font-size: 10px;
+          left: 20px;
+        }
+      }
+    }
+  }
 }
-
-
-
-
-
