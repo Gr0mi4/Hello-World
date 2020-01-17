@@ -52,10 +52,6 @@
       width: 300px;
     }
 
-    /*&.invalid-input {
-      border-bottom: 3px solid $color-red;
-    }*/
-
     &:focus {
       outline: none;
       border-bottom: 4px solid $color-azure;
@@ -266,24 +262,24 @@
     }
 
     &:after {
-        display: block;
-        content: "*Invalid value entered";
-        position: absolute;
-        bottom: -10px;
-        left: 5px;
-        color: $color-red;
-        font-family: $font-calibri;
-        font-size: 15px;
-        font-weight: 600;
+      display: block;
+      content: "*Invalid value entered";
+      position: absolute;
+      bottom: -10px;
+      left: 5px;
+      color: $color-red;
+      font-family: $font-calibri;
+      font-size: 15px;
+      font-weight: 600;
 
-        @media #{$media-704} {
-          font-size: 12px;
-          bottom: -5px;
-        }
+      @media #{$media-704} {
+        font-size: 12px;
+        bottom: -5px;
+      }
 
-        @media #{$media-571} {
-          font-size: 10px;
-          left: 20px;
+      @media #{$media-571} {
+        font-size: 10px;
+        left: 20px;
       }
     }
 

@@ -5,9 +5,11 @@ window.feedbackForm = (function () {
   let messageInput;
   let submitButton;
   let sendingBlocked;
-  const ACTION = {
-    SHOW: 'show',
-    HIDE: 'hide'
+
+  const VALIDATION_CHECK = {
+    NAME: /^.+\D\S$/i,
+    EMAIL: /^.+@.+\.\w+$/i,
+    MESSAGE: /^((?!Хуй|Пизд|Еб[а@]н|Уе[б6]|Бля[дт]|Пид[оoаa0]р).)*$/i,
   };
 
   function init() {
@@ -16,15 +18,9 @@ window.feedbackForm = (function () {
     messageInput = document.getElementById('message-input');
     submitButton = document.getElementById('submit-button');
 
-    const VALIDATION_CHECK = {
-      NAME: /^.+\D\S$/i,
-      EMAIL: /^.+@.+\.\w+$/i,
-      MESSAGE: /Хуй|Пизд|Еб[а@]н|Уе[б6]|Бля[дт]|Пид[оoаa0]р/i,
-    };
-
     nameInput.onblur = validateInput(VALIDATION_CHECK.NAME);
     emailInput.onblur = validateInput(VALIDATION_CHECK.EMAIL);
-    messageInput.onblur = validateInput(!VALIDATION_CHECK.MESSAGE);
+    messageInput.onblur = validateInput(VALIDATION_CHECK.MESSAGE);
 
     function validateInput(validationCheck) {
       return (event) => {
@@ -32,9 +28,9 @@ window.feedbackForm = (function () {
         const isValid = input.value.match(validationCheck);
 
         if (isValid) {
-          showInvalidInputError(input, ACTION.HIDE);
+          hideInvalidInputError(input);
         } else {
-          showInvalidInputError(input, ACTION.SHOW);
+          showInvalidInputError(input);
         }
       };
     }
@@ -46,27 +42,27 @@ window.feedbackForm = (function () {
       } else if(emailInput.value === "") {
         showInvalidInputError(emailInput)
       } else {
-        showInvalidInputError(nameInput, ACTION.HIDE);
-        showInvalidInputError(emailInput, ACTION.HIDE);
+        hideInvalidInputError(nameInput);
+        hideInvalidInputError(emailInput);
         alert('Message sent!');
       }
     };
   }
 
-  function showInvalidInputError(element, action = 'show') {
-    if (action === 'show') {
+  function showInvalidInputError(element) {
       element.parentElement.classList.add('invalid');
       sendingBlocked = true;
-    }
-    else if (action === 'hide') {
+  }
+
+  function hideInvalidInputError(element) {
       element.parentElement.classList.remove('invalid');
       sendingBlocked = false;
-    }
   }
 
   return {
     init,
     showInvalidInputError,
+    hideInvalidInputError
   }
 })();
 
