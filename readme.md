@@ -9,7 +9,7 @@ front-end knowledge.
 For now it's look like a my personal technical Blog, where i would post some of
 my thoughts, news, and stories from personal experience. Anyway at the moment i'd
 like to focus on the technical part of the project and adding of some functions,
- so i prefer not to concentrate on content, at least fo now.
+ so i prefer not to concentrate on content, at least foк now.
  
                             Used technologies
 Main tech's that was used in this project is PUG(Jade in past), and Sass template
