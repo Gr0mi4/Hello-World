@@ -24,7 +24,7 @@ please run `npm install` in console while you in main folder;
 
 for opening run type `npm run build` in console - this script would create 
 folder /build where all needed files would be created; Then you can run any 
-page you want;
+page you want from the build folder;
 
 To see changes in your code after you made some changes you need to run build script
 again, or enable SCSS watcher by command `npm run watch` if all the changes are in 
